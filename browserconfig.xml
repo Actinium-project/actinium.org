@@ -1,0 +1,10 @@
+<browserconfig>
+    <msapplication>
+        <tile>
+            <square70x70logo src="/images/logo/windows/actinium-tile-small.png"/>
+            <square150x150logo src="/images/logo/windows/actinium-tile-medium.png"/>
+            <square310x310logo src="/images/logo/windows/actinium-tile-large.png"/>
+            <TileColor>#292929</TileColor>
+        </tile>
+    </msapplication>
+</browserconfig>
