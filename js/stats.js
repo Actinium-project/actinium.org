@@ -2,6 +2,15 @@ $(function() {
   $.getJSON('https://actinium.org:3000/v1/acm/price', function(price) {
 
 $( "#price" ).attr( "data-to", price.price*100000000 );
+$( "#volume" ).attr( "data-to", price.volume );
+
+})
+});
+
+$(function() {
+  $.getJSON('https://actinium.org:3000/v1/acm/price', function(volume) {
+
+$( "#volume" ).attr( "data-to", volume.volume );
 
 })
 });
