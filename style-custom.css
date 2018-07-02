@@ -59,12 +59,21 @@ h2 {
 }
 
 .bg-stats-price {
+	background: #40c0cb;
+	background: -moz-linear-gradient(-45deg, #40c0cb 0%, #36a3ad 100%);
+	background: -webkit-linear-gradient(-45deg, #40c0cb 0%,#36a3ad 100%);
+	background: linear-gradient(135deg, #40c0cb 0%,#36a3ad 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40c0cb', endColorstr='#36a3ad',GradientType=1 );
+}
+
+.bg-stats-fiatprice {
 	background: #59ba41;
 	background: -moz-linear-gradient(-45deg, #59ba41 0%, #50a73a 100%);
 	background: -webkit-linear-gradient(-45deg, #59ba41 0%,#50a73a 100%);
 	background: linear-gradient(135deg, #59ba41 0%,#50a73a 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#59ba41', endColorstr='#50a73a',GradientType=1 );
 }
+
 .bg-stats-marketcap {
 	background: #eb9c4d;
 	background: -moz-linear-gradient(-45deg, #eb9c4d 0%, #d38c45 100%);
@@ -72,6 +81,7 @@ h2 {
 	background: linear-gradient(135deg, #eb9c4d 0%,#d38c45 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eb9c4d', endColorstr='#d38c45',GradientType=1 );
 }
+
 .bg-stats-supply {
 	background: #1265a8;
 	background: -moz-linear-gradient(-45deg, #1265a8 0%, #105b97 100%);
@@ -79,6 +89,7 @@ h2 {
 	background: linear-gradient(135deg, #1265a8 0%,#105b97 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1265a8', endColorstr='#105b97',GradientType=1 );
 }
+
 .bg-stats-hashrate {
 	background: #c02942;
 	background: -moz-linear-gradient(-45deg, #c02942 0%, #ad253b 100%);

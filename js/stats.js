@@ -24,6 +24,14 @@ $( "#marketcap" ).attr( "data-to", marketcap.USD );
 });
 
 $(function() {
+  $.getJSON('https://actinium.org:3000/v1/acm/fiatprice', function(fiatprice) {
+
+$( "#fiatprice" ).attr( "data-to", fiatprice.USD );
+
+})
+});
+
+$(function() {
 	$.getJSON('https://actinium.org:3000/v1/acm/supply', function(supply) {
 
 $( "#supply" ).attr( "data-to", supply.total );
