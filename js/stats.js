@@ -1,7 +1,7 @@
 $(function() {
   $.getJSON('https://actinium.org:3000/v1/acm/price', function(price) {
 
-$( "#price" ).attr( "data-to", price.buy*100000000 );
+$( "#price" ).attr( "data-to", price.price*100000000 );
 
 })
 });
