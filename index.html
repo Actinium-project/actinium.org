@@ -158,6 +158,27 @@
 	<!-- CONTENT START -->
 	<section id="content">
 	<div class="content-wrap bg-standard-gray">
+<div>
+	<span class="timer"></span>
+
+<script type="text/javascript">
+$('.timer').countTo({
+	from: 50,
+	to: 2500,
+	speed: 1000,
+	refreshInterval: 50,
+	formatter: function (value, options) {
+		return value.toFixed(options.decimals);
+	},
+	onUpdate: function (value) {
+		console.debug(this);
+	},
+	onComplete: function (value) {
+		console.debug(this);
+	}
+});
+</script>
+</div>
 
 	<!-- STATS START -->
 
@@ -423,7 +444,8 @@
 	<!-- FOOTER SCRIPTS START -->
 
 	<script src="js/functions.js"></script>
-	<script src="js/stats.js"></script>
+	<script type="text/javascript" src="js/plugins/jquery.countTo.js"></script>
+	<script type="text/javascript" src="js/statsV2.js"></script>
 
 
 
