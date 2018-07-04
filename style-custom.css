@@ -246,3 +246,13 @@ animation: BgExampleChart 2s infinite;
   0%{background-position:0% 0%}
   100%{background-position:100% 100%}
 }
+
+.nav-community-icons {
+  position: relative;
+  top: -1px;
+  font-size: 14px;
+  width: 32px;
+  text-align: center;
+  margin-right: 6px;
+
+}
