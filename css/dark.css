@@ -202,12 +202,12 @@ body.top-search-open .dark #header-wrap:not(.not-dark) #top-search a,
 #primary-menu.dark ul ul li:first-child { border-top: 0; }
 
 .dark #primary-menu:not(.not-dark) ul ul li > a,
-#primary-menu.dark ul ul li > a { color: #999 !important; }
+#primary-menu.dark ul ul li > a { color: #ffffff !important; }
 
 .dark #primary-menu:not(.not-dark) ul ul li:hover > a,
 #primary-menu.dark ul ul li:hover > a {
 	background-color: rgba(0,0,0,0.1);
-	color: #CCC !important;
+	color: #1ABC9C !important;
 }
 
 .dark #primary-menu:not(.not-dark) ul ul > li.sub-menu > a,

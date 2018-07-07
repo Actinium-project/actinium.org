@@ -54,7 +54,7 @@
 	<meta name="application-name" content="Actinium" />
 	<meta name="msapplication-config" content="/browserconfig.xml">
 
-	<meta name="theme-color" content="#292929">
+	<meta name="theme-color" content="#00072a">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
 	<!-- Firefox, Chrome, Safari, IE 11+ and Opera. 196x196 pixels in size. -->
@@ -86,7 +86,7 @@
 
 </head>
 
-<body id="home" class="stretched" data-loader="3" data-animation-in="fadeIn" data-speed-in="1500" data-animation-out="fadeOut" data-speed-out="800">
+<body id="home" class="stretched" data-loader="7" data-animation-in="fadeIn" data-speed-in="1500" data-animation-out="fadeOut" data-speed-out="800" data-loader-timeout="4000" data-loader-color="#26f0a4">
 
 	<!-- WRAPPER START -->
 
@@ -96,7 +96,7 @@
 
 
 
-		<header id="header" class="semi-transparent transparent-header" data-sticky-class="not-dark" data-sticky-offset="100">
+		<header id="header" class="transparent-header no-sticky dark" data-sticky-class="dark" data-sticky-offset="100">
 
 			<div id="header-wrap">
 
@@ -107,8 +107,8 @@
 					<!-- LOGO START -->
 
 					<div id="logo" >
-						<a href="/" class="standard-logo" data-dark-logo="images/logo/actinium-logo-outline-white-text.svg"><img src="images/logo/actinium-logo-color-text-header.svg" alt="Actinium"></a>
-						<a href="/" class="retina-logo" data-dark-logo="images/logo/actinium-logo-outline-white-text.svg"><img src="images/logo/actinium-logo-color-text-header.svg" alt="Actinium"></a>
+						<a href="/" class="standard-logo" data-dark-logo="images/logo/actinium-logo-color-simple-header.svg"><img src="images/logo/actinium-logo-color-simple-header.svg" alt="Actinium"></a>
+						<a href="/" class="retina-logo" data-dark-logo="images/logo/actinium-logo-color-simple-header.svg"><img src="images/logo/actinium-logo-color-simple-header.svg" alt="Actinium"></a>
 					</div>
 
 					<!-- LOGO END -->
@@ -117,20 +117,29 @@
 
 					<nav id="primary-menu">
 						<ul>
-							<li class="current"><a href="/" data-scrollto="#home"><div>Home</div></a>
+							<li><a href="#wallets" data-scrollto="#wallets" class="dark-hover trn" data-trn-key="wallets"><div>Wallets</div></a>
 							</li>
-							<li><a href="roadmap"><div>Roadmap</div></a>
+							<li><a href="#roadmap" data-scrollto="#roadmap" class="dark-hover trn" data-trn-key="roadmap"><div>Roadmap</div></a>
 							</li>
-							<li><a href="team"><div>Team</div></a>
+							<li><a href="#exchanges" data-scrollto="#exchanges" class="dark-hover trn" data-trn-key="exchanges"><div>Exchanges</div></a>
 							</li>
-							<li><a href="#"><div>Community</div></a>
-								<ul style="background-color: rgba(255,255,255,0.8);">
+							<li><a href="#team" data-scrollto="#team" class="dark-hover trn" data-trn-key="team"><div>Team</div></a>
+							</li>
+							<li><a href="#" class="dark-hover trn" data-trn-key="community"><div>Community</div></a>
+								<ul style="background-color: #000a3b;">
 									<li><a href="https://discord.gg/cC5JGSv" target="_blank"><div><img class="nav-community-icons" src="images/logo/discord-vector.svg" alt="Discord - Actinium"></img>Discord</div></a></li>
 									<li><a href="https://www.reddit.com/r/ActiniumCrypto/" target="_blank"><div><img class="nav-community-icons" src="images/logo/reddit-vector.svg" alt="Reddit - Actinium"></img>Reddit</div></a></li>
 									<li><a href="https://t.me/actiniumdiscussions" target="_blank"><div><img class="nav-community-icons" src="images/logo/telegram-vector.svg" alt="Telegram - Actinium"></img>Telegram</div></a></li>
 									<li><a href="https://twitter.com/ActiniumCrypto" target="_blank"><div><img class="nav-community-icons" src="images/logo/twitter-vector.svg" alt="Twitter - Actinium"></img>Twitter</div></a></li>
 									<li><a href="https://github.com/Actinium-project" target="_blank"><div><img class="nav-community-icons" src="images/logo/github-black-vector.svg" alt="GitHub - Actinium"></img>GitHub</div></a></li>
 								</ul>
+							</li>
+							<li><a href="#" class="dark-hover trn" data-trn-key="language"><div>Language</div></a>
+								<ul style="background-color: #000a3b;">
+									<li><a class="lang_selector" href="#" role="button"  data-value="en"><div><img class="nav-community-icons" src="images/logo/lang/en_US.svg" alt="Translate to English"></img><span class="lang-display trn" data-trn-key="language_en">English</span></div></a></li>
+									<li><a class="lang_selector" href="#" role="button" data-value="es"><div><img class="nav-community-icons" src="images/logo/lang/es_ES.svg" alt="Translate to Spanish"></img><span class="lang-display trn" data-trn-key="language_es">Spanish</span></div></a></li>
+								</ul>
+							</li>
 						</ul>
 					</nav>
 
@@ -144,65 +153,53 @@
 
 	<!-- SLIDER START -->
 
-	<section id="slider" class="dark slider-element revslider-wrap slider-parallax full-screen force-full-screen clearfix">
+  <section id="slider" class="dark slider-element revslider-wrap full-screen force-full-screen clearfix">
 		<div class="slider-parallax-inner">
-			<div class="full-screen force-full-screen" style="background: url('images/backgrounds/background-acm-slider.jpg') center center no-repeat; background-size: cover;">
+			<div class="full-screen force-full-screen" style="background: url('images/backgrounds/bg-actinium-section-landing-less.jpg') center bottom no-repeat; background-size: cover;">
 				<div class="container clearfix">
 					<div class="emphasis-title vertical-middle center">
-						<img data-animate="fadeInDown" data-delay="200" src="images/logo/actinium-logo-outline-white-slider-glow.svg" alt="Actinium - Cryptocurrency - POS - Scrypt" class="imagescale footer-logo" style="max-width: 300px; margin: auto;">
-						<h3 data-animate="fadeInUp" data-delay="2200" class="text-rotater" data-separator="|" data-rotate="flipInX" data-speed="2200" >
-							<span style="color: #f0f0f0;" class="t-rotate">Cryptocurrency|POW|Scrypt|No ICO|No Premine|No Airdrop|Fair Launch</span>
-						</h3>
+						<img data-animate="fadeInDown" data-delay="200" src="images/logo/actinium-logo-slider.png" alt="Actinium - Cryptocurrency - POS - Scrypt" class="imagescale footer-logo" style="max-width: 300px; margin: auto;">
+						<h3 data-animate="fadeInUp" data-delay="2200" class="dark d-none d-lg-block d-xl-block trn" data-trn-key="section_logo_text">#POW&nbsp;&nbsp;&nbsp;&nbsp;#SCRYPT&nbsp;&nbsp;&nbsp;&nbsp;#No ICO&nbsp;&nbsp;&nbsp;&nbsp;#No Premine&nbsp;&nbsp;&nbsp;&nbsp;#No Airdrop&nbsp;&nbsp;&nbsp;&nbsp;#Fair Launch</h3>
 					</div>
 				</div>
 			</div>
-			<div class="video-overlay" style="background-color: rgba(0,0,0,0.45);"></div>
 		</div>
 	</section>
+
+
 
 	<!-- SLIDER END -->
 
 
 	<!-- CONTENT START -->
-	<section id="content">
-	<div class="content-wrap bg-standard-gray">
+	<section id="content" class="bg-standard-landing">
+	<div class="container clearfix">
 
 	<!-- STATS START -->
 
-		<div class="row nomargin container-fluid">
-			<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl">
-				<div class="col-padding-sm bottommargin-sm block-stats-height center bg-stats-price dark card-shadow border-6px">
-					<span>Price </span>
-					<div class="counter counter-small"><span id="price" data-from="0" data-to=" " data-refresh-interval="80" data-speed="3000" data-comma="true">???</span></br>Sat</div>
-					<i class="icon-bitcoin2 bgicon-sm"></i>
+		<div class="row margin-top-bottom bg-white center bg-stats-shadows border-6px" style="color: #000a3b;">
+			<div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl">
+				<div class="col-padding-sm ">
+					<span class="trn" data-trn-key="price_block">Price</span>
+					<div class="counter counter-small"><span id="price" data-from="0" data-to=" " data-refresh-interval="80" data-speed="3000" data-comma="true">???</span> Sat</div>
 				</div>
 			</div>
-			<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl">
-				<div class="col-padding-sm bottommargin-sm block-stats-height center bg-stats-fiatprice dark card-shadow border-6px">
-					<span>Price </span>
-					<div class="counter counter-small"><span id="fiatprice" data-decimals="2" data-from="0" data-to=" " data-refresh-interval="80" data-speed="3000" data-comma="true">???</span></br>$</div>
-					<i class="icon-dollar bgicon-sm"></i>
+			<div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl">
+				<div class="col-padding-sm">
+					<span class="trn" data-trn-key="marketcap_block">Market Cap</span>
+					<div class="counter counter-small"><span id="marketcap" data-from="0" data-to=" " data-refresh-interval="80" data-speed="3000" data-comma="true">???</span> $</div>
 				</div>
 			</div>
-			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl">
-				<div class="col-padding-sm bottommargin-sm block-stats-height center bg-stats-marketcap dark card-shadow border-6px">
-					<span>Market Cap</span>
-					<div class="counter counter-small"><span id="marketcap" data-from="0" data-to=" " data-refresh-interval="80" data-speed="3000" data-comma="true">???</span></br>$</div>
-					<i class="icon-bar-chart bgicon-sm"></i>
+			<div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl">
+				<div class="col-padding-sm">
+					<span class="trn" data-trn-key="currentsupply_block">Current Supply</span>
+					<div class="counter counter-small"><span id="supply" data-from="0" data-to=" " data-refresh-interval="80" data-speed="3000" data-comma="true">???</span> ACM</div>
 				</div>
 			</div>
-			<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl">
-				<div class="col-padding-sm bottommargin-sm block-stats-height center bg-stats-supply dark card-shadow border-6px">
-					<span>Current Supply</span>
-					<div class="counter counter-small"><span id="supply" data-from="0" data-to=" " data-refresh-interval="80" data-speed="3000" data-comma="true">???</span></br>ACM</div>
-					<i class="icon-unlocked bgicon-sm"></i>
-				</div>
-			</div>
-			<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl">
-				<div class="col-padding-sm bottommargin-sm block-stats-height center bg-stats-hashrate dark card-shadow border-6px">
-					<span>Hashrate</span>
-					<div class="counter counter-small"><span id="hashrate" data-from="0" data-to=" " data-refresh-interval="80" data-speed="3000" data-comma="true">???</span></br>GH/s</div>
-					<i class="icon-atom bgicon-sm"></i>
+			<div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl">
+				<div class="col-padding-sm">
+					<span class="trn" data-trn-key="hashrate_block">Hashrate</span>
+					<div class="counter counter-small"><span id="hashrate" data-from="0" data-to=" " data-refresh-interval="80" data-speed="3000" data-comma="true">???</span> GH/s</div>
 				</div>
 			</div>
 		</div>
@@ -211,99 +208,111 @@
 
 	<!-- ABOUT START -->
 
-	<div class="row nomargin grid-container">
-		<div class="col-xl-2">
+  <div class="row margin-top-bottom">
+		<div class="col-md-12 col-lg-6 col-xl-6 order-0">
+			<div class="">
+        <div class="fancy-title title-bottom-border">
+				      <h2 class="h2-small dark trn" data-trn-key="about">About</h2>
+        </div>
+        <div class="p-mb">
+				      <span class="dark trn" data-trn-key="about_desc_1">Actinium is more than a crypto currency.
+                <br><br>Actinium is a <b>decentralized currency built on blockchain technology</b> that aims to help bring crypto into every customer’s pocket, every store, and be extraordinarily safe and easy to use.
+                <br><br>This can be achieved because <b>Actinium is a Lightning Network supported coin</b> that will allow <b>instant transactions with near-zero fees, atomic swaps, and many of the numerous other 2nd Layer solutions.</b></span>
+        </div>
+				</div>
 		</div>
-		<div class="col-lg-12 col-xl-8">
-			<div class="col-padding-sm bottommargin-sm center bg-gray card-shadow border-6px">
-				<h2>About</h2>
-				<span>Actinium is more than a crypto currency. Actinium is a decentralized currency built on blockchain technology that aims to
-				help bring crypto into every customer’s pocket, every store, and be extraordinarily safe and easy to use. This can be achieved
-				because Actinium is a Lightning Network supported coin that will allow instant transactions with near-zero fees, atomic swaps,
-				and many of the numerous other 2nd Layer solutions.
-				</br>
-				</br>
-				 Actinium is completely decentralized <strong>without premine</strong> and <strong>is not an ICO</strong>. It has proper mining support, mobile wallets, and hardware
-				wallet integration. Actinium has all the needed features already activated to achieve Lightning Network compatibility. Actinium
-				will not remain a blockchain-only cryptocurrency. The inevitable progress will deliver competing solutions to many problems
-				on different layers.</span>
-			</div>
-		</div>
-		<div class="col-xl-2">
-		</div>
+
+		<div class="col-md-12 col-lg-6 col-xl-6 order-1">
+			<div class="bottommargin-sm">
+        <div class="fancy-title title-bottom-border-transparent d-none d-lg-block d-xl-block">
+          <h2 class="h2-small dark">&nbsp;</h2>
+    </div>
+    <div class="p-mb">
+          <span class="dark trn" data-trn-key="about_desc_2">Actinium is completely decentralized without premine and is not an ICO. <b>It has proper mining support, mobile wallets, and hardware wallet integration.</b>
+            <br><br>Actinium has all the needed features already activated to achieve Lightning Network compatibility.
+            <br><br>Actinium will not remain a blockchain-only cryptocurrency. <b>The inevitable progress will deliver competing solutions to many problems on different layers.</b></span>
+    </div>
+    </div>
+  </div>
 	</div>
 
 	<!-- ABOUT END -->
 
 	<!-- WALLET POOLS MINERS START -->
 
-	<div class="row nomargin grid-container equal">
-		<div class="col-md-12 col-lg-6 col-xl-6 order-0">
-			<div class="col-padding-sm bottommargin-sm bg-gray card-shadow border-6px">
-				<h2>Wallets</h2>
-				<span>Download Actinium for any platform</span>
-				<br>
-				<br>
-				<a href="https://github.com/Actinium-project/Actinium/releases/download/v0.16.1.0/Actinium.zip" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="" data-original-title="v0.16.1.0 - mandatory update!" class="button button-rounded button-reveal button-large button-green button-fill fill-from-top button-reveal tright"><i class="icon-download-alt"></i><span>Windows</span></a>
-				<a href="https://github.com/Actinium-project/Actinium/releases/download/v0.16.1.0/Actinium-Qt.dmg" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="" data-original-title="v0.16.1.0 - mandatory update!" class="button button-rounded button-reveal button-large button-green button-fill fill-from-top button-reveal tright"><i class="icon-download-alt"></i><span>macOS</span></a>
-				<a href="https://github.com/Actinium-project/Actinium/archive/v0.16.1.0.tar.gz" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="" data-original-title="v0.16.1.0 - mandatory update!" class="button button-rounded button-reveal button-large button-green button-fill fill-from-top button-reveal tright"><i class="icon-download-alt"></i><span>Linux</span></a>
-				<a href="https://play.google.com/store/apps/details?id=org.acpay" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="" data-original-title="v3.0.0 - SPV Wallet" class="button button-rounded button-reveal button-large button-green button-fill fill-from-top button-reveal tright"><i class="icon-download-alt"></i><span>Android</span></a>
-				<a data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Soon!" class="button button-rounded button-reveal button-large button-red button-fill fill-from-top button-reveal tright" style="color: #ffffff;"><i class="icon-forbidden"></i><span>iOS</span></a>
+	<div class="row margin-top-bottom">
+		<div class="col-md-12 col-lg-6 col-xl-6 order-0 margin-bottom-panels">
+			<div class="bottommargin-sm">
+        <div class="fancy-title title-bottom-border marginbottom-10">
+				      <h2 id="wallets" class="h2-small dark trn" data-trn-key="wallets">Wallets</h2>
+        </div>
+        <div class="p-mb">
+				      <span class="p-primary-color trn" data-trn-key="wallets_desc">Download Actinium for any platform</span>
+        </div>
+				<a href="https://github.com/Actinium-project/Actinium/releases/download/v0.16.1.0/Actinium.zip" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>Windows</span></a>
+				<a href="https://github.com/Actinium-project/Actinium/releases/download/v0.16.1.0/Actinium-Qt.dmg" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>macOS</span></a>
+				<a href="https://github.com/Actinium-project/Actinium/archive/v0.16.1.0.tar.gz" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>Linux</span></a>
+				<a href="https://play.google.com/store/apps/details?id=org.acpay" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>Android</span></a>
+				<a href="#wallets" title="" class="button button-small button-border button-rounded button-fill button-soon-acm"><span>iOS</span></a>
 			</div>
 		</div>
 
-		<div class="col-md-12 col-lg-6 col-xl-6 order-1">
-			<div class="col-padding-sm bottommargin-sm bg-gray card-shadow border-6px">
-				<h2>Mining pools</h2>
-				<span>Select a pool and start mining</span>
-				<br>
-				<br>
-				<a href="http://pool.actinium.org/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Official" class="button button-rounded button-reveal button-large button-amber button-fill fill-from-top button-reveal tright"><i class="icon-connection-25"></i><span>Official 1</span></a>
-				<a href="http://fastpool.actinium.org/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Higher Diff" class="button button-rounded button-reveal button-large button-amber button-fill fill-from-top button-reveal tright"><i class="icon-connection-50"></i><span>Official 2</span></a>
-				<a href="https://goldmine.actinium.org/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="YIIMP" class="button button-rounded button-reveal button-large button-amber button-fill fill-from-top button-reveal tright"><i class="icon-connection-75"></i><span>Official 3</span></a>
-				<a href="http://explorer.actinium.org/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Check the explorer!" class="button button-rounded button-reveal button-large button-blue button-fill fill-from-top button-reveal tright"><i class="icon-search"></i><span>Explorer</span></a>
+		<div class="col-md-12 col-lg-6 col-xl-6 order-1 margin-bottom-panels">
+			<div class="bottommargin-sm">
+        <div class="fancy-title title-bottom-border marginbottom-10">
+				      <h2 class="h2-small dark trn" data-trn-key="pools">Mining pools</h2>
+        </div>
+        <div class="p-mb">
+              <span class="p-primary-color trn" data-trn-key="pools_desc">Select a pool and start mining</span>
+        </div>
+				<a href="http://pool.actinium.org/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span class="trn" data-trn-key="official_button">Official</span></a>
+				<a href="http://fastpool.actinium.org/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>FastPool</span></a>
+				<a href="https://goldmine.actinium.org/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>GoldMine</span></a>
+				<a href="http://explorer.actinium.org/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-valid-acm"><span class="trn" data-trn-key="explorer_button">Explorer</span></a>
 			</div>
 		</div>
 
-		<div class="col-md-12 col-lg-6 col-xl-6 order-2">
-			<div class="col-padding-sm bottommargin-sm bg-gray card-shadow border-6px">
-				<h2>Miners</h2>
-				<span>Download a miner for your architecture</span>
-				<br>
-				<br>
-				<a data-toggle="modal" data-target=".amd-sgminer" class="button button-rounded button-reveal button-large button-red button-fill fill-from-top button-reveal tright" style="color: #ffffff;"><i class="icon-download-alt"></i><span>AMD</span></a>
-				<div class="modal fade amd-sgminer" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		<div class="col-md-12 col-lg-6 col-xl-6 order-2 margin-bottom-panels">
+			<div class="bottommargin-sm">
+        <div class="fancy-title title-bottom-border marginbottom-10">
+				      <h2 class="h2-small dark trn" data-trn-key="miners">Miners</h2>
+        </div>
+        <div class="p-mb">
+              <span class="p-primary-color trn" data-trn-key="miners_desc">Download a miner for your architecture</span>
+        </div>
+				<a href="#myModalLabelAmd" data-toggle="modal" data-target=".amd-sgminer" class="button button-small button-border button-rounded button-fill button-soon-acm"><span>AMD</span></a>
+				<div class="modal fade amd-sgminer " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 					<div class="modal-dialog modal-lg">
-						<div class="modal-body">
-							<div class="modal-content">
-								<div class="modal-header">
+						<div class="modal-body ">
+							<div class="modal-content bg-standard-landing">
+								<div class="modal-header dark">
 									<h4 class="modal-title" id="myModalLabel">AMD - sgMiner</h4>
 									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 								</div>
 								<div class="modal-body">
-									<p>Create a .bat file inside the miner directory and add this parameters:</p>
-									<p class="bg-code">sgminer -o stratum+tcp://goldmine.actinium.org:14334 -u YOURADDRESS -p c=ACM -I 10</p>
-									<p>You can download sgMiner for AMD GPU in the next link:</p>
-									<a href="http://cryptomining-blog.com/2586-download-sgminer-4-2-1-scrypt-gpu-miner-for-windows/" target="_blank" class="button button-rounded button-reveal button-large button-red button-fill fill-from-top button-reveal tright" style="color: #ffffff;"><i class="icon-download-alt"></i><span>AMD - sgMiner</span></a>
+									<p class="dark trn" data-trn-key="how_to_gpu_amd_01">Create a .bat file inside the miner directory and add this parameters:</p>
+									<p class="bg-code trn" data-trn-key="how_to_code_miner">sgminer -o stratum+tcp://goldmine.actinium.org:14334 -u YOURADDRESS -p c=ACM -I 10</p>
+									<p class="dark trn" data-trn-key="how_to_gpu_amd_02">You can download sgMiner for AMD GPU in the next link:</p>
+									<a href="http://cryptomining-blog.com/2586-download-sgminer-4-2-1-scrypt-gpu-miner-for-windows/" target="_blank" class="button button-small button-border button-rounded button-fill button-soon-acm"><i class="icon-download-alt"></i><span>AMD - sgMiner</span></a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<a data-toggle="modal" data-target=".nvidia-sgminer" class="button button-rounded button-reveal button-large button-green button-fill fill-from-top button-reveal tright" style="color: #ffffff;"><i class="icon-download-alt"></i><span>nVidia</span></a>
+				<a href="#myModalLabelNvidia" data-toggle="modal" data-target=".nvidia-sgminer" class="button button-small button-border button-rounded button-fill button-valid-acm"><span>nVidia</span></a>
 				<div class="modal fade nvidia-sgminer" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 					<div class="modal-dialog modal-lg">
 						<div class="modal-body">
-							<div class="modal-content">
-								<div class="modal-header">
+							<div class="modal-content bg-standard-landing">
+								<div class="modal-header dark">
 									<h4 class="modal-title" id="myModalLabel">nVidia - sgMiner</h4>
 									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 								</div>
 								<div class="modal-body">
-									<p>Create a .bat file inside the miner directory and add this parameters:</p>
-									<p class="bg-code">sgminer -o stratum+tcp://goldmine.actinium.org:14334 -u YOURADDRESS -p c=ACM -I 10</p>
-									<p>You can download sgMiner for nVidia GPU in the next link:</p>
-									<a href="http://cryptomining-blog.com/tag/sgminer-nvidia/" target="_blank" class="button button-rounded button-reveal button-large button-green button-fill fill-from-top button-reveal tright" style="color: #ffffff;"><i class="icon-download-alt"></i><span>nVidia - sgMiner</span></a>
+									<p class="dark trn" data-trn-key="how_to_gpu_nvidia_01">Create a .bat file inside the miner directory and add this parameters:</p>
+									<p class="bg-code trn" data-trn-key="how_to_code_miner">sgminer -o stratum+tcp://goldmine.actinium.org:14334 -u YOURADDRESS -p c=ACM -I 10</p>
+									<p class="dark trn" data-trn-key="how_to_gpu_nvidia_02">You can download sgMiner for nVidia GPU in the next link:</p>
+									<a href="http://cryptomining-blog.com/tag/sgminer-nvidia/" target="_blank" class="button button-small button-border button-rounded button-fill button-valid-acm"><i class="icon-download-alt"></i><span>nVidia - sgMiner</span></a>
 								</div>
 							</div>
 						</div>
@@ -312,48 +321,257 @@
 			</div>
 		</div>
 
-		<div class="col-md-12 col-lg-6 col-xl-6 order-last">
-			<div class="col-padding-sm bottommargin-sm bg-gray card-shadow border-6px">
-				<h2>Other links</h2>
-				<span>Discover more about Actinium</span>
-				<br>
-				<br>
-				<a href="https://bitcointalk.org/index.php?topic=4300440.0" target="_blank" class="button button-rounded button-reveal button-large button-purple button-fill fill-from-top button-reveal tright"><i class="icon-bitcoin"></i><span>BitcoinTalk ANN</span></a>
-				<a href="http://faucet.actinium.org/" target="_blank" class="button button-rounded button-reveal button-large button-aqua button-fill fill-from-top button-reveal tright"><i class="icon-line-drop"></i><span>Faucet</span></a>
+		<div class="col-md-12 col-lg-6 col-xl-6 order-last margin-bottom-panels">
+			<div class="bottommargin-sm">
+        <div class="fancy-title title-bottom-border marginbottom-10">
+				      <h2 class="h2-small dark trn" data-trn-key="other_links">Other links</h2>
+        </div>
+        <div class="p-mb">
+              <span class="p-primary-color trn" data-trn-key="other_links_desc">Discover more about Actinium</span>
+        </div>
+				<a href="https://bitcointalk.org/index.php?topic=4300440.0" target="_blank" class="button button-small button-border button-rounded button-fill button-available-acm"><span>BitcoinTalk ANN</span></a>
+				<a href="http://faucet.actinium.org/" target="_blank" class="button button-small button-border button-rounded button-fill button-valid-acm"><span>Faucet</span></a>
 			</div>
 		</div>
 	</div>
 
 	<!-- WALLET POOLS MINERS END -->
 
-	<!-- EXCHANGES START -->
+  <!-- ROADMAP START -->
 
-	<div class="row nomargin grid-container">
-		<div class="col-xl-2">
-		</div>
-		<div class="col-lg-12 col-xl-8">
-			<div class="col-padding-sm bottommargin-sm center bg-gray card-shadow border-6px">
-				<h2>Exchanges</h2>
-				<span>Trade your Actinium</span>
-				<div class="row nomargin grid-container">
-					<div class="col col-sm col-md-6 col-lg-6 col-xl-6">
-						<div class="topmargin-sm bottommargin-sm social-logo-links center">
-							<a href="https://tradeogre.com/exchange/BTC-ACM" target="_blank"><img src="images/logo/exchanges/tradeogre-exchange.svg" alt="TradeOgre"></a>
-						</div>
-					</div>
-					<div class="col col-sm col-md-6 col-lg-6 col-xl-6">
-						<div class="topmargin-sm bottommargin-sm social-logo-links center">
-							<a href="https://bitfex.trade/en/ACM/BTC" target="_blank"><img src="images/logo/exchanges/bitfex-exchange.svg" alt="BitFex"></a>
-						</div>
-					</div>
-				</div>
+  <div class="row margin-top-bottom">
+
+    <!-- ROADMAP WALLETS START -->
+
+    <div class="col-md-12 col-lg-6 col-xl-6 order-0">
+      <div class="bottommargin-sm">
+        <div class="fancy-title title-bottom-border">
+              <h2 id="roadmap" class="h2-small dark trn" data-trn-key="roadmap">Roadmap</h2>
+        </div>
+        <div class="p-mb">
+          <h2 class="h2-small dark trn" data-trn-key="desktop_wallets">Desktop Wallets</h2>
+          <span class="p-primary-color trn" data-trn-key="finish_q1">Finished <b>Q1 2018</b></span>
+          <br>
+          <br>
+          <ul class="skills">
+            <li data-percent="100">
+              <span class="p-primary-color trn" data-trn-key="progress">Progress...</span>
+              <div class="progress skills-animated" style="width: 0%;">
+                <div class="progress-percent"><div class="counter counter-inherit counter-instant"><span data-from="0" data-to="100" data-refresh-interval="50" data-speed="1100">100</span>%</div></div>
+              </div>
+            </li>
+          </ul>
+        </br>
+        <a href="#roadmapWindows" class="button button-small button-border button-rounded button-fill button-available-acm"><i class="icon-windows3"></i><span> Windows</span></a>
+        <a href="#roadmapMacos" class="button button-small button-border button-rounded button-fill button-available-acm"><i class="icon-apple"></i><span> macOS</span></a>
+        <a href="#roadmapLinux" class="button button-small button-border button-rounded button-fill button-available-acm"><i class="icon-linux"></i><span> Linux</span></a>
+        </div>
+        </div>
+    </div>
+
+    <!-- ROADMAP WALLETS END -->
+
+    <!-- ROADMAP MOBILE WALLETS START -->
+
+    <div class="col-md-12 col-lg-6 col-xl-6 order-1">
+      <div class="bottommargin-sm">
+        <div class="fancy-title title-bottom-border-transparent d-none d-lg-block d-xl-block">
+          <h2 class="h2-small dark">&nbsp;</h2>
+    </div>
+    <div class="p-mb">
+      <h2 class="h2-small dark trn" data-trn-key="smartphone_wallets">Smartphone Wallets</h2>
+      <span class="p-primary-color trn" data-trn-key="going_q2">On going <b>Q2 2018</b></span>
+      <br>
+      <br>
+      <ul class="skills">
+        <li data-percent="75">
+          <span class="p-primary-color trn" data-trn-key="progress">Progress...</span>
+          <div class="progress skills-animated" style="width: 0%;">
+            <div class="progress-percent"><div class="counter counter-inherit counter-instant"><span data-from="0" data-to="75" data-refresh-interval="50" data-speed="1100">75</span>%</div></div>
+          </div>
+        </li>
+      </ul>
+    </br>
+    <a href="#roadmapAndroid" class="button button-small button-border button-rounded button-fill button-available-acm"><i class="icon-android"></i><span> Android</span></a>
+    <a href="#roadmapIos" class="button button-small button-border button-rounded button-fill button-soon-acm"><i class="icon-apple"></i><span> iOS</span></a>
+    </div>
+    </div>
+  </div>
+
+    <!-- ROADMAP MOBILE WALLETS END -->
+
+    <!-- ROADMAP LEDGER NANO START -->
+
+  <div class="col-md-12 col-lg-6 col-xl-6 order-2">
+    <div class="bottommargin-sm">
+  <div class="p-mb">
+    <h2 class="h2-small dark trn" data-trn-key="ledger_nano">Ledger Nano</h2>
+    <span class="p-primary-color trn" data-trn-key="going_q2">On going <b>Q2 2018</b></span>
+    <br>
+    <br>
+    <ul class="skills">
+      <li data-percent="50">
+        <span class="p-primary-color trn" data-trn-key="progress">Progress...</span>
+        <div class="progress skills-animated" style="width: 0%;">
+          <div class="progress-percent"><div class="counter counter-inherit counter-instant"><span data-from="0" data-to="50" data-refresh-interval="50" data-speed="1100">50</span>%</div></div>
+        </div>
+      </li>
+    </ul>
+  </br>
+  <a href="#roadmapLedgernano" data-toggle="modal" data-target=".ledger-nano" class="button button-small button-border button-rounded button-fill button-valid-acm"><i class="icon-line-image"></i><span class="trn" data-trn-key="ledger_nano_screenshot"> Take a look!</span></a>
+  </div>
+  </div>
+</div>
+
+<div class="modal fade ledger-nano" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-md">
+    <div class="modal-body">
+      <div class="modal-content bg-standard-landing">
+        <div class="modal-header dark">
+          <h4 class="modal-title trn" id="myModalLabel" data-trn-key="ledger_nano_progress">Ledger Nano progress...</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        </div>
+        <div class="modal-body">
+          <img class="center" src="images/ledger-nano-dev.jpg" style="text-align: center; " alt="Ledger Nano Dev"></img>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- ROADMAP LEDGER NANO END -->
+
+    <!-- ROADMAP LIGHTNING NETWORK START -->
+
+  <div class="col-md-12 col-lg-6 col-xl-6 order-2">
+    <div class="bottommargin-sm">
+  <div class="p-mb">
+    <h2 class="h2-small dark trn" data-trn-key="lightning_network">Lightning Network</h2>
+    <span class="p-primary-color trn" data-trn-key="going_q3">On going <b>Q3 2018</b></span>
+    <br>
+    <br>
+    <ul class="skills">
+      <li data-percent="35">
+        <span class="p-primary-color trn" data-trn-key="progress">Progress...</span>
+        <div class="progress skills-animated" style="width: 0%;">
+          <div class="progress-percent"><div class="counter counter-inherit counter-instant"><span data-from="0" data-to="35" data-refresh-interval="50" data-speed="1100">35</span>%</div></div>
+        </div>
+      </li>
+    </ul>
+  </br>
+  <a href="#roadmapLightningnetwork" class="button button-small button-border button-rounded button-fill button-soon-acm"><i class="icon-bolt"></i><span class="trn" data-trn-key="testing"> Testing!</span></a>
+  </div>
+  </div>
+</div>
+</div>
+
+    <!-- ROADMAP LIGHTNING NETWORK END -->
+
+	   <!-- EXCHANGES START -->
+
+  <div class="row margin-top-bottom">
+    <div class="col-md-12 col-lg-6 col-xl-6 order-0 margin-bottom-panels">
+			<div class="bottommargin-sm">
+        <div class="fancy-title title-bottom-border marginbottom-10">
+				      <h2 id="exchanges" class="h2-small dark trn" data-trn-key="exchanges">Exchanges</h2>
+        </div>
+        <div class="p-mb">
+				      <span class="p-primary-color trn" data-trn-key="exchanges_desc">Trade your actinium</span>
+        </div>
+				<a href="https://tradeogre.com/exchange/BTC-ACM" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>TradeOgre</span></a>
+				<a href="https://bitfex.trade/en/ACM/BTC" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>BitFex</span></a>
 			</div>
 		</div>
-		<div class="col-xl-2">
-		</div>
-	</div>
 
-	<!-- EXCHANGES END -->
+  </div>
+
+  	<!-- EXCHANGES END -->
+
+    <!-- TEAM START -->
+
+    <div class="row margin-top-bottom">
+  		<div class="col-md-12 col-lg-6 col-xl-6 order-0">
+  			<div class="bottommargin-sm">
+          <div class="fancy-title title-bottom-border">
+  				      <h2 id="team" class="h2-small dark trn" data-trn-key="team">Meet the team</h2>
+          </div>
+          <div class="p-mb">
+  				      <span class="dark trn" data-trn-key="team_desc">Unlike many other altcoins <b>we are not anonymous.</b>
+                <br><br>We think that investors have a right to know the people representing the coin. Yes, the standard excuse is very often <i>'But Satoshi never revealed himself'</i>.
+                <br><br>However, unlike us, who are building things based on Bitcoin's original code, Satoshi created something extraordinary and he/she/they had every right to remain hidden.</span>
+          </div>
+  				</div>
+  		</div>
+      <div class="col-md-12 col-lg-6 col-xl-6 order-1">
+  			<div class="bottommargin-sm">
+          <div class="fancy-title title-bottom-border-transparent d-none d-lg-block d-xl-block">
+            <h2 class="h2-small dark">&nbsp;</h2>
+      </div>
+      <div class="p-mb">
+            <span class="dark"></span>
+      </div>
+      </div>
+    </div>
+
+    <div class="col-md-12 col-lg-6 col-xl-6 order-2 bottommargin-sm">
+      <div class="team team-list bottommargin-sm">
+        <div class="team-image">
+          <img src="images/team/brakmic-harris.jpg" class="border-6px" alt="Harris Brakmic">
+        </div>
+        <div class="team-desc">
+          <div class="team-title dark"><h4>Harris Brakmic</h4><span class="trn" data-trn-key="harris_sub">Founder - Software developer</span></div>
+          <div class="team-content dark">
+            <p class="trn" data-trn-key="harris_desc">Software Developer 🤖</p>
+          </div>
+          <a href="https://twitter.com/brakmic" target="_blank" class="social-icon si-rounded si-small si-dark si-twitter">
+            <i class="icon-twitter"></i>
+            <i class="icon-twitter"></i>
+          </a>
+          <a href="https://github.com/brakmic" target="_blank" class="social-icon si-rounded si-small si-dark si-github">
+            <i class="icon-github"></i>
+            <i class="icon-github"></i>
+          </a>
+          <a href="https://stackoverflow.com/users/story/3294529" target="_blank" class="social-icon si-rounded si-small si-dark si-stackoverflow">
+            <i class="icon-stackoverflow"></i>
+            <i class="icon-stackoverflow"></i>
+          </a>
+          <a href="http://blog.brakmic.com/" target="_blank" class="social-icon si-rounded si-small si-dark si-delicious">
+            <i class="icon-world"></i>
+            <i class="icon-world"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-12 col-lg-6 col-xl-6 order-3 bottommargin-sm">
+      <div class="team team-list bottommargin-sm">
+        <div class="team-image">
+          <img src="images/team/pablo-caceres.jpg" class="border-6px" alt="cancaB">
+        </div>
+        <div class="team-desc">
+          <div class="team-title dark"><h4>Pablo Cáceres</h4><span class="trn" data-trn-key="pablo_sub">Web Designer</span></div>
+          <div class="team-content dark">
+            <p class="trn" data-trn-key="pablo_desc">I came here when this was still an experiment. Fan of 360º photography and cats lover (I have 12)... 😹</p>
+          </div>
+          <a href="https://twitter.com/cancabron" target="_blank" class="social-icon si-rounded si-small si-dark si-twitter">
+            <i class="icon-twitter"></i>
+            <i class="icon-twitter"></i>
+          </a>
+          <a href="https://github.com/cancabron" target="_blank" class="social-icon si-rounded si-small si-dark si-github">
+            <i class="icon-github"></i>
+            <i class="icon-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/pablo-caceres-diaz/" target="_blank" class="social-icon si-rounded si-small si-dark si-delicious">
+            <i class="icon-linkedin"></i>
+            <i class="icon-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  	</div>
+
+  	<!-- TEAM END -->
 
 	</div>
 	</section>
@@ -364,49 +582,23 @@
 
 	<footer id="footer" class="dark">
 
-		<div class="container clearfix">
-			<div class="row nomargin">
-				<div class="col-lg-1 col-xl-1">
-				</div>
-			<div class="col-6 col-sm col-md col-lg-2 col-xl-2">
-				<div class="topmargin-sm bottommargin-sm social-logo-links center">
-					<a href="https://discord.gg/cC5JGSv" target="_blank" data-toggle="tooltip" data-placement="left" title="" data-original-title="Join the community!" data-toggle="modal" data-target="#discord"><img src="images/logo/discord-vector.svg" alt="Discord - Actinium"></a>
-				</div>
-			</div>
-			<div class="col-6 col-sm col-md col-lg-2 col-xl-2">
-				<div class="topmargin-sm bottommargin-sm social-logo-links center">
-					<a href="https://www.reddit.com/r/ActiniumCrypto/" target="_blank" data-toggle="tooltip" data-placement="left" title="" data-original-title="Follow us in Reddit!" data-toggle="modal" data-target="#reddit"><img src="images/logo/reddit-vector.svg" alt="Reddit - Actinium"></a>
-				</div>
-			</div>
-			<div class="col-6 col-sm col-md col-lg-2 col-xl-2">
-				<div class="topmargin-sm bottommargin-sm social-logo-links center">
-					<a href="https://t.me/actiniumdiscussions" target="_blank" data-toggle="tooltip" data-placement="left" title="" data-original-title="Come and talk with us!" data-toggle="modal" data-target="#telegram"><img src="images/logo/telegram-vector.svg" alt="Telegram - Actinium"></a>
-				</div>
-			</div>
-			<div class="col-6 col-sm col-md col-lg-2 col-xl-2">
-				<div class="topmargin-sm bottommargin-sm social-logo-links center">
-					<a href="https://twitter.com/ActiniumCrypto" target="_blank" data-toggle="tooltip" data-placement="left" title="" data-original-title="Follow us on Twitter!" data-toggle="modal" data-target="#twitter"><img src="images/logo/twitter-vector.svg" alt="Twitter - Actinium"></a>
-				</div>
-			</div>
-			<div class="col-6 col-sm col-md col-lg-2 col-xl-2">
-				<div class="topmargin-sm bottommargin-sm social-logo-links center">
-					<a href="https://github.com/Actinium-project" target="_blank" data-toggle="tooltip" data-placement="left" title="" data-original-title="Check the code on Github!" data-toggle="modal" data-target="#github"><img src="images/logo/github-vector.svg" alt="GitHub - Actinium"></a>
-				</div>
-			</div>
-			<div class="col-lg-1 col-xl-1">
-			</div>
-		</div>
-		</div>
-
 			<!-- COPYRIGHTS START -->
 
 			<div id="copyrights">
+
 				<div class="container clearfix">
-					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+
+					<div class="row">
+
+					<div class="col-12 col-sm-6 col-md-8 col-lg-8 col-xl-8 trn" data-trn-key="copyright">
 						Copyrights &copy; 2018 All Rights Reserved by The Actinium Project.
 					</div>
+
 				</div>
+				</div>
+
 			</div>
+
 
 			<!-- COPYRIGHTS END -->
 
@@ -427,6 +619,8 @@
 	<!-- EXTERNAL JAVASCRIPTS START -->
 
 	<script src="js/jquery.js"></script>
+	<script src="js/jquery.translate.js" type="text/javascript"></script>
+  <script src="js/language.js"></script>
 	<script src="js/plugins.js"></script>
 
 

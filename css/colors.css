@@ -57,7 +57,7 @@ h6 > span:not(.nocolor):not(.badge),
 .btn-link,
 .dark .post-timeline .entry:hover .entry-timeline,
 .dark .post-timeline .entry:hover .timeline-divider,
-.clear-rating-active:hover { color: #004C6F; }
+.clear-rating-active:hover { color: #26f0a4; }
 
 .color,
 .top-cart-item-desc a:hover,
@@ -190,7 +190,7 @@ input.switch-toggle-round:checked + label:before,
 .fancy-title.title-bottom-border h5,
 .fancy-title.title-bottom-border h6,
 .more-link,
-.tabs.tabs-bb ul.tab-nav li.ui-tabs-active a { border-bottom-color: #004C6F; }
+.tabs.tabs-bb ul.tab-nav li.ui-tabs-active a { border-bottom-color: #26f0a4; }
 
 .border-color,
 .process-steps li.active a,
