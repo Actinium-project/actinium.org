@@ -19,6 +19,14 @@ $(function() {
       rs: "Engleski",
       ru: " "
     },
+    nav_language_french: {
+      en: "French",
+      fr: " ",
+      es: "Francés",
+      it: " ",
+      rs: " ",
+      ru: " "
+    },
     nav_language_spanish: {
       en: "Spanish",
       fr: " ",
@@ -27,12 +35,28 @@ $(function() {
       rs: "Španski",
       ru: " "
     },
+    nav_language_italian: {
+      en: "Italian",
+      fr: " ",
+      es: "Italiano",
+      it: " ",
+      rs: " ",
+      ru: " "
+    },
     nav_language_serbian: {
       en: "Serbian",
       fr: " ",
       es: "Serbio",
       it: " ",
       rs: "Srpski",
+      ru: " "
+    },
+    nav_language_russian: {
+      en: "Russian",
+      fr: " ",
+      es: "Ruso",
+      it: " ",
+      rs: "",
       ru: " "
     },
     nav_home: {
