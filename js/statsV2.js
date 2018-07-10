@@ -1,5 +1,5 @@
 $(function() {
-  $.getJSON('https://actinium.org:3000/v1/acm/price', function(price) {
+  $.getJSON('https://api.actinium.org/v1/acm/price', function(price) {
 
 $( "#price" ).attr( "data-to", price.price*100000000 );
 $( "#volume" ).attr( "data-to", price.volume );
@@ -24,7 +24,7 @@ $('#price').countTo({
 });
 
 $(function() {
-  $.getJSON('https://actinium.org:3000/v1/acm/fiatprice', function(fiatprice) {
+  $.getJSON('https://api.actinium.org/v1/acm/fiatprice', function(fiatprice) {
 
 $( "#fiatprice" ).attr( "data-to", fiatprice.USD );
 
@@ -49,7 +49,7 @@ $('#fiatprice').countTo({
 });
 
 $(function() {
-  $.getJSON('https://actinium.org:3000/v1/acm/marketcap', function(marketcap) {
+  $.getJSON('https://api.actinium.org/v1/acm/marketcap', function(marketcap) {
 
 $( "#marketcap" ).attr( "data-to", marketcap.USD );
 
@@ -74,7 +74,7 @@ $('#marketcap').countTo({
 });
 
 $(function() {
-  $.getJSON('https://actinium.org:3000/v1/acm/supply', function(supply) {
+  $.getJSON('https://api.actinium.org/v1/acm/supply', function(supply) {
 
 $( "#supply" ).attr( "data-to", supply.total );
 
@@ -100,7 +100,7 @@ $('#supply').countTo({
 });
 
 $(function() {
-$.getJSON('https://actinium.org:3000/v1/acm/hashrate', function(hashrate) {
+$.getJSON('https://api.actinium.org/v1/acm/hashrate', function(hashrate) {
 
 $( "#hashrate" ).attr( "data-to", hashrate.gh );
 
