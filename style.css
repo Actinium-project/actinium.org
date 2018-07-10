@@ -8138,9 +8138,9 @@ body:not(.device-touch) .button.button-full strong {
 .style-msg2 .sb-msg {
 	display: block;
 	padding: 15px;
-	border-left: 1px solid rgba(255,255,255,0.5);
+
 	font-size: 14px;
-	text-shadow: 1px 1px 1px rgba(255,255,255,0.6);
+
 }
 
 .style-msg2 .msgtitle {

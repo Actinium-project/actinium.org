@@ -291,6 +291,14 @@ $(function() {
       rs: "Otkrijte još o Aktinijumu",
       ru: " "
     },
+    roadmap: {
+      en: "Roadmap",
+      fr: " ",
+      es: "Hoja de ruta",
+      it: " ",
+      rs: "Planovi za budućnost",
+      ru: " "
+    },
     desktop_wallets: {
       en: "Desktop Wallets",
       fr: " ",
