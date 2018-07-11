@@ -503,3 +503,9 @@ box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.35);
 .menu-shadow {
   text-shadow: 2px 2px 4px rgb(0, 0, 0) !important;
 }
+
+.hard-fork-remain, .hard-fork-remain a {
+  background-color: #000a3b;
+    padding: 5px;
+    border-radius: 6px;
+}

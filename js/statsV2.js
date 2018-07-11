@@ -123,3 +123,13 @@ $('#hashrate').countTo({
 
 })
 });
+
+
+$(function() {
+$.getJSON('https://api.actinium.org/v1/acm/blockcount', function(blockcount) {
+
+
+
+$( "#blocks_left" ).append( 55000 - blockcount.blockcount );
+})
+});
