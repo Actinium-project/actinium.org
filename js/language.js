@@ -420,19 +420,19 @@ $(function() {
       ru: " "
     },
     harris_sub: {
-      en: "Founder - Software developer",
+      en: "Founder",
       fr: " ",
-      es: "Fundador - Desarrollador de software",
+      es: "Fundador",
       it: " ",
-      rs: "Osnivač - Softver developer",
+      rs: "Osnivač",
       ru: " "
     },
     harris_desc: {
-      en: "Software Developer 🤖",
+      en: "Software Gardener 🤖",
       fr: " ",
-      es: "Desarrollador de software 🤖",
+      es: "Software Gardener 🤖",
       it: " ",
-      rs: "Softver Developer 🤖",
+      rs: "Software Gardener 🤖",
       ru: " "
     },
     pablo_sub: {
