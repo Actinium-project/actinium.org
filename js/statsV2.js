@@ -106,10 +106,10 @@ $( "#hashrate" ).attr( "data-to", hashrate.gh );
 
 $('#hashrate').countTo({
   from: 0,
-  to: hashrate.gh,
+  to: hashrate.gh*1000,
   speed: 3000,
   refreshInterval: 80,
-  decimals: 0,
+  decimals: 2,
   formatter: function (value, options) {
     return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
   },
