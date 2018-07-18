@@ -6,7 +6,7 @@ $( "#volume" ).attr( "data-to", price.volume );
 
 $('#price').countTo({
   from: 0,
-  to: price.price*100000000,
+  to: price.price*100000000 ,
   speed: 3000,
   refreshInterval: 80,
   formatter: function (value, options) {
@@ -106,7 +106,7 @@ $( "#hashrate" ).attr( "data-to", hashrate.gh );
 
 $('#hashrate').countTo({
   from: 0,
-  to: hashrate.gh*1000,
+  to: hashrate.gh*1000 ,
   speed: 3000,
   refreshInterval: 80,
   decimals: 2,
