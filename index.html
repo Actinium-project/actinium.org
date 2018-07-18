@@ -301,7 +301,7 @@
 				<a href="https://github.com/Actinium-project/Actinium/releases/download/v0.17.2.0/Actinium-Qt.dmg" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>macOS</span></a>
 				<a href="https://github.com/Actinium-project/Actinium/archive/v0.17.2.0.tar.gz" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>Linux</span></a>
 				<a href="https://play.google.com/store/apps/details?id=org.acpay" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>Android</span></a>
-				<a href="#wallets" title="" class="button button-small button-border button-rounded button-fill button-soon-acm"><span>iOS</span></a>
+				<a href="#wallets" title="" class="button button-small button-border button-rounded button-fill button-soon-acm"><i class="icon-remove"></i><span>iOS</span></a>
 			</div>
 		</div>
 
@@ -315,8 +315,9 @@
         </div>
 				<!--<a href="http://pool.actinium.org/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span class="trn" data-trn-key="official_button">Official</span></a>
 				<a href="http://fastpool.actinium.org/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>FastPool</span></a>-->
-				<a href="https://goldmine.actinium.org/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-valid-acm"><i class="icon-star"></i><span>GoldMine</span></a>
-				<a href="https://hive.gulfcoastmining.com/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>QueenBee Hive</span></a>
+				<a href="https://goldmine.actinium.org/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-valid-acm"><i class="icon-star-empty"></i><span>GoldMine</span></a>
+				<a href="https://hive.gulfcoastmining.com/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><i class="icon-rocket"></i><span>QueenBee Hive</span></a>
+				<a href="https://icemining.ca/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><i class="icon-rocket"></i><span>Icemining</span></a>
 				<a href="https://minpool.net/coin/ACM" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>Minpool</span></a>
 				<a href="https://weekendpool.info/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>Weekend Pool</span></a>
 				<a href="https://fairmine.pro/site/coininfo?coin=ACM" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>FairMine</span></a>
@@ -330,9 +331,15 @@
 				      <h2 class="h2-small dark trn" data-trn-key="miners">Miners</h2>
         </div>
         <div class="p-mb">
-              <span class="p-primary-color trn" data-trn-key="miners_desc">Download a miner for your architecture</span>
+              <span class="p-primary-color" data-trn-key="miners_desc">Download a miner for your architecture <a style="color: #ff6666;font-weight: 600;">AMD</a> or <a style="color: #66ff88;font-weight: 600;">nVidia</a></span>
         </div>
-				<a href="#myModalLabelAmd" data-toggle="modal" data-target=".amd-sgminer" class="button button-small button-border button-rounded button-fill button-soon-acm"><span>AMD</span></a>
+				<a href="https://bitcointalk.org/index.php?topic=3299496.0" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-soon-acm"><i class="icon-rocket"></i><span>TdxMiner</span></a>
+				<a href="https://bitcointalk.org/index.php?topic=4432704.0" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-valid-acm"><i class="icon-rocket"></i><span>T-Rex</span></a>
+				<a href="https://github.com/genesismining/sgminer-gm/releases" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-soon-acm"><span>SgMiner</span></a>
+				<a href="https://bitcointalk.org/index.php?topic=4412370.0" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-valid-acm"><span>coolMiner</span></a>
+				<a href="https://github.com/tpruvot/ccminer/releases" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-valid-acm"><span>CCminer</span></a>
+				<!--<a href="#myModalLabelAmd" data-toggle="modal" data-target=".amd-sgminer" class="button button-small button-border button-rounded button-fill button-soon-acm"><span>AMD</span></a>
+				<a href="#myModalLabelNvidia" data-toggle="modal" data-target=".nvidia-sgminer" class="button button-small button-border button-rounded button-fill button-valid-acm"><span>nVidia</span></a>
 				<div class="modal fade amd-sgminer " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 					<div class="modal-dialog modal-lg">
 						<div class="modal-body ">
@@ -345,13 +352,12 @@
 									<p class="dark trn" data-trn-key="how_to_gpu_amd_01">Create a .bat file inside the miner directory and add this parameters:</p>
 									<p class="bg-code trn" data-trn-key="how_to_code_miner">sgminer -o stratum+tcp://goldmine.actinium.org:14334 -u YOURADDRESS -p c=ACM -I 10</p>
 									<p class="dark trn" data-trn-key="how_to_gpu_amd_02">You can download sgMiner for AMD GPU in the next link:</p>
-									<a href="http://cryptomining-blog.com/2586-download-sgminer-4-2-1-scrypt-gpu-miner-for-windows/" target="_blank" class="button button-small button-border button-rounded button-fill button-soon-acm"><i class="icon-download-alt"></i><span>AMD - sgMiner</span></a>
+									<a href="https://github.com/genesismining/sgminer-gm/releases/latest" target="_blank" class="button button-small button-border button-rounded button-fill button-soon-acm"><i class="icon-download-alt"></i><span>AMD - sgMiner</span></a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<a href="#myModalLabelNvidia" data-toggle="modal" data-target=".nvidia-sgminer" class="button button-small button-border button-rounded button-fill button-valid-acm"><span>nVidia</span></a>
 				<div class="modal fade nvidia-sgminer" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 					<div class="modal-dialog modal-lg">
 						<div class="modal-body">
@@ -369,7 +375,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div>-->
 			</div>
 		</div>
 
@@ -386,6 +392,7 @@
 				<a href="https://chainmapper.com/acm" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-valid-acm"><span class="" data-trn-key="chainmapper_button">Chainmapper</span></a>
 				<a href="https://altexplorer.co/coin/acm" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-valid-acm"><span class="" data-trn-key="altexplorer_button">AltExplorer</span></a>
 				<a href="https://www.livecoinwatch.com/price/Actinium-ACM" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-soon-acm"><span class="" data-trn-key="livecoinwatch_button">Live Coin Watch</span></a>
+				<a href="https://www.coingecko.com/en/coins/actinium" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-soon-acm"><span class="" data-trn-key="livecoinwatch_button">CoinGecko</span></a>
 			</div>
 		</div>
 	</div>
