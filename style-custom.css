@@ -326,6 +326,18 @@ animation: BgExampleChart 2s infinite;
   margin-bottom: 50px;
 }
 
+.sub-primary-color {
+  color: #26f0a4 !important;
+}
+
+.user-link-community {
+  color: #26f0a4 !important;
+}
+
+.user-link-community:hover {
+  color: #26f0a4 !important;
+}
+
 .fancy-title.title-bottom-border-transparent h1,
 .fancy-title.title-bottom-border-transparent h2,
 .fancy-title.title-bottom-border-transparent h3,
