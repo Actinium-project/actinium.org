@@ -76,6 +76,9 @@
 	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script src="js/calculator.js"></script>
+
 	<!-- STYLESHEETS END -->
 
 	<!-- TITLE START -->
@@ -278,10 +281,34 @@
 				</div>
 				</div>
 		</div>
-		<div class="col-md-12 col-lg-6 col-xl-6 order-1">
-			<div class="bottommargin-sm vertical-middle center d-none d-lg-block d-xl-block">
-				<img data-animate="fadeInRight" data-delay="200" src="images/backgrounds/acm-coin.svg" alt="Actinium Coin" class="imagescale footer-logo" style="max-width: 300px; margin: auto;">
-			</div>
+		<div ng-app="app-calculator" ng-controller="mainController" ng-cloak class="col-md-12 col-lg-6 col-xl-6 order-1">
+			<div class="">
+				<div class="fancy-title title-bottom-border">
+							<h2 class="h2-small dark" data-trn-key="coin_specs">Miner Calculator</h2>
+				</div>
+				<div class="p-mb">
+					<span class="dark" data-trn-key="coin_specs_desc_01"><b>Per hour:</b> {{(getACMPerDay() / 24).toFixed(2)}} ACM </span><span>( {{(getUSDPerDay() / 24).toFixed(2)}} $ )</span></br>
+					<span class="dark" data-trn-key="coin_specs_desc_02"><b>Per day:</b> {{getACMPerDay().toFixed(2)}} ACM </span><span>({{getUSDPerDay()}} $)</span></br>
+					<span class="dark" data-trn-key="coin_specs_desc_03"><b>Per week:</b> {{(getACMPerDay() * 7).toFixed(2)}} ACM </span><span>({{(getUSDPerDay() * 7).toFixed(2)}} $)</span></br>
+					<span class="dark" data-trn-key="coin_specs_desc_03"><b>Per month:</b> {{(getACMPerDay() * 30).toFixed(2)}} ACM </span><span>({{(getUSDPerDay() * 30).toFixed(2)}} $)</span></br>
+					<span class="dark" data-trn-key="coin_specs_desc_03"><b>Per year:</b> {{(getACMPerDay() * 365).toFixed(2)}} ACM </span><span>({{(getUSDPerDay() * 365).toFixed(2)}} $)</span></br>
+					<form id="main-form" style="padding: 2em;" class="form-horizontal">
+
+                    <div class="form-group">
+                        <label class="control-label col-sm-2">Hashing Power:</label>
+                        <div class="col-sm-10">
+                            <div class="input-group">
+                                <input ng-model="hashingPower" type="number" style="width: auto; display: inline-block;" class="form-control" placeholder="10">
+                                <select ng-model="hashingUnitOptions.selectedHashingUnit"
+                                        ng-options="unit.name for unit in hashingUnitOptions.availablehashingUnits track by unit.value"
+                                        style="width: auto; display: inline-block;" class="selectpicker form-control"></select>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+				</div>
+				</div>
 		</div>
 	</div>
 
