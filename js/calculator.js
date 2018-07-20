@@ -26,7 +26,6 @@ app.controller('mainController', function($scope, $http){
             {value: 1000, name: 'KH/s'},
             {value: 1000000, name: 'MH/s'},
             {value: 1000000000, name: 'GH/s'},
-            {value: 1000000000000, name: 'TH/s'},
 
         ],
         selectedHashingUnit: {value: 1000000, name: 'MH/s'}
