@@ -79,6 +79,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 	<script src="js/calculator.js"></script>
 
+
 	<!-- STYLESHEETS END -->
 
 	<!-- TITLE START -->
@@ -120,7 +121,7 @@
 
 					<nav id="primary-menu">
 						<ul>
-							<li><a href="https://github.com/Actinium-project/BluePaper/raw/master/BluePaper.pdf" target="_blank" class="dark-hover menu-shadow trn"><div>BluePaper</div></a>
+							<li><a href="#myModalLabelBluepaper" data-toggle="modal" data-target=".bluepaper" class="dark-hover menu-shadow trn"><div>BluePaper</div></a>
 							</li>
 							<li><a href="#wallets" data-scrollto="#wallets" class="dark-hover menu-shadow trn" data-trn-key="nav_wallets"><div>Wallets</div></a>
 							</li>
@@ -200,6 +201,22 @@
 
 		</div>
 	</div>-->
+
+	<div class="modal fade bluepaper" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-body ">
+				<div class="modal-content bg-standard-landing">
+					<div class="modal-header dark">
+						<h4 class="modal-title" id="myModalLabel">Actinium BluePaper</h4>
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					</div>
+					<div class="modal-body">
+						<div id="bluepaper-pdf"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!-- STATS START -->
 
@@ -974,6 +991,17 @@
 	<script src="js/functions.js"></script>
 	<script type="text/javascript" src="js/plugins/jquery.countto.js"></script>
 	<script type="text/javascript" src="js/statsV2.js"></script>
+
+	<script src="js/pdfobject.js"></script>
+	<script>
+//Be sure your document contains an element with the CSS selector "#bluepaper-pdf"
+var options = {
+   pdfOpenParams: { view: 'FitH', messages: '0' }
+};
+
+PDFObject.embed("https://github.com/Actinium-project/BluePaper/raw/master/BluePaper-compressed.pdf", "#bluepaper-pdf", options);
+</script>
+
 
 
 
