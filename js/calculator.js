@@ -4,7 +4,7 @@ let app = angular.module('app-calculator', []);
 
 app.controller('mainController', function($scope, $http){
 
-    $scope.reward = 40;
+    $scope.reward = 50;
     $scope.difficulty = 0;
 
     $scope.hashingPower = 5;
