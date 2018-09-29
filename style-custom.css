@@ -473,6 +473,11 @@ box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.35);
 	color: #ffffff;
 }
 
+.newsmsg {
+	background: #0198cd;
+	color: #ffffff;
+}
+
 .list-group-item.active {
     color: #0198cd;
     background-color: rgba(1, 152, 205, 0.3);
@@ -554,3 +559,10 @@ box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.35);
 
 .pdfobject-container { height: 500px; width: 100%;}
 .pdfobject { border: 1px solid #000a3b;}
+
+.button-white2{background-color:#fff;}
+.button-3d.button-white2:hover,
+.button-reveal.button-white2:hover,
+.button-border.button-white2:hover,
+.button-border.button-white2.button-fill:before{background-color:#fff !important; color:#000 !important;}
+.button-border.button-white2{color:#fff;border-color:#fff;}
