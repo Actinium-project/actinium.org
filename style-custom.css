@@ -504,7 +504,7 @@ box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.35);
 }
 
 #header.dark.sticky-header.transparent-header #header-wrap:not(.not-dark) {
-  background-color: rgba(0, 10, 61, 0.8) !important;
+  background-color: rgba(0, 10, 61, 0.95) !important;
     border-bottom: 2px solid rgb(38, 240, 164);
 }
 

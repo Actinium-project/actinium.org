@@ -165,7 +165,7 @@
 
 	<!-- SLIDER START -->
 
-  <section id="slider" class="slider-element revslider-wrap full-screen force-full-screen clearfix">
+  <section id="slider" class="slider-element revslider-wrap full-screen clearfix">
 		<div class="slider-parallax-inner">
 			<div class="full-screen force-full-screen" style="background: url('images/backgrounds/bg-actinium-section-landing-less.jpg') center bottom no-repeat; background-size: cover;">
 				<div class="container clearfix">
@@ -243,27 +243,27 @@
 
 	<!-- STATS START -->
 
-		<div class="row margin-top-bottom bg-white center bg-stats-shadows border-6px" style="color: #000a3b;">
+		<div data-animate="fadeIn" class="row margin-top-bottom bg-white center bg-stats-shadows border-6px" style="color: #000a3b;">
 			<div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl">
-				<div class="col-padding-sm ">
+				<div data-animate="fadeIn" data-delay="200" class="col-padding-sm ">
 					<span class="trn" data-trn-key="price_block">Price</span>
 					<div class="counter counter-small"><span id="price" data-from="0" data-to=" " data-refresh-interval="80" data-speed="3000" data-comma="true">???</span>&nbsp;Sat</div>
 				</div>
 			</div>
 			<div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl">
-				<div class="col-padding-sm">
+				<div data-animate="fadeIn" data-delay="300" class="col-padding-sm">
 					<span class="trn" data-trn-key="marketcap_block">Market Cap</span>
 					<div class="counter counter-small"><span id="marketcap" data-from="0" data-to=" " data-refresh-interval="80" data-speed="3000" data-comma="true">???</span>&nbsp;$</div>
 				</div>
 			</div>
 			<div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl">
-				<div class="col-padding-sm">
+				<div data-animate="fadeIn" data-delay="400" class="col-padding-sm">
 					<span class="trn" data-trn-key="currentsupply_block">Current Supply</span>
 					<div class="counter counter-small"><span id="supply" data-from="0" data-to=" " data-refresh-interval="80" data-speed="3000" data-comma="true">???</span>&nbsp;ACM</div>
 				</div>
 			</div>
 			<div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl">
-				<div class="col-padding-sm">
+				<div data-animate="fadeIn" data-delay="500" class="col-padding-sm">
 					<span class="trn" data-trn-key="hashrate_block">Hashrate</span>
 					<div class="counter counter-small"><span id="hashrate" data-from="0" data-to=" " data-refresh-interval="80" data-speed="3000" data-comma="true">???</span>&nbsp;MH/s</div>
 				</div>
@@ -275,7 +275,7 @@
 	<!-- ABOUT START -->
 
   <div class="row margin-top-bottom">
-		<div class="col-md-12 col-lg-6 col-xl-6 order-0">
+		<div data-animate="fadeIn" class="col-md-12 col-lg-6 col-xl-6 order-0">
 			<div class="">
         <div class="fancy-title title-bottom-border">
 				      <h2 class="h2-small dark trn" data-trn-key="about">About</h2>
@@ -288,7 +288,7 @@
 				</div>
 		</div>
 
-		<div class="col-md-12 col-lg-6 col-xl-6 order-1">
+		<div data-animate="fadeIn" class="col-md-12 col-lg-6 col-xl-6 order-1">
 			<div class="bottommargin-sm">
         <div class="fancy-title title-bottom-border-transparent d-none d-lg-block d-xl-block">
           <h2 class="h2-small dark">&nbsp;</h2>
@@ -311,7 +311,7 @@
 	<!-- COIN SPECS START -->
 
 	<div class="row margin-top-bottom">
-		<div class="col-md-12 col-lg-6 col-xl-6 order-0">
+		<div data-animate="fadeIn" class="col-md-12 col-lg-6 col-xl-6 order-0">
 			<div class="">
 				<div class="fancy-title title-bottom-border">
 							<h2 class="h2-small dark" data-trn-key="coin_specs">Coin specs</h2>
@@ -329,7 +329,7 @@
 				</div>
 				</div>
 		</div>
-		<div ng-app="app-calculator" ng-controller="mainController" ng-cloak class="col-md-12 col-lg-6 col-xl-6 order-1">
+		<div data-animate="fadeIn" ng-app="app-calculator" ng-controller="mainController" ng-cloak class="col-md-12 col-lg-6 col-xl-6 order-1">
 			<div class="">
 				<div class="fancy-title title-bottom-border">
 							<h2 class="h2-small dark" data-trn-key="coin_specs">Miner Calculator</h2>
@@ -376,7 +376,7 @@
 	<!-- WALLET POOLS MINERS START -->
 
 	<div class="row margin-top-bottom">
-		<div class="col-md-12 col-lg-6 col-xl-6 order-0">
+		<div data-animate="fadeIn" class="col-md-12 col-lg-6 col-xl-6 order-0">
 			<div class="bottommargin-sm">
         <div class="fancy-title title-bottom-border marginbottom-10">
 				      <h2 id="wallets" class="h2-small dark trn" data-trn-key="wallets">Wallets</h2>
@@ -394,30 +394,7 @@
 			</div>
 		</div>
 
-		<div class="col-md-12 col-lg-6 col-xl-6 order-1">
-			<div class="bottommargin-sm">
-        <div class="fancy-title title-bottom-border marginbottom-10">
-				      <h2 class="h2-small dark trn" data-trn-key="pools">Mining pools</h2>
-        </div>
-        <div class="p-mb">
-              <span class="p-primary-color trn" data-trn-key="pools_desc">Select a pool and start mining</span>
-        </div>
-				<!--<a href="http://pool.actinium.org/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span class="trn" data-trn-key="official_button">Official</span></a>
-				<a href="http://fastpool.actinium.org/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>FastPool</span></a>-->
-				<a href="https://goldmine.actinium.org/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-valid-acm"><i class="icon-star-empty"></i><span>GoldMine</span></a>
-				<a href="https://hive.gulfcoastmining.com/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><i class="icon-rocket"></i><span>QueenBee Hive</span></a>
-				<a href="https://icemining.ca/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><i class="icon-rocket"></i><span>Icemining</span></a>
-				<!--<a href="https://minpool.net/coin/ACM" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>Minpool</span></a>-->
-				<a href="https://weekendpool.info/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>Weekend Pool</span></a>
-				<a href="https://fairmine.pro/site/coininfo?coin=ACM" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>FairMine</span></a>
-				<a href="https://www.smilingmining.com/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>Smiling Mining</span></a>
-				<a href="https://www.cryptorushmining.com/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>Crypto Rush Mining</span></a>
-				<a href="https://frrsan.com/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>Forsan Pool</span></a>
-				<a href="http://www.lcpool.eu/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>LCP MINING</span></a>
-			</div>
-		</div>
-
-		<div class="col-md-12 col-lg-6 col-xl-6 order-2">
+		<div data-animate="fadeIn" class="col-md-12 col-lg-6 col-xl-6 order-1">
 			<div class="bottommargin-sm">
         <div class="fancy-title title-bottom-border marginbottom-10">
 				      <h2 class="h2-small dark trn" data-trn-key="miners">Miners</h2>
@@ -471,7 +448,30 @@
 			</div>
 		</div>
 
-		<div class="col-md-12 col-lg-6 col-xl-6 order-last">
+		<div data-animate="fadeIn" class="col-md-12 col-lg-6 col-xl-6 order-2">
+			<div class="bottommargin-sm">
+        <div class="fancy-title title-bottom-border marginbottom-10">
+				      <h2 class="h2-small dark trn" data-trn-key="pools">Mining pools</h2>
+        </div>
+        <div class="p-mb">
+              <span class="p-primary-color trn" data-trn-key="pools_desc">Select a pool and start mining</span>
+        </div>
+				<!--<a href="http://pool.actinium.org/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span class="trn" data-trn-key="official_button">Official</span></a>
+				<a href="http://fastpool.actinium.org/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>FastPool</span></a>-->
+				<a href="https://goldmine.actinium.org/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-valid-acm"><i class="icon-star-empty"></i><span>GoldMine</span></a>
+				<a href="https://hive.gulfcoastmining.com/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><i class="icon-rocket"></i><span>QueenBee Hive</span></a>
+				<a href="https://icemining.ca/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><i class="icon-rocket"></i><span>Icemining</span></a>
+				<!--<a href="https://minpool.net/coin/ACM" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>Minpool</span></a>-->
+				<a href="https://weekendpool.info/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>Weekend Pool</span></a>
+				<a href="https://fairmine.pro/site/coininfo?coin=ACM" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>FairMine</span></a>
+				<a href="https://www.smilingmining.com/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>Smiling Mining</span></a>
+				<a href="https://www.cryptorushmining.com/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>Crypto Rush Mining</span></a>
+				<a href="https://frrsan.com/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>Forsan Pool</span></a>
+				<a href="http://www.lcpool.eu/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>LCP MINING</span></a>
+			</div>
+		</div>
+
+		<div data-animate="fadeIn" class="col-md-12 col-lg-6 col-xl-6 order-last">
 			<div class="">
         <div class="fancy-title title-bottom-border marginbottom-10">
 				      <h2 class="h2-small dark trn" data-trn-key="other_links">Explorers, Tools, & Stats</h2>
@@ -500,7 +500,7 @@
 	<!-- ARTICLES START -->
 
 <div class="row margin-top-bottom">
- <div class="col-md-12 col-lg-6 col-xl-6 order-0">
+ <div data-animate="fadeIn" class="col-md-12 col-lg-6 col-xl-6 order-0">
 	 <div class="">
 		 <div class="fancy-title title-bottom-border marginbottom-10">
 					 <h2 id="articles" class="h2-small dark" data-trn-key="articles">Articles</h2>
@@ -593,7 +593,7 @@
 
     <!-- ROADMAP WALLETS START -->
 
-    <div class="col-md-12 col-lg-6 col-xl-6 order-0">
+    <div data-animate="fadeIn" class="col-md-12 col-lg-6 col-xl-6 order-0">
       <div class="bottommargin-sm">
         <div class="fancy-title title-bottom-border">
               <h2 id="roadmap" class="h2-small dark trn" data-trn-key="roadmap">Roadmap</h2>
@@ -623,7 +623,7 @@
 
     <!-- ROADMAP MOBILE WALLETS START -->
 
-    <div class="col-md-12 col-lg-6 col-xl-6 order-1">
+    <div data-animate="fadeIn" class="col-md-12 col-lg-6 col-xl-6 order-1">
       <div class="bottommargin-sm">
         <div class="fancy-title title-bottom-border-transparent d-none d-lg-block d-xl-block">
           <h2 class="h2-small dark">&nbsp;</h2>
@@ -652,7 +652,7 @@
 
 		<!-- ROADMAP LIGHTNING NETWORK START -->
 
-  <div id="LNroadmap" class="col-md-12 col-lg-6 col-xl-6 order-2">
+  <div id="LNroadmap" data-animate="fadeIn" class="col-md-12 col-lg-6 col-xl-6 order-2">
     <div class="bottommargin-sm">
   <div class="p-mb" data-lightbox="gallery">
     <h2 class="h2-small dark trn" data-trn-key="lightning_network">Lightning Network</h2>
@@ -710,7 +710,7 @@
 
     <!-- ROADMAP LEDGER NANO START -->
 
-  <div class="col-md-12 col-lg-6 col-xl-6 order-3">
+  <div data-animate="fadeIn" class="col-md-12 col-lg-6 col-xl-6 order-3">
     <div class="bottommargin-sm">
   <div class="p-mb">
     <h2 class="h2-small dark trn" data-trn-key="ledger_nano">Ledger Nano</h2>
@@ -752,7 +752,7 @@
 
 		<!-- ROADMAP TREZOR START -->
 
-  <div class="col-md-12 col-lg-6 col-xl-6 order-3">
+  <div data-animate="fadeIn" class="col-md-12 col-lg-6 col-xl-6 order-3">
     <div class="">
   <div class="p-mb">
     <h2 class="h2-small dark trn" data-trn-key="ledger_nano">Trezor</h2>
@@ -783,7 +783,7 @@
 	   <!-- EXCHANGES START -->
 
   <div class="row margin-top-bottom">
-    <div class="col-md-12 col-lg-6 col-xl-6 order-0">
+    <div data-animate="fadeIn" class="col-md-12 col-lg-6 col-xl-6 order-0">
 			<div class="">
         <div class="fancy-title title-bottom-border marginbottom-10">
 				      <h2 id="exchanges" class="h2-small dark trn" data-trn-key="exchanges">Exchanges</h2>
@@ -809,7 +809,7 @@
     <!-- TEAM START -->
 
     <div class="row margin-top-bottom">
-  		<div class="col-md-12 col-lg-6 col-xl-6 order-0">
+  		<div data-animate="fadeIn" class="col-md-12 col-lg-6 col-xl-6 order-0">
   			<div class="bottommargin-sm">
           <div class="fancy-title title-bottom-border">
   				      <h2 id="team" class="h2-small dark trn" data-trn-key="team">Meet the team</h2>
@@ -832,7 +832,7 @@
       </div>
     </div>
 
-    <div class="col-md-12 col-lg-6 col-xl-6 order-2 bottommargin-sm">
+    <div data-animate="fadeIn" class="col-md-12 col-lg-6 col-xl-6 order-2 bottommargin-sm">
       <div class="team team-list bottommargin-sm">
         <div class="team-image">
           <img src="images/team/brakmic-harris-175px.jpg" class="bg-stats-shadows border-6px" alt="Harris Brakmic">
@@ -862,7 +862,7 @@
       </div>
     </div>
 
-    <div class="col-md-12 col-lg-6 col-xl-6 order-3 bottommargin-sm">
+    <div data-animate="fadeIn" class="col-md-12 col-lg-6 col-xl-6 order-3 bottommargin-sm">
       <div class="team team-list bottommargin-sm">
         <div class="team-image">
           <img src="images/team/pablo-caceres-175px.jpg" class="bg-stats-shadows border-6px" alt="Pablo Cáceres">
@@ -884,7 +884,7 @@
       </div>
     </div>
 
-		<div class="col-md-12 col-lg-6 col-xl-6 order-4 bottommargin-sm">
+		<div data-animate="fadeIn" class="col-md-12 col-lg-6 col-xl-6 order-4 bottommargin-sm">
       <div class="team team-list bottommargin-sm">
         <div class="team-image">
           <img src="images/team/milosnes-175px.jpg" class="bg-stats-shadows border-6px" alt="milosnes">
@@ -902,7 +902,7 @@
       </div>
     </div>
 
-		<div class="col-md-12 col-lg-6 col-xl-6 order-5 bottommargin-sm">
+		<div data-animate="fadeIn" class="col-md-12 col-lg-6 col-xl-6 order-5 bottommargin-sm">
       <div class="team team-list bottommargin-sm">
         <div class="team-image">
           <img src="images/team/bronson-chapman-175px.jpg" class="bg-stats-shadows border-6px" alt="Bronson Chapman">
