@@ -1,3 +1,17 @@
+ul > li > p > b {
+	color: #0297cc;
+}
+
+ul > li > p > a {
+	color: #0297cc;
+	font-weight: bolder;
+}
+ul > li > p > a:hover {
+	color: #0297cc !important;
+	opacity: 0.9;
+	font-weight: bolder;
+}
+
 .roadmap-list {
 	margin: 0;
 	padding: 0;
