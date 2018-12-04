@@ -66,6 +66,7 @@
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
 	<link rel="stylesheet" href="style.css" type="text/css" />
 	<link rel="stylesheet" href="style-custom.css" type="text/css" />
+	<link rel="stylesheet" href="css/roadmap.css" type="text/css" />
 	<link rel="stylesheet" href="css/colors.css" type="text/css" />
 	<link rel="stylesheet" href="css/swiper.css" type="text/css" />
 	<link rel="stylesheet" href="css/dark.css" type="text/css" />
@@ -121,15 +122,15 @@
 
 					<nav id="primary-menu">
 						<ul>
-							<li><a href="#roadmapSection" data-scrollto="#roadmap" class="dark-hover menu-shadow trn" data-trn-key="nav_roamap"><div>Lightning Network</div></a>
+							<!--<li><a href="#LNroadmap" data-scrollto="#LNroadmap" class="dark-hover menu-shadow trn"><div>Lightning Network</div></a>
 							</li>
 							<li><a href="#myModalLabelBluepaper" data-toggle="modal" data-target=".bluepaper" class="dark-hover menu-shadow trn"><div>BluePaper</div></a>
-							</li>
+							</li>-->
 							<li><a href="#wallets" data-scrollto="#wallets" class="dark-hover menu-shadow trn" data-trn-key="nav_wallets"><div>Wallets</div></a>
 							</li>
-							<li><a href="#roadmap" data-scrollto="#roadmap" class="dark-hover menu-shadow trn" data-trn-key="nav_roadmap"><div>Roadmap</div></a>
-							</li>
 							<li><a href="#exchanges" data-scrollto="#exchanges" class="dark-hover menu-shadow trn" data-trn-key="nav_exchanges"><div>Exchanges</div></a>
+							</li>
+							<li><a href="#roadmap" data-scrollto="#roadmap" class="dark-hover menu-shadow trn" data-trn-key="nav_roadmap"><div>Roadmap</div></a>
 							</li>
 							<li><a href="#team" data-scrollto="#team" class="dark-hover menu-shadow trn" data-trn-key="nav_team"><div>Team</div></a>
 							</li>
@@ -165,14 +166,21 @@
 
 	<!-- SLIDER START -->
 
-  <section id="slider" class="dark slider-element revslider-wrap full-screen force-full-screen clearfix">
+  <section id="slider" class="slider-element revslider-wrap full-screen clearfix">
 		<div class="slider-parallax-inner">
 			<div class="full-screen force-full-screen" style="background: url('images/backgrounds/bg-actinium-section-landing-less.jpg') center bottom no-repeat; background-size: cover;">
 				<div class="container clearfix">
 					<div class="emphasis-title vertical-middle center">
 						<img data-animate="fadeInDown" data-delay="200" src="images/logo/actinium-logo-slider.png" alt="Actinium - Cryptocurrency - POS - Lyra2z" class="imagescale footer-logo" style="max-width: 300px; margin: auto;">
 						<h3 data-animate="fadeInUp" data-delay="600" class="dark d-xs-block d-sm-block d-md-block d-lg-block d-xl-block" data-trn-key="section_logo_text" style="text-shadow: 3px 3px 7px rgb(0, 0, 0);">#POW&emsp;#LYRA2Z&emsp;#No&nbsp;ICO&emsp;#No&nbsp;Premine&emsp;#No&nbsp;Airdrops&emsp;#Fair&nbsp;Launch</h3>
+						<div>
+						<a data-animate="fadeIn" data-delay="800" href="#myModalLabelBluepaper" data-toggle="modal" data-target=".bluepaper" class="button button-border button-rounded button-fill button-available-acm"><span><i class="icon-book"></i>BluePaper</span></a>
+					</br>
+						<a data-animate="fadeIn" data-delay="1000" href="#LNroadmap" data-scrollto="#LNroadmap" class="button button-border button-rounded button-fill button-valid-acm"><span><i class="icon-bolt"></i>Lightning Network</span></a>
+						</div>
+
 					</div>
+
 				</div>
 			</div>
 		</div>
@@ -204,20 +212,6 @@
 		</div>
 	</div>-->
 
-	<div class="style-msg newsmsg center">
-		<div class="sb-msg"><b>We are now on Crex24 exchange!</b>
-			<br>
-			We appreciate the support received from our great community!
-			<br>
-			<br>
-			<a href="https://crex24.com/exchange/ACM-BTC" class="button button-small button-border button-rounded button-fill button-white2"><span>Crex24</span></a>
-			<a href="https://tradeogre.com/exchange/BTC-ACM" class="button button-small button-border button-rounded button-fill button-white2"><span>TradeOgre</span></a>
-			<a href="https://bitfex.trade/en/ACM/BTC" class="button button-small button-border button-rounded button-fill button-white2"><span>BitFex</span></a>
-			<br>
-			Happy trading!
-		</div>
-	</div>
-
 	<div class="modal fade bluepaper" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-lg">
 			<div class="modal-body ">
@@ -234,29 +228,46 @@
 		</div>
 	</div>
 
+	<div data-animate="fadeIn" class="row margin-top-bottom center bg-stats-shadows border-6px style-msg newsmsg">
+		<div class="sb-msg"><b>We are now on Bisq exchange!</b>
+			<br>
+			We appreciate the support received from our great community!
+			<br>
+			<br>
+			<a href="https://github.com/bisq-network/bisq/releases/latest" class="button button-small button-border button-rounded button-fill button-white2"><span>Bisq</span></a>
+			<a href="https://tradeogre.com/exchange/BTC-ACM" class="button button-small button-border button-rounded button-fill button-white2"><span>TradeOgre</span></a>
+			<a href="https://crex24.com/exchange/ACM-BTC" class="button button-small button-border button-rounded button-fill button-white2"><span>Crex24</span></a>
+			<a href="https://bitfex.trade/en/ACM/BTC" class="button button-small button-border button-rounded button-fill button-white2"><span>BitFex</span></a>
+			<br>
+			Happy trading!
+		</div>
+	</div>
+
+
+
 	<!-- STATS START -->
 
-		<div class="row margin-top-bottom bg-white center bg-stats-shadows border-6px" style="color: #000a3b;">
+		<div data-animate="fadeIn" class="row margin-top-bottom bg-white center bg-stats-shadows border-6px" style="color: #000a3b;">
 			<div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl">
-				<div class="col-padding-sm ">
+				<div data-animate="fadeIn" data-delay="200" class="col-padding-sm ">
 					<span class="trn" data-trn-key="price_block">Price</span>
 					<div class="counter counter-small"><span id="price" data-from="0" data-to=" " data-refresh-interval="80" data-speed="3000" data-comma="true">???</span>&nbsp;Sat</div>
 				</div>
 			</div>
 			<div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl">
-				<div class="col-padding-sm">
+				<div data-animate="fadeIn" data-delay="300" class="col-padding-sm">
 					<span class="trn" data-trn-key="marketcap_block">Market Cap</span>
 					<div class="counter counter-small"><span id="marketcap" data-from="0" data-to=" " data-refresh-interval="80" data-speed="3000" data-comma="true">???</span>&nbsp;$</div>
 				</div>
 			</div>
 			<div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl">
-				<div class="col-padding-sm">
+				<div data-animate="fadeIn" data-delay="400" class="col-padding-sm">
 					<span class="trn" data-trn-key="currentsupply_block">Current Supply</span>
 					<div class="counter counter-small"><span id="supply" data-from="0" data-to=" " data-refresh-interval="80" data-speed="3000" data-comma="true">???</span>&nbsp;ACM</div>
 				</div>
 			</div>
 			<div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl">
-				<div class="col-padding-sm">
+				<div data-animate="fadeIn" data-delay="500" class="col-padding-sm">
 					<span class="trn" data-trn-key="hashrate_block">Hashrate</span>
 					<div class="counter counter-small"><span id="hashrate" data-from="0" data-to=" " data-refresh-interval="80" data-speed="3000" data-comma="true">???</span>&nbsp;MH/s</div>
 				</div>
@@ -268,39 +279,43 @@
 	<!-- ABOUT START -->
 
   <div class="row margin-top-bottom">
-		<div class="col-md-12 col-lg-6 col-xl-6 order-0">
+		<div data-animate="fadeIn" class="col-md-12 col-lg-6 col-xl-6 order-0">
 			<div class="">
         <div class="fancy-title title-bottom-border">
 				      <h2 class="h2-small dark trn" data-trn-key="about">About</h2>
         </div>
         <div class="p-mb">
-				      <span class="dark trn" data-trn-key="about_desc_1">Actinium is more than a crypto currency.
-                <br><br>Actinium is a <b>decentralized currency built on blockchain technology</b> that aims to help bring crypto into every customer’s pocket, every store, and be extraordinarily safe and easy to use.
-                <br><br>This can be achieved because <b>Actinium is a Lightning Network supported coin</b> that will allow <b>instant transactions with near-zero fees, atomic swaps, and many of the numerous other 2nd Layer solutions.</b></span>
+				      <span class="dark trn" data-trn-key="about_desc_1"><b>Actinium</b> is a cryptocurrency designed to be <b>convenient, functional and secure.</b>
+                <br><br>Featuring an active <b>Lightning Network, Hardware Wallet integration, Mobile Wallets, Tor Browser capabilities,</b> as well as maintaining a heavy focus on <b>education and every day application,</b> Actinium aims to make blockchain technology useful for everyone.
+                <br><br><b>The Actinium Network</b> is dedicated to sustaining a foundation of <b>transparency and trust,</b> which is why the project was <b>launched fairly,</b> meaning there is <b>no pre-mine, no ICO, no pre-launch funding and no developer rewards</b> of any sort associated with this project—whatsoever. </span>
         </div>
 				</div>
 		</div>
 
-		<div class="col-md-12 col-lg-6 col-xl-6 order-1">
+		<div data-animate="fadeIn" class="col-md-12 col-lg-6 col-xl-6 order-1">
 			<div class="bottommargin-sm">
         <div class="fancy-title title-bottom-border-transparent d-none d-lg-block d-xl-block">
           <h2 class="h2-small dark">&nbsp;</h2>
     </div>
     <div class="p-mb">
-          <span class="dark trn" data-trn-key="about_desc_2">Actinium is completely decentralized without premine and is not an ICO. <b>It has proper mining support, mobile wallets, and hardware wallet integration.</b>
-            <br><br>Actinium has all the needed features already activated to achieve Lightning Network compatibility.
-            <br><br>Actinium will not remain a blockchain-only cryptocurrency. <b>The inevitable progress will deliver competing solutions to many problems on different layers.</b></span>
+          <span class="dark trn" data-trn-key="about_desc_2">Additionally, Actinium is completely decentralized featuring an <b>open-source codebase</b> available for review, critique, and change from anyone.
+            <br><br>The full breadth of the blockchain industry has yet to be realized which is why <b>the development of Actinium remains perpetual and ever-expanding.</b>
+            <br><br>Designed to continuously incorporate innovative new features accordingly. The future of blockchain technology is bright and The Actinium Network strives to be equally radiant by <b>ensuring its users have access to all the advantages this industry has to offer, both now and in the future.</b></span>
     </div>
     </div>
   </div>
 	</div>
 
 	<!-- ABOUT END -->
+</div>
+</section>
 
+<section id="content" class="bg-standard-landing-alt">
+	<div class="container clearfix">
 	<!-- COIN SPECS START -->
 
 	<div class="row margin-top-bottom">
-		<div class="col-md-12 col-lg-6 col-xl-6 order-0">
+		<div data-animate="fadeIn" class="col-md-12 col-lg-6 col-xl-6 order-0">
 			<div class="">
 				<div class="fancy-title title-bottom-border">
 							<h2 class="h2-small dark" data-trn-key="coin_specs">Coin specs</h2>
@@ -318,7 +333,7 @@
 				</div>
 				</div>
 		</div>
-		<div ng-app="app-calculator" ng-controller="mainController" ng-cloak class="col-md-12 col-lg-6 col-xl-6 order-1">
+		<div data-animate="fadeIn" ng-app="app-calculator" ng-controller="mainController" ng-cloak class="col-md-12 col-lg-6 col-xl-6 order-1">
 			<div class="">
 				<div class="fancy-title title-bottom-border">
 							<h2 class="h2-small dark" data-trn-key="coin_specs">Miner Calculator</h2>
@@ -358,11 +373,14 @@
 	</div>
 
 	<!-- COIN SPECS END -->
-
+</div>
+</section>
+<section id="content" class="bg-standard-landing">
+	<div class="container clearfix">
 	<!-- WALLET POOLS MINERS START -->
 
 	<div class="row margin-top-bottom">
-		<div class="col-md-12 col-lg-6 col-xl-6 order-0 margin-bottom-panels">
+		<div data-animate="fadeIn" class="col-md-12 col-lg-6 col-xl-6 order-0">
 			<div class="bottommargin-sm">
         <div class="fancy-title title-bottom-border marginbottom-10">
 				      <h2 id="wallets" class="h2-small dark trn" data-trn-key="wallets">Wallets</h2>
@@ -370,40 +388,18 @@
         <div class="p-mb">
 				      <span class="p-primary-color trn" data-trn-key="wallets_desc">Download Actinium for any platform</span>
         </div>
-				<a href="https://github.com/Actinium-project/Actinium/releases/download/v0.18.2.0/Actinium.zip" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>Windows</span></a>
-				<a href="https://github.com/Actinium-project/Actinium/releases/download/v0.18.2.0/Actinium-Qt.dmg" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>macOS</span></a>
-				<a href="https://github.com/Actinium-project/Actinium/archive/v0.18.2.0.tar.gz" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>Linux</span></a>
-				<a href="https://play.google.com/store/apps/details?id=org.acpay" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>Android</span></a>
+				<a href="https://github.com/Actinium-project/Actinium/releases/download/v0.18.3.1/Actinium.zip" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><i class="icon-windows2"></i><span>Windows</span></a>
+				<a href="https://github.com/Actinium-project/Actinium/releases/download/v0.18.3.1/Actinium-Qt.dmg" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><i class="icon-apple"></i><span>macOS</span></a>
+				<a href="https://github.com/Actinium-project/Actinium/archive/v0.18.3.1.tar.gz" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><i class="icon-linux"></i><span>Linux</span></a>
+				<a href="https://play.google.com/store/apps/details?id=org.actinium.acmcopay" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><i class="icon-android"></i><span>Actinium Wallet</span></a>
+				<a href="https://play.google.com/store/apps/details?id=org.acpay" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><i class="icon-android"></i><span>AcPay</span></a>
 				<a href="#wallets" title="" class="button button-small button-border button-rounded button-fill button-soon-acm"><i class="icon-remove"></i><span>iOS</span></a>
 				<a href="https://paperwallet.actinium.org/?currency=Actinium" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="" class="button button-small button-border button-rounded button-fill button-valid-acm"><span>Paper Wallet</span></a>
 				<a href="https://actinium.org/downloads/bootstrap.dat" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="" class="button button-small button-border button-rounded button-fill button-valid-acm"><span>bootstrap.dat</span></a>
 			</div>
 		</div>
 
-		<div class="col-md-12 col-lg-6 col-xl-6 order-1 margin-bottom-panels">
-			<div class="bottommargin-sm">
-        <div class="fancy-title title-bottom-border marginbottom-10">
-				      <h2 class="h2-small dark trn" data-trn-key="pools">Mining pools</h2>
-        </div>
-        <div class="p-mb">
-              <span class="p-primary-color trn" data-trn-key="pools_desc">Select a pool and start mining</span>
-        </div>
-				<!--<a href="http://pool.actinium.org/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span class="trn" data-trn-key="official_button">Official</span></a>
-				<a href="http://fastpool.actinium.org/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>FastPool</span></a>-->
-				<a href="https://goldmine.actinium.org/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-valid-acm"><i class="icon-star-empty"></i><span>GoldMine</span></a>
-				<a href="https://hive.gulfcoastmining.com/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><i class="icon-rocket"></i><span>QueenBee Hive</span></a>
-				<a href="https://icemining.ca/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><i class="icon-rocket"></i><span>Icemining</span></a>
-				<!--<a href="https://minpool.net/coin/ACM" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>Minpool</span></a>-->
-				<a href="https://weekendpool.info/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>Weekend Pool</span></a>
-				<a href="https://fairmine.pro/site/coininfo?coin=ACM" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>FairMine</span></a>
-				<a href="https://www.smilingmining.com/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>Smiling Mining</span></a>
-				<a href="https://www.cryptorushmining.com/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>Crypto Rush Mining</span></a>
-				<a href="https://frrsan.com/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>Forsan Pool</span></a>
-				<a href="http://www.lcpool.eu/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>LCP MINING</span></a>
-			</div>
-		</div>
-
-		<div class="col-md-12 col-lg-6 col-xl-6 order-2 margin-bottom-panels">
+		<div data-animate="fadeIn" class="col-md-12 col-lg-6 col-xl-6 order-1">
 			<div class="bottommargin-sm">
         <div class="fancy-title title-bottom-border marginbottom-10">
 				      <h2 class="h2-small dark trn" data-trn-key="miners">Miners</h2>
@@ -411,7 +407,7 @@
         <div class="p-mb">
               <span class="p-primary-color" data-trn-key="miners_desc">Download a miner for your architecture <a style="color: #ff6666;font-weight: 600;">AMD</a> or <a style="color: #66ff88;font-weight: 600;">nVidia</a></span>
         </div>
-				<a href="https://bitcointalk.org/index.php?topic=3299496.0" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-soon-acm"><i class="icon-rocket"></i><span>TdxMiner</span></a>
+				<a href="https://bitcointalk.org/index.php?topic=5027811.0" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-soon-acm"><i class="icon-rocket"></i><span>TeamRedMiner</span></a>
 				<a href="https://bitcointalk.org/index.php?topic=4432704.0" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-valid-acm"><i class="icon-rocket"></i><span>T-Rex</span></a>
 				<a href="https://github.com/genesismining/sgminer-gm/releases" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-soon-acm"><span>SgMiner</span></a>
 				<a href="https://bitcointalk.org/index.php?topic=4412370.0" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-valid-acm"><span>coolMiner</span></a>
@@ -457,33 +453,63 @@
 			</div>
 		</div>
 
-		<div class="col-md-12 col-lg-6 col-xl-6 order-last margin-bottom-panels">
+		<div data-animate="fadeIn" class="col-md-12 col-lg-6 col-xl-6 order-2">
 			<div class="bottommargin-sm">
+        <div class="fancy-title title-bottom-border marginbottom-10">
+				      <h2 class="h2-small dark trn" data-trn-key="pools">Mining pools</h2>
+        </div>
+        <div class="p-mb">
+              <span class="p-primary-color trn" data-trn-key="pools_desc">Select a pool and start mining</span>
+        </div>
+				<!--<a href="http://pool.actinium.org/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span class="trn" data-trn-key="official_button">Official</span></a>
+				<a href="http://fastpool.actinium.org/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>FastPool</span></a>-->
+				<a href="https://goldmine.actinium.org/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-valid-acm"><i class="icon-star-empty"></i><span>GoldMine</span></a>
+				<!--<a href="https://hive.gulfcoastmining.com/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><i class="icon-rocket"></i><span>QueenBee Hive</span></a>-->
+				<a href="https://www.lyra2z.com/ACM/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><i class="icon-rocket"></i><span>Lyra2z</span></a>
+				<a href="https://icemining.ca/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><i class="icon-rocket"></i><span>Icemining</span></a>
+				<a href="https://www.zpool.ca/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><i class="icon-rocket"></i><span>Zpool</span></a>
+				<a href="https://minpool.net/coin/ACM" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>Minpool</span></a>
+				<!--<a href="https://weekendpool.info/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>Weekend Pool</span></a>-->
+				<a href="https://fairmine.pro/site/coininfo?coin=ACM" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>FairMine</span></a>
+				<a href="https://www.smilingmining.com/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>Smiling Mining</span></a>
+				<!--<a href="https://www.cryptorushmining.com/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>Crypto Rush Mining</span></a>-->
+				<!--<a href="https://frrsan.com/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>Forsan Pool</span></a>-->
+				<a href="http://www.lcpool.eu/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>LCP MINING</span></a>
+				<a href="https://miningpoolstats.stream/actinium" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-soon-acm"><span><i class="icon-info"></i>Check all available pools!</span></a>
+			</div>
+		</div>
+
+		<div data-animate="fadeIn" class="col-md-12 col-lg-6 col-xl-6 order-last">
+			<div class="">
         <div class="fancy-title title-bottom-border marginbottom-10">
 				      <h2 class="h2-small dark trn" data-trn-key="other_links">Explorers, Tools, & Stats</h2>
         </div>
         <div class="p-mb">
               <span class="p-primary-color trn" data-trn-key="other_links_desc">Discover more about Actinium</span>
         </div>
-				<a href="https://faucet.actinium.org" target="_blank" class="button button-small button-border button-rounded button-fill button-available-acm"><span>Faucet</span></a>
+				<!--<a href="https://faucet.actinium.org" target="_blank" class="button button-small button-border button-rounded button-fill button-available-acm"><span>Faucet</span></a>-->
 				<a href="https://bitcointalk.org/index.php?topic=4300440.0" target="_blank" class="button button-small button-border button-rounded button-fill button-available-acm"><span>BitcoinTalk ANN</span></a>
-				<a href="http://explorer.actinium.org/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-valid-acm"><span class="trn" data-trn-key="explorer_button">Explorer</span></a>
+				<a href="http://explorer.actinium.org/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-valid-acm"><span class="trn" data-trn-key="explorer_button"><i class="icon-star-empty"></i>Explorer</span></a>
 				<a href="http://explorer2.actinium.org/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-valid-acm"><span class="trn" data-trn-key="explorer_button">Explorer 2</span></a>
 				<a href="https://chainmapper.com/acm" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-valid-acm"><span class="" data-trn-key="chainmapper_button">Chainmapper</span></a>
 				<a href="https://altexplorer.co/coin/acm" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-valid-acm"><span class="" data-trn-key="altexplorer_button">AltExplorer</span></a>
+				<a href="https://coinmarketcap.com/currencies/actinium/" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-soon-acm"><span class="" data-trn-key="livecoinwatch_button"><i class="icon-star-empty"></i>CoinMarketCap</span></a>
 				<a href="https://www.livecoinwatch.com/price/Actinium-ACM" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-soon-acm"><span class="" data-trn-key="livecoinwatch_button">Live Coin Watch</span></a>
 				<a href="https://www.coingecko.com/en/coins/actinium" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-soon-acm"><span class="" data-trn-key="livecoinwatch_button">CoinGecko</span></a>
 			</div>
 		</div>
 	</div>
+</div>
+</section>
 
 	<!-- WALLET POOLS MINERS END -->
 
 	<!-- ARTICLES START -->
-
-<div class="row margin-top-bottom">
- <div class="col-md-12 col-lg-6 col-xl-6 order-0 margin-bottom-panels">
-	 <div class="bottommargin-sm">
+<section id="content" class="bg-standard-landing-alt">
+	<div class="container clearfix">
+		<div class="row margin-top-bottom">
+ 		<div data-animate="fadeIn" class="col-md-12 col-lg-6 col-xl-6 order-0">
+	 <div class="">
 		 <div class="fancy-title title-bottom-border marginbottom-10">
 					 <h2 id="articles" class="h2-small dark" data-trn-key="articles">Articles</h2>
 		 </div>
@@ -563,335 +589,127 @@
  </div>
 
 </div>
+</div>
+</section>
 
- <!-- ARTICLES END -->
+	<!-- ARTICLES END -->
 
-  <!-- ROADMAP START -->
+	<!-- EXCHANGES START -->
+
+	<section id="content" class="bg-standard-landing">
+		<div class="container clearfix">
 
   <div class="row margin-top-bottom">
-
-    <!-- ROADMAP WALLETS START -->
-
-    <div class="col-md-12 col-lg-6 col-xl-6 order-0">
-      <div class="bottommargin-sm">
-        <div class="fancy-title title-bottom-border">
-              <h2 id="roadmap" class="h2-small dark trn" data-trn-key="roadmap">Roadmap</h2>
-        </div>
-        <div class="p-mb">
-          <h2 class="h2-small dark trn" data-trn-key="desktop_wallets">Desktop Wallets</h2>
-          <span class="p-primary-color trn" data-trn-key="finish_q1">Finished <b>Q1 2018</b></span>
-          <br>
-          <br>
-          <ul class="skills">
-            <li data-percent="100">
-              <span class="p-primary-color trn" data-trn-key="progress">Progress...</span>
-              <div class="progress skills-animated" style="width: 0%;">
-                <div class="progress-percent"><div class="counter counter-inherit counter-instant"><span data-from="0" data-to="100" data-refresh-interval="50" data-speed="1100">100</span>%</div></div>
-              </div>
-            </li>
-          </ul>
-        </br>
-        <a href="#roadmapWindows" class="button button-small button-border button-rounded button-fill button-available-acm"><i class="icon-windows3"></i><span> Windows</span></a>
-        <a href="#roadmapMacos" class="button button-small button-border button-rounded button-fill button-available-acm"><i class="icon-apple"></i><span> macOS</span></a>
-        <a href="#roadmapLinux" class="button button-small button-border button-rounded button-fill button-available-acm"><i class="icon-linux"></i><span> Linux</span></a>
-        </div>
-        </div>
-    </div>
-
-    <!-- ROADMAP WALLETS END -->
-
-    <!-- ROADMAP MOBILE WALLETS START -->
-
-    <div class="col-md-12 col-lg-6 col-xl-6 order-1">
-      <div class="bottommargin-sm">
-        <div class="fancy-title title-bottom-border-transparent d-none d-lg-block d-xl-block">
-          <h2 class="h2-small dark">&nbsp;</h2>
-    </div>
-    <div class="p-mb">
-      <h2 class="h2-small dark trn" data-trn-key="smartphone_wallets">Smartphone Wallets</h2>
-      <span class="p-primary-color trn" data-trn-key="going_q2">On going <b>Q2 2018</b></span>
-      <br>
-      <br>
-      <ul class="skills">
-        <li data-percent="75">
-          <span class="p-primary-color trn" data-trn-key="progress">Progress...</span>
-          <div class="progress skills-animated" style="width: 0%;">
-            <div class="progress-percent"><div class="counter counter-inherit counter-instant"><span data-from="0" data-to="75" data-refresh-interval="50" data-speed="1100">75</span>%</div></div>
-          </div>
-        </li>
-      </ul>
-    </br>
-    <a href="#roadmapAndroid" class="button button-small button-border button-rounded button-fill button-available-acm"><i class="icon-android"></i><span> Android</span></a>
-    <a href="#roadmapIos" class="button button-small button-border button-rounded button-fill button-soon-acm"><i class="icon-apple"></i><span> iOS</span></a>
-    </div>
-    </div>
-  </div>
-
-    <!-- ROADMAP MOBILE WALLETS END -->
-
-    <!-- ROADMAP LEDGER NANO START -->
-
-  <div class="col-md-12 col-lg-6 col-xl-6 order-2">
-    <div class="bottommargin-sm">
-  <div class="p-mb">
-    <h2 class="h2-small dark trn" data-trn-key="ledger_nano">Ledger Nano</h2>
-    <span class="p-primary-color trn" data-trn-key="going_q2">On going <b>Q2 2018</b></span>
-    <br>
-    <br>
-    <ul class="skills">
-      <li data-percent="50">
-        <span class="p-primary-color trn" data-trn-key="progress">Progress...</span>
-        <div class="progress skills-animated" style="width: 0%;">
-          <div class="progress-percent"><div class="counter counter-inherit counter-instant"><span data-from="0" data-to="50" data-refresh-interval="50" data-speed="1100">50</span>%</div></div>
-        </div>
-      </li>
-    </ul>
-  </br>
-  <a href="images/ledger-nano-dev.jpg" data-lightbox="image" title="Ledger Nano Dev"  class="button button-small button-border button-rounded button-fill button-valid-acm"><i class="icon-line-image"></i><span class="trn" data-trn-key="ledger_nano_screenshot"> Take a look!</span></a>
-  </div>
-  </div>
-</div>
-
-<div class="modal fade ledger-nano" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-md">
-    <div class="modal-body">
-      <div class="modal-content bg-standard-landing">
-        <div class="modal-header dark">
-          <h4 class="modal-title trn" id="myModalLabel" data-trn-key="ledger_nano_progress">Ledger Nano progress...</h4>
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        </div>
-        <div class="modal-body">
-          <img class="center" src="images/ledger-nano-dev.jpg" style="text-align: center; " alt="Ledger Nano Dev"></img>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-    <!-- ROADMAP LEDGER NANO END -->
-
-    <!-- ROADMAP LIGHTNING NETWORK START -->
-
-  <div class="col-md-12 col-lg-6 col-xl-6 order-2">
-    <div class="bottommargin-sm">
-  <div class="p-mb" data-lightbox="gallery">
-    <h2 class="h2-small dark trn" data-trn-key="lightning_network">Lightning Network</h2>
-    <span class="p-primary-color trn" data-trn-key="going_q3">On going <b>Q3 2018</b></span>
-    <br>
-    <br>
-    <ul class="skills">
-      <li data-percent="75">
-        <span class="p-primary-color trn" data-trn-key="progress">Progress...</span>
-        <div class="progress skills-animated" style="width: 0%;">
-          <div class="progress-percent"><div class="counter counter-inherit counter-instant"><span data-from="0" data-to="75" data-refresh-interval="50" data-speed="1100">35</span>%</div></div>
-        </div>
-      </li>
-    </ul>
-  </br>
-  <a href="#roadmapLightningnetwork" class="button button-small button-border button-rounded button-fill button-soon-acm"><i class="icon-bolt"></i><span class="trn" data-trn-key="testing"> Testing!</span></a>
-	<a href="https://github.com/Actinium-project/Actinium/wiki/Lightning-Network" target="_blank" class="button button-small button-border button-rounded button-fill button-available-acm"><i class="icon-book"></i><span class="trn" data-trn-key="testing"> LN wiki</span></a>
-	<a href="https://ln-explorer.actinium.org" target="_blank" class="button button-small button-border button-rounded button-fill button-available-acm"><i class="icon-book"></i><span class="trn" data-trn-key="testing"> LN explorer</span></a>
-	<a href="images/lightning-network/acmd_port.png" data-lightbox="gallery-item" title="Lightning Network Dev (first screenshot - june 2018)" class="button button-small button-border button-rounded button-fill button-valid-acm"><i class="icon-line-image"></i><span class="" data-trn-key="lightning_network_screenshot"> LN screenshots!</span></a>
-	<a href="images/lightning-network/01.png" data-lightbox="gallery-item" title="Current status 1/2 (30/08/2018)" class="hidden button button-small button-border button-rounded button-fill button-valid-acm"><i class="icon-line-image"></i><span class="" data-trn-key="lightning_network_screenshot"> Take a look! 2</span></a>
-	<a href="images/lightning-network/02.png" data-lightbox="gallery-item" title="Current status 2/2 (30/08/2018)" class="hidden button button-small button-border button-rounded button-fill button-valid-acm"><i class="icon-line-image"></i><span class="" data-trn-key="lightning_network_screenshot"> Take a look! 2</span></a>
-	<a href="images/lightning-network/03.connecting_with_other_node.png" data-lightbox="gallery-item" title="Connecting with other node" class="hidden button button-small button-border button-rounded button-fill button-valid-acm"><i class="icon-line-image"></i><span class="" data-trn-key="lightning_network_screenshot"> Take a look! 3</span></a>
-	<a href="images/lightning-network/04.local_lightning_node.png" data-lightbox="gallery-item" title="Local Lightning Node" class="hidden button button-small button-border button-rounded button-fill button-valid-acm"><i class="icon-line-image"></i><span class="" data-trn-key="lightning_network_screenshot"> Take a look! 4</span></a>
-	<a href="images/lightning-network/05.list-peers.png" data-lightbox="gallery-item" title="List Peers" class="hidden button button-small button-border button-rounded button-fill button-valid-acm"><i class="icon-line-image"></i><span class="" data-trn-key="lightning_network_screenshot"> Take a look! 4</span></a>
-	<a href="images/lightning-network/06.funded_address.png" data-lightbox="gallery-item" title="Funded Address" class="hidden button button-small button-border button-rounded button-fill button-valid-acm"><i class="icon-line-image"></i><span class="" data-trn-key="lightning_network_screenshot"> Take a look! 4</span></a>
-	<a href="images/lightning-network/07.funds_on_server_node.png" data-lightbox="gallery-item" title="Funds one Server Node" class="hidden button button-small button-border button-rounded button-fill button-valid-acm"><i class="icon-line-image"></i><span class="" data-trn-key="lightning_network_screenshot"> Take a look! 4</span></a>
-	<a href="images/lightning-network/08.fund_channel.png" data-lightbox="gallery-item" title="Fund Channel" class="hidden button button-small button-border button-rounded button-fill button-valid-acm"><i class="icon-line-image"></i><span class="" data-trn-key="lightning_network_screenshot"> Take a look! 4</span></a>
-	<a href="images/lightning-network/09.funding_channel_other_side.png" data-lightbox="gallery-item" title="Funding Channel other side" class="hidden button button-small button-border button-rounded button-fill button-valid-acm"><i class="icon-line-image"></i><span class="" data-trn-key="lightning_network_screenshot"> Take a look! 4</span></a>
-	<a href="images/lightning-network/10.funding_locked.png" data-lightbox="gallery-item" title="Funding Locked" class="hidden button button-small button-border button-rounded button-fill button-valid-acm"><i class="icon-line-image"></i><span class="" data-trn-key="lightning_network_screenshot"> Take a look! 4</span></a>
-	<a href="images/lightning-network/11.create_invoice.png" data-lightbox="gallery-item" title="Create Invoice" class="hidden button button-small button-border button-rounded button-fill button-valid-acm"><i class="icon-line-image"></i><span class="" data-trn-key="lightning_network_screenshot"> Take a look! 4</span></a>
-	<a href="images/lightning-network/12.decode_payment.png" data-lightbox="gallery-item" title="Decode Payments" class="hidden button button-small button-border button-rounded button-fill button-valid-acm"><i class="icon-line-image"></i><span class="" data-trn-key="lightning_network_screenshot"> Take a look! 4</span></a>
-  </div>
-  </div>
-</div>
-</div>
-
-<div class="modal fade lightning-network" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-xl">
-    <div class="modal-body">
-      <div class="modal-content bg-standard-landing">
-        <div class="modal-header dark">
-          <h4 class="modal-title" id="myModalLabel" data-trn-key="lightning_network_progress">Lightning Network progress...</h4>
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        </div>
-        <div class="modal-body">
-          <a href="images/acmd_port.png" data-lightbox="image" title="Lightning Network Dev"><img class="center" src="images/acmd_port.png"  alt="Lightning Network Dev"></img></a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-    <!-- ROADMAP LIGHTNING NETWORK END -->
-
-
-
-    <!-- Begin Timeline -->
-
-    <div class="row margin-top-bottom">
-
-
-      <div class="col-md-12 col-lg-12 col-xl-12 order-0">
-        <div class="bottommargin-sm">
-          <div class="fancy-title title-bottom-border">
-                <h2 id="roadmap" class="h2-small dark trn" data-trn-key="roadmap">Roadmap</h2>
-          </div>
-          </div>
-      </div>
-      <div class="col-md-12 col-lg-12 col-xl-12 order-1">
-          <ul class="timeline pb80">
-
-            <!-- Item 1 -->
-            <li>
-              <div class="timeline-image" data-animate="fadeInDown" data-delay="2000"><img alt="Launch" class="img-circle img-responsive" src="/images/timeline-1.png"></div>
-              <div class="timeline-panel leftReveal">
-                <div class="timeline-heading">
-                  <h4 class="h4-small dark">Q2 2018</h4>
-                  <h3 class="h3-small dark">Actinium Launch</h3>
-                  <p class="dark">The project was launched with wallets for all the computer platforms.</p>
-                  <ul class="list-unstyled">
-                    <li>
-                      <a href="https://github.com/Actinium-project/Actinium/releases/latest">
-                        Wallet [Win/Mac/Lin]
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-
-            <!-- Item 2 -->
-            <li class="timeline-inverted">
-              <div class="timeline-image scaleReveal"><img alt="Timeline" class="img-circle img-responsive" src="/images/timeline-2.png"></div>
-              <div class="timeline-panel rightReveal">
-                <div class="timeline-heading">
-                  <h5 class="heading-1 mb15">Q1 2018</h5>
-                  <h4 class="subheading">{% t index_page.roadmap_4 %}</h4>
-                </div>
-                <div class="timeline-body">
-                  <p>{% t index_page.roadmap_5 %}</p>
-                  <ul class="list-unstyled list-highlighted mt10">
-                    <li>
-                      <a href="https://github.com/turtlecoin/turtle-wallet-go">
-                        Golang GUI [Win/Mac/Lin]
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://github.com/turtlecoin/turtle-wallet-winforms">
-                        Winforms GUI [Win/Mac/Lin]
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://github.com/turtlecoin/turtle-wallet-python">
-                        Python GUI [Win/Mac/Lin]
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://github.com/turtlecoin/turtle-wallet-electron">
-                        Electron GUI [Win/Mac/Lin]
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://github.com/turtlecoin/turtle-wallet-csharp">
-                        C# GUI [Windows]
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-            <!-- Item 3 -->
-            <li>
-              <div class="timeline-image scaleReveal"><img alt="Timeline" class="img-circle img-responsive" src="/images/timeline-3.png"></div>
-              <div class="timeline-panel leftReveal">
-                <div class="timeline-heading">
-                  <h5 class="heading-1 mb15">Q2 2018</h5>
-                  <h4 class="subheading">{% t index_page.roadmap_6 %}</h4>
-                </div>
-                <div class="timeline-body"> <p>{% t index_page.roadmap_7 %}</p>
-
-                </div>
-              </div>
-            </li>
-
-            <!-- Item 4 -->
-            <li class="timeline-inverted">
-              <div  class="timeline-image scaleReveal"><img alt="Timeline" class="img-circle img-responsive" src="/images/timeline-5.png"></div>
-              <div class="timeline-panel rightReveal">
-                <div class="timeline-heading">
-                  <h5 class="heading-1 mb15">{% t index_page.roadmap_8 %}</h5>
-                  <h4 class="subheading">{% t index_page.roadmap_12 %}</h4>
-                </div>
-                <div class="timeline-body">
-                  <p>{% t index_page.roadmap_13 %}</p>
-                </div>
-              </div>
-            </li>
-
-            <!-- Item 3 -->
-            <li>
-              <div  class="timeline-image scaleReveal"><img alt="Timeline" class="img-circle img-responsive" src="/images/timeline-6.png"></div>
-              <div class="timeline-panel leftReveal">
-                <div class="timeline-heading">
-                  <h5 class="heading-1 mb15">{% t index_page.roadmap_16 %}</h5>
-                  <h4 class="subheading">{% t index_page.roadmap_14 %}</h4>
-                </div>
-                <div class="timeline-body">
-                  <p>{% t index_page.roadmap_15 %}</p>
-                </div>
-              </div>
-            </li>
-
-            <!-- Item 4 -->
-            <li class="timeline-inverted">
-              <div class="timeline-image scaleReveal"><img alt="Timeline" class="img-circle img-responsive" src="/images/timeline-4.png"></div>
-              <div class="timeline-panel rightReveal">
-                <div class="timeline-heading">
-                  <h5 class="heading-1 mb15">{% t index_page.roadmap_11 %}</h5>
-                  <h4 class="subheading">{% t index_page.roadmap_9 %}</h4>
-                </div>
-                <div class="timeline-body">
-                  <p>{% t index_page.roadmap_10 %}</p>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div><!-- /.column -->
-
-    </div><!-- /.container -->
-
-  <!-- End Timeline -->
-
-
-
-	   <!-- EXCHANGES START -->
-
-  <div class="row margin-top-bottom">
-    <div class="col-md-12 col-lg-6 col-xl-6 order-0 margin-bottom-panels">
-			<div class="bottommargin-sm">
+    <div data-animate="fadeIn" class="col-md-12 col-lg-6 col-xl-6 order-0">
+			<div class="">
         <div class="fancy-title title-bottom-border marginbottom-10">
 				      <h2 id="exchanges" class="h2-small dark trn" data-trn-key="exchanges">Exchanges</h2>
         </div>
         <div class="p-mb">
 				      <span class="p-primary-color trn" data-trn-key="exchanges_desc">Trade your actinium</span>
         </div>
-				<a href="https://crex24.com/exchange/ACM-BTC" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>Crex24</span></a>
 				<a href="https://tradeogre.com/exchange/BTC-ACM" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>TradeOgre</span></a>
+				<a href="https://crex24.com/exchange/ACM-BTC" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>Crex24</span></a>
+				<a href="https://github.com/bisq-network/bisq/releases/latest" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>Bisq</span></a>
 				<a href="https://bitfex.trade/en/ACM/BTC" target="_blank" title="" class="button button-small button-border button-rounded button-fill button-available-acm"><span>BitFex</span></a>
 			</div>
 		</div>
 
   </div>
 
-  	<!-- EXCHANGES END -->
 
-    <!-- TEAM START -->
 
-    <div class="row margin-top-bottom">
-  		<div class="col-md-12 col-lg-6 col-xl-6 order-0">
+	</div>
+	</section>
+
+	<!-- EXCHANGES END -->
+
+	<!-- ROADMAP START -->
+<section id="content" class="bg-standard-landing-alt">
+	<div class="container clearfix">
+	<div class="row margin-top-bottom">
+		<div data-animate="fadeIn" class="col-md-12 col-xl-3">
+  	</div>
+
+		<div data-animate="fadeIn" class="col-md-12 col-lg-12 col-xl-6">
+			<div class="">
+        <div class="fancy-title title-bottom-border">
+				      <h2 id="roadmap" class="h2-small dark center">Roadmap</h2>
+        </div>
+
+				<div class="roadmap-block">
+						<div class="container">
+							<ul class="roadmap-list">
+								<li class="check">
+									<time class="p-primary-color" datetime="2018-04">Q2 2018</time>
+									<h3 class="roadmap-subtitle dark">Genesis</h3>
+									<p class="dark">
+										- Actinium wallet for Windows<br>
+										- Actinium wallet for Mac<br>
+										- Actinium wallet for Linux<br>
+										- Actinium explorer<br>
+										- Actinium GoldMine Pool (1% fee goes to Bounty pool)<br>
+										- AcPay, wallet for Android<br>
+										- Listed on Bitfex exchange<br>
+										- Ledger wallet integration code<br>
+										- tor integration<br>
+									</p>
+								</li>
+								<li class="check">
+									<time class="p-primary-color" datetime="2018-07">Q3 2018</time>
+									<h3 class="roadmap-subtitle dark">Pre Bitcoin dump</h3>
+									<p class="dark">
+										- Telegram channel & groups<br>
+										- Listed on TradeOgre exchange<br>
+										- Listed on LiveCoinWatch<br>
+										- Listed on Delta portfolio<br>
+										- Listed on Blockfolio portfolio<br>
+										- Hard fork to Lyra2z algorithm<br>
+										- Paper wallet<br>
+										- Electrum client for Actinium<br>
+										- Published BluePaper<br>
+										- Segwit activation<br>
+										- Lightning Network<br>
+										- Port of recksplorer (for ACM's Lightning Network explorer)<br>
+										- Adaptation of Spark Wallet (for ACM's Lightning Network)
+									</p>
+								</li>
+								<li>
+									<time class="p-primary-color" datetime="2019-10">Q4 2019</time>
+									<h3 class="roadmap-subtitle dark">Christmas REKT time</h3>
+									<p class="dark">
+										- Listed on Crex24 exchange<br>
+										- Listed on CoinMarketCap<br>
+										- Trezor integration code<br>
+										- Integration in BTCPayServer<br>
+										- Actinium Wallet, wallet for Android & iOS<br>
+										- ACM port of bcoin<br>
+										- Vanitygen plus for address generation<br>
+										- Listed on Bisq decentralized exchange<br>
+										- Incorporated an LTD in the UK to publish iOS app
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+		</div>
+
+		<div data-animate="fadeIn" class="col-md-12 col-xl-3">
+  	</div>
+	</div>
+
+	</section>
+
+	<!-- ROADMAP END -->
+
+	<!-- TEAM START -->
+
+	<section id="content" class="bg-standard-landing">
+		<div class="container clearfix">
+        <div class="row margin-top-bottom">
+  		<div data-animate="fadeIn" class="col-md-12 col-lg-6 col-xl-6 order-0">
   			<div class="bottommargin-sm">
           <div class="fancy-title title-bottom-border">
   				      <h2 id="team" class="h2-small dark trn" data-trn-key="team">Meet the team</h2>
@@ -914,7 +732,7 @@
       </div>
     </div>
 
-    <div class="col-md-12 col-lg-6 col-xl-6 order-2 bottommargin-sm">
+    <div data-animate="fadeIn" class="col-md-12 col-lg-6 col-xl-6 order-2 bottommargin-sm">
       <div class="team team-list bottommargin-sm">
         <div class="team-image">
           <img src="images/team/brakmic-harris-175px.jpg" class="bg-stats-shadows border-6px" alt="Harris Brakmic">
@@ -944,7 +762,7 @@
       </div>
     </div>
 
-    <div class="col-md-12 col-lg-6 col-xl-6 order-3 bottommargin-sm">
+    <div data-animate="fadeIn" class="col-md-12 col-lg-6 col-xl-6 order-3 bottommargin-sm">
       <div class="team team-list bottommargin-sm">
         <div class="team-image">
           <img src="images/team/pablo-caceres-175px.jpg" class="bg-stats-shadows border-6px" alt="Pablo Cáceres">
@@ -966,7 +784,7 @@
       </div>
     </div>
 
-		<div class="col-md-12 col-lg-6 col-xl-6 order-4 bottommargin-sm">
+		<div data-animate="fadeIn" class="col-md-12 col-lg-6 col-xl-6 order-4 bottommargin-sm">
       <div class="team team-list bottommargin-sm">
         <div class="team-image">
           <img src="images/team/milosnes-175px.jpg" class="bg-stats-shadows border-6px" alt="milosnes">
@@ -984,7 +802,7 @@
       </div>
     </div>
 
-		<div class="col-md-12 col-lg-6 col-xl-6 order-5 bottommargin-sm">
+		<div data-animate="fadeIn" class="col-md-12 col-lg-6 col-xl-6 order-5 bottommargin-sm">
       <div class="team team-list bottommargin-sm">
         <div class="team-image">
           <img src="images/team/bronson-chapman-175px.jpg" class="bg-stats-shadows border-6px" alt="Bronson Chapman">

@@ -1,0 +1,95 @@
+.roadmap-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.roadmap-list {
+	position: relative;
+}
+
+.roadmap-list:after {
+	position: absolute;
+	content: "";
+	width: 2px;
+	top: 0;
+	left: 19px;
+	bottom: 0;
+	background: rgba(2, 151, 204, 0.2);
+}
+
+.roadmap-list li {
+	position: relative;
+	padding: 0 0 55px 75px;
+}
+
+.roadmap-list li:after {
+	position: absolute;
+	content: "";
+	height: 48px;
+	width: 48px;
+	top: 15px;
+	left: -4px;
+	z-index: 1;
+	border-radius: 50%;
+  background: #01092d;
+  border: 2px solid #0098cd;
+  box-shadow: 0 0 0 3px #01092d;
+}
+
+.roadmap-list li:last-child {
+	padding: 0 0 0 75px;
+}
+
+.roadmap-list li:last-child:before {
+	position: absolute;
+	content: "";
+	background: #01092d;
+	top: 15px;
+	left: 0;
+	width: 40px;
+	bottom: 0;
+	z-index: 1;
+}
+
+.roadmap-list li.check:after {
+	font-family: "font-icons";
+	content: "\e658";
+  background: #0098cd;
+  color: #fff;
+  box-shadow: 0 0 0 7px #01092d, 0 0 0 9px rgba(2, 151, 204, 0.6), 0 0 0 16px #01092d, 0 0 0 18px rgba(2, 151, 204, 0.2), 0 0 0 21px #01092d;
+	font-size: 24px;
+	border: none;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.roadmap-list p:last-child {
+	margin: 0;
+}
+
+.roadmap-subtitle {
+	display: block;
+	font-weight: 500;
+	margin: 0 0 20px;
+}
+
+.roadmap-block {
+	padding: 50px 0 50px;
+}
+
+.roadmap-block .container {
+	max-width: 865px;
+}
+
+.roadmap-block h1 {
+	text-align: center;
+	margin: 0 0 54px;
+}
