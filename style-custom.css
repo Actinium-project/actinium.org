@@ -264,6 +264,16 @@ animation: BgExampleChart 2s infinite;
   margin-right: 6px;
 
 }
+
+.footer-community-icons {
+  font-size: 48px;
+  width: 48px;
+  text-align: center;
+  margin-right: 12px;
+
+}
+
+
 .section {
     margin-bottom: 3rem;
     padding-bottom: 3rem;
