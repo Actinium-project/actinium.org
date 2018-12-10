@@ -105,7 +105,7 @@ $( "#hashrate" ).attr( "data-to", hashrate.gh*1000 );
 
 $('#hashrate').countTo({
   from: 0,
-  to: hashrate.gh*1000 ,
+  to: hashrate.gh ,
   speed: 3000,
   refreshInterval: 80,
   decimals: 2,
