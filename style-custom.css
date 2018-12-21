@@ -720,3 +720,16 @@ box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.35);
 	.timeline > li .timeline-image h4 { margin-top:40px; }
 	.timeline > li.timeline-inverted > .timeline-panel { padding:0 30px 20px 20px; }
 }
+
+.dropdown-menu {
+    padding: 8px 0;
+    border: 0;
+}
+
+.dropdown-item {
+    padding: 8px 17px;
+}
+
+.badge {
+    vertical-align: text-top;
+}
