@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="257px" height="290px" viewBox="0 0 257 290" style="enable-background:new 0 0 257 290;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_2_);}
+	.st1{fill:#0862A9;}
+	.st2{fill:#9BC339;}
+</style>
+<g>
+	<g>
+		<defs>
+			<polygon id="SVGID_1_" points="20,82.5 20,207.5 128.3,270 236.6,207.5 236.6,82.5 128.3,20 			"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+		</clipPath>
+		<g class="st0">
+			<polygon class="st1" points="236.6,95 236.6,207.5 139.1,263.8 139.1,213.8 193.2,182.5 193.3,120 			"/>
+			<polygon class="st1" points="225.7,76.3 182.4,101.3 128.3,70 74.2,101.2 30.9,76.2 128.3,20 			"/>
+			<polygon class="st1" points="117.5,213.7 117.5,263.7 20,207.5 20,95 63.4,120 63.3,182.5 			"/>
+			<polygon class="st2" points="171.6,120 171.6,170 128.3,195 85,170 85,120 128.3,95 			"/>
+		</g>
+	</g>
+</g>
+</svg>

@@ -1,6 +1,9 @@
 User-Agent: *
+Allow: *
 Disallow: /.git/
-Disallow: /css/
-Disallow: /include/
-Disallow: /js/
+Disallow: /assets/css/
+Disallow: /assets/fonts/
+Disallow: /assets/js/
+Disallow: /assets/php/
+Disallow: /assets/plugin/
 Sitemap: https://actinium.org/sitemap.xml
