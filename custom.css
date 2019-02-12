@@ -16,6 +16,24 @@
     background: #0d7360 !important;
 }
 
+.alert-news {
+  color: #fff;
+  background-color: rgba(230, 33, 108, 0.4);
+  border-color: #E6216C;
+  border-radius: 0.5rem !important;
+}
+.alert-news hr {
+  border-top-color: #E6216C;
+}
+.news-link {
+  color: #fff !important;
+  font-weight: bold;
+}
+
+.news-link:hover {
+  opacity: 0.85;
+}
+
 .stats-bg {
 
   background: -webkit-linear-gradient(45deg, rgba(33, 230, 193, 0.7) 0%,rgba(39, 142, 165, 0.7) 100%);
