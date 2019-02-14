@@ -34,6 +34,13 @@
   opacity: 0.85;
 }
 
+.popup {
+  background: -webkit-linear-gradient(45deg, rgba(33, 230, 193, 0.7) 0%,rgba(39, 142, 165, 0.7) 100%);
+      background-color: #fff0;
+      border: 0px solid #ffffff;
+        border-radius: 0.5rem;
+}
+
 .stats-bg {
 
   background: -webkit-linear-gradient(45deg, rgba(33, 230, 193, 0.7) 0%,rgba(39, 142, 165, 0.7) 100%);
