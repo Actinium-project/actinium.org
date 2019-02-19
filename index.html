@@ -1,856 +1,869 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <meta name="description" content="Actinium is a cryptocurrency based on latest Bitcoin code. Our initial goal was not only to develop yet another cryptocurrency, but to provide a complete environment for mining, faucets, explorers, mobile & hardware wallets.">
-      <meta name="keywords" content="actinium, cryptocurrency, pow, lyra2z, no-premine, no-ico, fair launch, bitcoin, lightning network, android app, trezor, ledger nano">
-      <meta name="author" content="Harris Brakmic" />
-      <meta name="robots" content="index, follow">
-      <meta name="revisit-after" content="1 days">
-      <meta name="revisit" content="1 days">
-      <meta name="language" content="English">
-      <meta name="rating" content="general">
-      <meta name="rating" content="safe for kids">
-      <meta property="og:locale" content="en_US" />
-      <meta property="og:type" content="website" />
-      <meta property="og:title" content="⚡ Actinium ⚡ Cryptocurrency project that supports Lightning Network" />
-      <meta property="og:description" content="Actinium is a cryptocurrency based on latest Bitcoin code. Our initial goal was not only to develop yet another cryptocurrency, but to provide a complete environment for mining, faucets, explorers, mobile & hardware wallets." />
-      <meta property="og:url" content="https://actinium.org/" />
-      <meta property="og:site_name" content="Actinium" />
-      <!-- <meta property="fb:app_id" content="813501412188048" /> -->
-      <meta property="og:image" content="https://actinium.org/actinium-featured.png" />
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content="@ActiniumCrypto" />
-      <meta name="twitter:creator" content="@ActiniumCrypto" />
-      <meta name="twitter:description" content="Actinium is a cryptocurrency based on latest Bitcoin code. Our initial goal was not only to develop yet another cryptocurrency, but to provide a complete environment for mining, faucets, explorers, mobile & hardware wallets." />
-      <meta name="twitter:title" content="⚡ Actinium ⚡ Cryptocurrency project that supports Lightning Network" />
-      <meta name="twitter:image" content="https://actinium.org/actinium-featured-twitter.png" />
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121419345-1"></script>
-      <script>
-         window.dataLayer = window.dataLayer || [];
-         function gtag(){dataLayer.push(arguments);}
-         // Don’t call the init functions just yet:
-         // gtag(‘js’, new Date());
-         // gtag(‘config’, ‘UA-XXXXXXXX-1’);
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="Actinium is a cryptocurrency based on latest Bitcoin code. Our initial goal was not only to develop yet another cryptocurrency, but to provide a complete environment for mining, faucets, explorers, mobile & hardware wallets.">
+		<meta name="keywords" content="actinium, cryptocurrency, pow, lyra2z, no-premine, no-ico, fair launch, bitcoin, lightning network, android app, trezor, ledger nano">
+		<meta name="author" content="Harris Brakmic" />
+		<meta name="robots" content="index, follow">
+		<meta name="revisit-after" content="1 days">
+		<meta name="revisit" content="1 days">
+		<meta name="language" content="English">
+		<meta name="rating" content="general">
+		<meta name="rating" content="safe for kids">
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="⚡ Actinium ⚡ Cryptocurrency project that supports Lightning Network" />
+		<meta property="og:description" content="Actinium is a cryptocurrency based on latest Bitcoin code. Our initial goal was not only to develop yet another cryptocurrency, but to provide a complete environment for mining, faucets, explorers, mobile & hardware wallets." />
+		<meta property="og:url" content="https://actinium.org/" />
+		<meta property="og:site_name" content="Actinium" />
+		<!-- <meta property="fb:app_id" content="813501412188048" /> -->
+		<meta property="og:image" content="https://actinium.org/actinium-featured.png" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@ActiniumCrypto" />
+		<meta name="twitter:creator" content="@ActiniumCrypto" />
+		<meta name="twitter:description" content="Actinium is a cryptocurrency based on latest Bitcoin code. Our initial goal was not only to develop yet another cryptocurrency, but to provide a complete environment for mining, faucets, explorers, mobile & hardware wallets." />
+		<meta name="twitter:title" content="⚡ Actinium ⚡ Cryptocurrency project that supports Lightning Network" />
+		<meta name="twitter:image" content="https://actinium.org/actinium-featured-twitter.png" />
+		<!-- Schema script -->
+		<script type="application/ld+json">
+			{
+			  "@context": "http://schema.org",
+			  "@type": "EducationalOrganization",
+			  "name": "Actinium",
+        "alternateName": "Actinium, cryptocurrency and education project",
+			  "url": "https://actinium.org",
+			  "logo": "https://actinium.org/assets/img/logo/actinium-logo.png",
+			  "sameAs": [
+			    "https://twitter.com/ActiniumCrypto",
+			    "https://github.com/Actinium-project",
+			    "https://actilectrum.org"
+			  ]
+			}
+		</script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121419345-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			// Don’t call the init functions just yet:
+			// gtag(‘js’, new Date());
+			// gtag(‘config’, ‘UA-XXXXXXXX-1’);
 
-         function initialiseGoogleAnalytics() {
-           gtag('js', new Date());
-           gtag('config', 'UA-121419345-1');
-         }
+			function initialiseGoogleAnalytics() {
+			  gtag('js', new Date());
+			  gtag('config', 'UA-121419345-1');
+			}
 
-         // Subscribe for the cookie consent events
-         $(document).bind("user_cookie_already_accepted", function(event, object) {
-           initialiseGoogleAnalytics();
-         });
+			// Subscribe for the cookie consent events
+			$(document).bind("user_cookie_already_accepted", function(event, object) {
+			  initialiseGoogleAnalytics();
+			});
 
-         $(document).bind("user_cookie_consent_changed", function(event, object) {
-           const userConsentGiven = $(object).attr('consent');
-           if (userConsentGiven) {
-             // User clicked on enabling cookies. Now it’s safe to call the
-             // init functions.
-             initialiseGoogleAnalytics();
-           }
-         });
-      </script>
-      <meta name="google-site-verification" content="s1ds4cRPDRGlm2HjhBJGNFJcCBLbJlcA8TaWqQF24Jk" />
-      <link rel="apple-touch-icon" sizes="57x57" href="assets/img/logo/apple/apple-icon-57x57.png">
-      <link rel="apple-touch-icon" sizes="60x60" href="assets/img/logo/apple/apple-icon-60x60.png">
-      <link rel="apple-touch-icon" sizes="72x72" href="assets/img/logo/apple/apple-icon-72x72.png">
-      <link rel="apple-touch-icon" sizes="76x76" href="assets/img/logo/apple/apple-icon-76x76.png">
-      <link rel="apple-touch-icon" sizes="114x114" href="assets/img/logo/apple/apple-icon-114x114.png">
-      <link rel="apple-touch-icon" sizes="120x120" href="assets/img/logo/apple/apple-icon-120x120.png">
-      <link rel="apple-touch-icon" sizes="144x144" href="assets/img/logo/apple/apple-icon-144x144.png">
-      <link rel="apple-touch-icon" sizes="152x152" href="assets/img/logo/apple/apple-icon-152x152.png">
-      <link rel="apple-touch-icon" sizes="180x180" href="assets/img/logo/apple/apple-icon-180x180.png">
-      <link rel="icon" type="image/png" sizes="192x192"  href="assets/img/logo/android/android-icon-192x192.png">
-      <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-      <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
-      <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-      <link rel="manifest" href="manifest.json">
-      <meta name="msapplication-TileColor" content="#ffffff">
-      <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
-      <meta name="theme-color" content="#0b1726">
-      <meta name="application-name" content="Actinium" />
-      <meta name="msapplication-config" content="browserconfig.xml">
-      <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-      <link rel="icon" href="favicon.ico">
-      <!-- Styles -->
-      <link href="assets/css/page.css" rel="stylesheet">
-      <link href="assets/css/style.css" rel="stylesheet">
-      <link href="assets/css/hover.css" rel="stylesheet">
-      <link href="custom.css" rel="stylesheet">
-      <link href="buttons.css" rel="stylesheet">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-      <link rel="stylesheet" type="text/css" href="assets/css/jquery-eu-cookie-law-popup.css">
-      <title>Actinium | Cryptocurrency - Lightning Network</title>
-   </head>
-   <body class="eupopup eupopup-bottom">
-      <!-- Cookies -->
-
-
-
-      <!-- ./Cookies -->
-      <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-light" data-navbar="smart">
-         <div class="container">
-            <nav class="nav nav-inline nav-navbar">
-               <a class="nav-link lead-3" href="#" data-toggle="offcanvas" data-target="#offcanvas-menu">&#9776;</a>
-            </nav>
-            <div class="navbar-left mr-auto">
-               <a class="navbar-brand" href="https://actinium.org">
-               <img class="logo-dark" src="assets/img/logo/actinium-header.svg" alt="logo">
-               <img class="logo-light" src="assets/img/logo/actinium-header.svg" alt="logo">
-               </a>
-            </div>
-            <div>
-               <a class="btn btn-sm btn-round btn-info" href="https://discord.actinium.org/" target="_blank"><i class="fab fa-discord mr-2"></i>Discord</a>
-            </div>
-         </div>
-      </nav>
-      <!-- /.navbar -->
-      <!-- Header -->
-      <header class="header text-center text-1 h-fullscreen overflow-hidden" style="background-image: linear-gradient(0deg, #172539 0%, #0b1726 100%);">
-         <canvas class="constellation" data-color="#21E6C1" data-length="100" data-radius="50"></canvas>
-         <div class="container position-static">
-            <div class="row align-items-center h-100">
-               <div class="col-sm-10 col-md-10 col-lg-10 mx-auto">
-                  <div class="row align-items-center">
-                     <div class="col-6 col-sm-3 col-md-3 col-lg-2 mx-auto mb-5" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" data-aos-easing="ease-in-out">
-                        <a class="hvr-float"><img src="assets/img/logo/actinium-logo-slider.svg" class="shadow-svg" alt="Actinium"></a>
-                     </div>
-                  </div>
-                  <h1 class="display-5 fw-400 pb-3" data-aos="fade-in" data-aos-delay="250" data-aos-duration="1000" data-aos-easing="ease-in-out"><strong class="fw-600">Actinium</strong> project</h1>
-                  <h2 class="display-6 pb-5" data-aos="fade-in" data-aos-delay="250" data-aos-duration="1000" data-aos-easing="ease-in-out" style="color: #21E6C1;"><span class="fw-200 pl-2" data-typing="#Lightning Network,#Atomic Swaps,#Tor,#POW,#Lyra2z" data-type-speed="80"></span></h2>
-                  <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" data-aos-easing="ease-in-out">
-                     <a class="btn btn-xl btn-round btn-custom-green mb-3 mr-1 ml-1" href="#wallets">Download</a>
-                     <a class="btn btn-xl btn-round btn-custom-blue mb-3 mr-1 ml-1" href="pdf/bluepaper-compressed.pdf" target="_blank">BluePaper</a>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </header>
-      <!-- /.header -->
-      <!-- Main Content -->
-      <main class="main-content">
-         <!-- Stats counter -->
-         <section id="stats" class="section bg-2 text-white">
-            <!-- News -->
-            <div class="container mb-5">
-               <div class="row">
-                  <div class="col-10 col-sm-12 col-md-12 col-lg-6 mx-auto" data-aos="fade-in" data-aos-delay="0" data-aos-duration="1000" data-aos-easing="ease-in-out">
-                     <div class="alert alert-news text-center" role="alert">
-                        <strong>NEWS!</strong>
-                        <br>
-                        Actinium has been listed on <a class="news-link" href="https://www.qbtc.ink/" target="_blank">QBTC</a> exchange!
-                        <br>
-                        You can trade using <a class="news-link" href="https://www.qbtc.ink/trade?symbol=ACM_CNYT" target="_blank">CNYT</a> and <a class="news-link" href="https://www.qbtc.ink/trade?symbol=ACM_USDT" target="_blank">USDT</a> pairs.
-                        <br>
-                        <br>
-                        Happy trading!
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <!-- /.News -->
-            <div class="container">
-               <div class="row gap-y">
-                  <div class="w-100"></div>
-                  <div class="col-10 col-xs-6 col-sm-6 col-md-6 col-lg-3 mx-auto text-center shadow-svg" data-aos="fade-in" data-aos-delay="0" data-aos-duration="1000" data-aos-easing="ease-in-out">
-                     <div class="rounded-md stats-bg p-2">
-                        <p>Price</p>
-                        <h3 class="m-0"><span id="price" data-from="0" data-to="" data-refresh-interval="80" data-speed="3000" data-comma="true"></span>&nbsp;sat</h3>
-                     </div>
-                  </div>
-                  <div class="col-10 col-xs-6 col-sm-6 col-md-6 col-lg-3 mx-auto text-center shadow-svg" data-aos="fade-in" data-aos-delay="250" data-aos-duration="1000" data-aos-easing="ease-in-out">
-                     <div class="rounded-md stats-bg p-2">
-                        <p>Market cap</p>
-                        <h3 class="m-0"><span id="marketcap" data-from="0" data-to="" data-refresh-interval="80" data-speed="3000" data-comma="true"></span>&nbsp;$</h3>
-                     </div>
-                  </div>
-                  <div class="col-10 col-xs-6 col-sm-6 col-md-6 col-lg-3 mx-auto text-center shadow-svg" data-aos="fade-in" data-aos-delay="500" data-aos-duration="1000" data-aos-easing="ease-in-out">
-                     <div class="rounded-md stats-bg p-2">
-                        <p>Current supply</p>
-                        <h3 class="m-0"><span id="supply" data-from="0" data-to="" data-refresh-interval="80" data-speed="3000" data-comma="true"></span>&nbsp;ACM</h3>
-                     </div>
-                  </div>
-                  <div class="col-10 col-xs-6 col-sm-6 col-md-6 col-lg-3 mx-auto text-center shadow-svg" data-aos="fade-in" data-aos-delay="750" data-aos-duration="1000" data-aos-easing="ease-in-out">
-                     <div class="rounded-md stats-bg p-2">
-                        <p>Hashrate</p>
-                        <h3 class="m-0"><span id="hashrate" data-from="0" data-to="" data-refresh-interval="80" data-speed="3000" data-comma="true"></span>&nbsp;GH/s</h3>
-                     </div>
-                  </div>
-                  <div class="col-10 col-xs-8 col-sm-8 col-md-8 col-lg-3 mx-auto text-center" data-aos="fade-in" data-aos-delay="1000" data-aos-duration="1000" data-aos-easing="ease-in-out">
-                     <div class="p-2">
-                        <p>How profitable is to mine Actinium?</p>
-                        <a class="btn btn-xl btn-round btn-custom-pink mb-3 mr-1 ml-1" href="https://whattomine.com/coins/290-acm-lyra2z" target="_blank"><i class="fas fa-calculator mr-2"></i>WhatToMine</a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <!-- ./Stats counter -->
-         <!-- About -->
-         <section id="about" class="section overflow-hidden bg-2" style="background-image: linear-gradient(180deg, #172539 0%, #0b1726 100%);">
-            <div class="container">
-               <header class="section-header text-1" data-aos="fade-down">
-                  <h2>What is Actinium?</h2>
-                  <hr>
-                  <p class="lead">A small intro to our project</p>
-               </header>
-               <div class="row tab-content h-100 text-1">
-                  <div class="col-xs-12 col-sm-12 col-md-6 text-center text-sm-left" data-aos="fade-in" data-aos-delay="0" data-aos-duration="1000" data-aos-easing="ease-in-out">
-                     <p><b>Actinium</b> is a cryptocurrency designed to be <b>convenient, functional and secure.</b>
-                        <br><br>Featuring an active <b>Lightning Network, Hardware Wallet integration, Mobile Wallets, Tor Browser capabilities,</b> as well as maintaining a heavy focus on <b>education and every day application,</b> Actinium aims to make blockchain technology useful for everyone.
-                        <br><br><b>The Actinium Network</b> is dedicated to sustaining a foundation of <b>transparency and trust,</b> which is why the project was <b>launched fairly,</b> meaning there is <b>no pre-mine, no ICO, no pre-launch funding and no developer rewards</b> of any sort associated with this project—whatsoever.
-                     </p>
-                  </div>
-                  <div class="col-xs-12 col-sm-12 col-md-6 text-center text-sm-left" data-aos="fade-in" data-aos-delay="250" data-aos-duration="1000" data-aos-easing="ease-in-out">
-                     <p>Additionally, Actinium is completely decentralized featuring an <b>open-source codebase</b> available for review, critique, and change from anyone.
-                        <br><br>The full breadth of the blockchain industry has yet to be realized which is why <b>the development of Actinium remains perpetual and ever-expanding.</b>
-                        <br><br>Designed to continuously incorporate innovative new features accordingly. The future of blockchain technology is bright and The Actinium Network strives to be equally radiant by <b>ensuring its users have access to all the advantages this industry has to offer, both now and in the future.</b>
-                     </p>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <!-- ./About -->
-         <!-- Specs -->
-         <section id="specs" class="section overflow-hidden bg-1">
-            <div class="container">
-               <header class="section-header text-1" data-aos="fade-down">
-                  <h2>Specs</h2>
-                  <hr>
-                  <p class="lead">Maximum supply of <strong>84.000.000 ACM</strong>, block time of <strong>2.5 minutes</strong>, using the <strong>Lyra2z algorithm</strong> and halving every <strong>840.000 blocks.</strong> Block difficulty adjusted using <strong>LWMA</strong> on every block.</p>
-               </header>
-               <div class="row gap-y text-center">
-                  <div class="col-md-4 col-xl-4 feature-1" data-aos="fade-in" data-aos-delay="250" data-aos-duration="1000" data-aos-easing="ease-in-out">
-                     <p class="fa-stack fa-2x">
-                        <i class="fas fa-ban fa-stack-2x gradient-icon"></i>
-                        <i class="fas fa-cubes fa-stack-1x gradient-icon"></i>
-                     </p>
-                     <h3 class="text-1">No premine</h3>
-                  </div>
-                  <div class="col-md-4 col-xl-4 feature-1" data-aos="fade-in" data-aos-delay="500" data-aos-duration="1000" data-aos-easing="ease-in-out">
-                     <p class="feature-icon"><i class="fas fa-rocket gradient-icon"></i></p>
-                     <h3 class="text-1">Fair Launch</h3>
-                  </div>
-                  <div class="col-md-4 col-xl-4 feature-1" data-aos="fade-in" data-aos-delay="750" data-aos-duration="1000" data-aos-easing="ease-in-out">
-                     <p class="fa-stack fa-2x">
-                        <i class="fas fa-ban fa-stack-2x gradient-icon"></i>
-                        <i class="fas fa-coins fa-stack-1x gradient-icon"></i>
-                     </p>
-                     <h3 class="text-1">No ICO</h3>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <!-- ./Specs -->
-         <!-- Wallets -->
-         <section id="wallets" class="section overflow-hidden bg-2" style="background-image: linear-gradient(0deg, #172539 0%, #0b1726 100%);">
-            <div class="container">
-               <header class="section-header text-1" data-aos="fade-down">
-                  <h2>Downloads</h2>
-                  <hr>
-                  <p class="lead">Wallets for any platform</p>
-               </header>
-               <ul class="nav nav-tabs-outline shadow-svg" data-aos="fade-in">
-                  <li class="nav-item">
-                     <a class="nav-link active" href="#wallet-windows" data-toggle="tab"><i class="fab fa-windows mr-2"></i>Windows</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#wallet-linux" data-toggle="tab"><i class="fab fa-linux mr-2"></i>Linux</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" data-toggle="tab" href="#wallet-mac"><i class="fab fa-apple mr-2"></i>Mac</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" data-toggle="tab" href="#wallet-android"><i class="fab fa-android mr-2"></i>Android</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" data-toggle="tab" href="#wallet-ios"><i class="fab fa-apple mr-2"></i>iOS</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" data-toggle="tab" href="#wallet-paperwallet"><i class="fa fa-scroll mr-2"></i>Paper wallet</a>
-                  </li>
-               </ul>
-               <br><br>
-               <div>
-                  <div class="row tab-content h-100 text-1" data-aos="fade-in" data-aos-delay="0" data-aos-duration="1000" data-aos-easing="ease-in-out">
-                     <!-- WALLET WINDOWS -->
-                     <div class="tab-pane fade show active text-center" id="wallet-windows">
-                        <div class="col-xs-12 col-sm-12 col-md-4 pt-3 pb-3 feature-1">
-                           <p class="feature-icon"><i class="fab fa-windows gradient-icon"></i></p>
-                           <h1 class="fw-600">Windows wallet</h1>
-                           <small>Current version: 0.19.0.2</small>
-                           <br>
-                           <br>
-                           <a class="btn btn-md btn-round btn-custom-green mb-3 mr-1 ml-1 text-center" href="https://github.com/Actinium-project/Actinium-ng/releases/download/v0.19.0.2/Actinium.zip" target="_blank">Actinium NG</a>
-                           <a class="btn btn-md btn-round btn-custom-light mb-3 mr-1 ml-1 text-center" href="https://github.com/Actinium-project/Actinium/releases/download/v0.18.4.0/Actinium.zip" target="_blank">Actinium Legacy</a>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-8 text-left pt-3 pb-3">
-                           <ol class="step">
-                              <li class="step-item">
-                                 <div class="step-icon">
-                                    <span class="iconbox">1</span>
-                                 </div>
-                                 <div class="step-content">
-                                    <h6><strong>Download the wallet</strong></h6>
-                                    <p>Always download the wallet from our website or from our Github repository!</p>
-                                 </div>
-                              </li>
-                              <li class="step-item">
-                                 <div class="step-icon">
-                                    <span class="iconbox">2</span>
-                                 </div>
-                                 <div class="step-content">
-                                    <h6><strong>Extract the files to your desired folder</strong></h6>
-                                 </div>
-                              </li>
-                              <li class="step-item">
-                                 <div class="step-icon">
-                                    <span class="iconbox">3</span>
-                                 </div>
-                                 <div class="step-content">
-                                    <h6><strong>Running the wallet</strong></h6>
-                                    <p>Run <b>Actinium-qt</b> then select the folder for your blockchain and wait for synchronisation to finish.
-                                       Remember to encrypt your <i>wallet.dat</i> and save your keys and mnemonic seed in a safe place.
-                                    </p>
-                                 </div>
-                              </li>
-                           </ol>
-                        </div>
-                     </div>
-                     <!-- WALLET LINUX -->
-                     <div class="tab-pane fade text-center" id="wallet-linux">
-                        <div class="col-xs-12 col-sm-12 col-md-4 pt-3 pb-3 feature-1">
-                           <p class="feature-icon"><i class="fab fa-linux gradient-icon"></i></p>
-                           <h1 class="fw-600">Linux sources</h1>
-                           <small>Current version: 0.19.0.2</small>
-                           <br>
-                           <br>
-                           <a class="btn btn-md btn-round btn-custom-green mb-3 mr-1 ml-1 text-center" href="https://github.com/Actinium-project/Actinium-ng/archive/v0.19.0.2.tar.gz" target="_blank">Actinium NG</a>
-                           <a class="btn btn-md btn-round btn-custom-pink mb-3 mr-1 ml-1 text-center" href="https://github.com/Actinium-project/actinium-ng-docker" target="_blank">Docker</a>
-                           <a class="btn btn-md btn-round btn-custom-light mb-3 mr-1 ml-1 text-center" href="https://github.com/Actinium-project/Actinium/archive/v0.18.4.0.tar.gz" target="_blank">Actinium Legacy</a>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-8 text-left pt-3 pb-3">
-                           <ol class="step">
-                              <li class="step-item">
-                                 <div class="step-icon">
-                                    <span class="iconbox">1</span>
-                                 </div>
-                                 <div class="step-content">
-                                    <h6><strong>Download the wallet</strong></h6>
-                                    <p>Always download the wallet from our website or from our Github repository!</p>
-                                 </div>
-                              </li>
-                              <li class="step-item">
-                                 <div class="step-icon">
-                                    <span class="iconbox">2</span>
-                                 </div>
-                                 <div class="step-content">
-                                    <h6><strong>Compile the wallet</strong></h6>
-                                    <p>Check out our tutorials on building under Linux in our GitHub.</p>
-                                 </div>
-                              </li>
-                              <li class="step-item">
-                                 <div class="step-icon">
-                                    <span class="iconbox">3</span>
-                                 </div>
-                                 <div class="step-content">
-                                    <h6><strong>Running the wallet</strong></h6>
-                                    <p>Run <b>Actinium-qt</b> then select the folder for your blockchain and wait for synchronisation to finish.
-                                       Remember to encrypt your <i>wallet.dat</i> and save your keys and mnemonic seed in a safe place.
-                                    </p>
-                                 </div>
-                              </li>
-                           </ol>
-                        </div>
-                     </div>
-                     <!-- WALLET MAC -->
-                     <div class="tab-pane fade text-center" id="wallet-mac">
-                        <div class="col-xs-12 col-sm-12 col-md-4 pt-3 pb-3 feature-1">
-                           <p class="feature-icon"><i class="fab fa-apple gradient-icon"></i></p>
-                           <h1 class="fw-600">macOS wallet</h1>
-                           <small>Current version: 0.19.0.2</small>
-                           <br>
-                           <br>
-                           <a class="btn btn-md btn-round btn-custom-green mb-3 mr-1 ml-1 text-center" href="https://github.com/Actinium-project/Actinium-ng/releases/download/v0.19.0.2/Actinium-Qt.dmg" target="_blank">Actinium NG</a>
-                           <a class="btn btn-md btn-round btn-custom-light mb-3 mr-1 ml-1 text-center" href="https://github.com/Actinium-project/Actinium/releases/download/v0.18.4.0/Actinium-Qt.dmg" target="_blank">Actinium Legacy</a>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-8 text-left pt-3 pb-3">
-                           <ol class="step">
-                              <li class="step-item">
-                                 <div class="step-icon">
-                                    <span class="iconbox">1</span>
-                                 </div>
-                                 <div class="step-content">
-                                    <h6><strong>Download the wallet</strong></h6>
-                                    <p>Always download the wallet from our website or from our Github repository!</p>
-                                 </div>
-                              </li>
-                              <li class="step-item">
-                                 <div class="step-icon">
-                                    <span class="iconbox">2</span>
-                                 </div>
-                                 <div class="step-content">
-                                    <h6><strong>Open the DMG file and follow instructions.</strong></h6>
-                                 </div>
-                              </li>
-                              <li class="step-item">
-                                 <div class="step-icon">
-                                    <span class="iconbox">3</span>
-                                 </div>
-                                 <div class="step-content">
-                                    <h6><strong>Run the wallet</strong></h6>
-                                    <p>Run <b>Actinium-qt</b> then select the folder for your blockchain and wait for synchronisation to finish.
-                                       Remember to encrypt your <i>wallet.dat</i> and save your keys and mnemonic seed in a safe place.
-                                    </p>
-                                 </div>
-                              </li>
-                           </ol>
-                        </div>
-                     </div>
-                     <!-- WALLET ANDROID -->
-                     <div class="tab-pane fade text-center" id="wallet-android">
-                        <div class="col-xs-12 col-sm-12 col-md-4 pt-3 pb-3 feature-1">
-                           <p class="feature-icon"><i class="fab fa-android gradient-icon"></i></p>
-                           <h1 class="fw-600">Android wallet</h1>
-                           <small>Download on Play Store</small>
-                           <br>
-                           <br>
-                           <a class="btn btn-md btn-round btn-custom-green mb-3 mr-1 ml-1 text-center" href="https://play.google.com/store/apps/details?id=org.actinium.acmcopay" target="_blank">Actinium wallet</a>
-                           <a class="btn btn-md btn-round btn-custom-light mb-3 mr-1 ml-1 text-center" href="https://play.google.com/store/apps/details?id=org.acpay" target="_blank">acPay</a>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-8 text-left pt-3 pb-3">
-                           <ol class="step">
-                              <li class="step-item">
-                                 <div class="step-icon">
-                                    <span class="iconbox">1</span>
-                                 </div>
-                                 <div class="step-content">
-                                    <h6><strong>Download the wallet</strong></h6>
-                                    <p>Always download the wallet from Google Play Store.</p>
-                                 </div>
-                              </li>
-                              <li class="step-item">
-                                 <div class="step-icon">
-                                    <span class="iconbox">2</span>
-                                 </div>
-                                 <div class="step-content">
-                                    <h6><strong>Run the app</strong></h6>
-                                    <p>Remember to encrypt your wallet and save your keys and mnemonic seed in a safe place.</p>
-                                 </div>
-                              </li>
-                           </ol>
-                        </div>
-                     </div>
-                     <!-- WALLET IOS -->
-                     <div class="tab-pane fade text-center" id="wallet-ios">
-                        <div class="col-xs-12 col-sm-12 col-md-4 pt-3 pb-3 feature-1">
-                           <p class="feature-icon"><i class="fab fa-apple gradient-icon"></i></p>
-                           <h1 class="fw-600">iOS wallet</h1>
-                           <small>Download on iTunes Store</small>
-                           <br>
-                           <br>
-                           <a class="btn btn-md btn-round btn-custom-green mb-3 mr-1 ml-1 text-center" href="https://itunes.apple.com/us/app/actinium-wallet/id1441925845" target="_blank">Actinium wallet</a>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-8 text-left pt-3 pb-3">
-                           <ol class="step">
-                              <li class="step-item">
-                                 <div class="step-icon">
-                                    <span class="iconbox">1</span>
-                                 </div>
-                                 <div class="step-content">
-                                    <h6><strong>Download the wallet</strong></h6>
-                                    <p>Always download the wallet from iTunes Store.</p>
-                                 </div>
-                              </li>
-                              <li class="step-item">
-                                 <div class="step-icon">
-                                    <span class="iconbox">2</span>
-                                 </div>
-                                 <div class="step-content">
-                                    <h6><strong>Run the app</strong></h6>
-                                    <p>Remember to encrypt your wallet and save your keys and mnemonic seed in a safe place.</p>
-                                 </div>
-                              </li>
-                           </ol>
-                        </div>
-                     </div>
-                     <!-- WALLET PAPER -->
-                     <div class="tab-pane fade text-center" id="wallet-paperwallet">
-                        <div class="col-xs-12 col-sm-12 col-md-4 pt-3 pb-3 feature-1">
-                           <p class="feature-icon"><i class="fa fa-scroll gradient-icon"></i></p>
-                           <h1 class="fw-600">Paper wallet</h1>
-                           <small>Go to paper wallet website</small>
-                           <br>
-                           <br>
-                           <a class="btn btn-md btn-round btn-custom-green mb-3 mr-1 ml-1 text-center" href="https://paperwallet.actinium.org/?currency=Actinium" target="_blank">Paper wallet</a>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-8 text-left pt-3 pb-3">
-                           <ol class="step">
-                              <li class="step-item">
-                                 <div class="step-icon">
-                                    <span class="iconbox">1</span>
-                                 </div>
-                                 <div class="step-content">
-                                    <h6><strong>Go to Actinium Paper wallet website</strong></h6>
-                                    <p>Make sure that the website shows the information of Actinium.</p>
-                                 </div>
-                              </li>
-                              <li class="step-item">
-                                 <div class="step-icon">
-                                    <span class="iconbox">2</span>
-                                 </div>
-                                 <div class="step-content">
-                                    <h6><strong>Follow the instructions</strong></h6>
-                                    <p>Move your mouse or add random characters to increase randomness.</p>
-                                 </div>
-                              </li>
-                              <li class="step-item">
-                                 <div class="step-icon">
-                                    <span class="iconbox">3</span>
-                                 </div>
-                                 <div class="step-content">
-                                    <h6><strong>Save your keys</strong></h6>
-                                    <p>Save your keys and mnemonic seed in a safe place.</p>
-                                 </div>
-                              </li>
-                           </ol>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <!-- ./Wallets -->
-         <!-- Hardware wallets -->
-         <section id="actilectrum" class="section bg-1 py-7 bg-2">
-            <div class="container text-1">
-               <header class="section-header text-1" data-aos="fade-down">
-                  <h2>Actilectrum</h2>
-                  <hr>
-                  <p class="lead">The lightweight Actinium Wallet</p>
-               </header>
-               <div class="row gap-y text-center">
-                  <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-8 mx-auto text-center" data-aos="fade-in" data-aos-delay="0" data-aos-duration="1000" data-aos-easing="ease-in-out">
-                     <p class="lead" data-aos="fade-in" data-aos-delay="0" data-aos-duration="1000" data-aos-easing="ease-in-out">Instead of downloading the whole blockchain <strong>Actilectrum</strong> operates in conjunction with high-performance servers that handle the most complicated parts of the Actinium system. <strong>Your private keys never leave the application.</strong></p>
-                  </div>
-               </div>
-               <div class="row gap-y text-center mt-2 mb-2 align-items-center">
-                  <div class="col-8 col-xs-8 col-sm-3 col-md-3 col-lg-3 mx-auto order-lg-1 order-md-1 order-sm-1 order-2" data-aos="fade-in" data-aos-delay="0" data-aos-duration="1000" data-aos-easing="ease-in-out">
-                     <a class="hvr-float" href="https://trezor.io/" target="_blank"><img src="assets/img/logo/trezor-logo.svg" class="shadow-svg" alt="Trezor"></a>
-                  </div>
-                  <div class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-6 mx-auto order-lg-2 order-md-2 order-sm-2 order-1" data-aos="fade-in" data-aos-delay="250" data-aos-duration="1000" data-aos-easing="ease-in-out">
-                     <a class="btn btn-md btn-round btn-custom-green mb-3 mr-1 ml-1 text-center" href="https://actilectrum.org" target="_blank">Actilectrum website</a>
-                  </div>
-                  <div class="col-8 col-xs-8 col-sm-3 col-md-3 col-lg-3 mx-auto order-lg-3 order-md-3 order-sm-3 order-3" data-aos="fade-in" data-aos-delay="500" data-aos-duration="1000" data-aos-easing="ease-in-out">
-                     <a class="hvr-float" href="https://www.ledger.com/" target="_blank"><img src="assets/img/logo/ledger-logo.svg" class="shadow-svg" alt="Ledger"></a>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <!-- /.Hardware wallets -->
-         <!-- Miners and pools -->
-         <section id="miner" class="section overflow-hidden bg-2" style="background-image: linear-gradient(180deg, #172539 0%, #0b1726 100%);">
-            <div class="container">
-               <header class="section-header text-1" data-aos="fade-down">
-                  <h2>Mining software and Pools<span></span></h2>
-                  <hr>
-                  <p class="lead">Are you a miner? Join us!</p>
-               </header>
-               <ul class="nav nav-tabs-outline shadow-svg" data-aos="fade-in">
-                  <li class="nav-item">
-                     <a class="nav-link active" href="#other-miners" data-toggle="tab"><i class="fas fa-download mr-2"></i>Miners</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#other-pools" data-toggle="tab"><i class="fas fa-globe mr-2"></i>Pools</a>
-                  </li>
-               </ul>
-               <br><br>
-               <div>
-                  <div class="row tab-content h-100 text-1" data-aos="fade-in" data-aos-delay="0" data-aos-duration="1000" data-aos-easing="ease-in-out">
-                     <!-- MINING SOFTWARE -->
-                     <div class="tab-pane fade show active text-center" id="other-miners">
-                        <div class="col-xs-12 col-sm-12 col-md-4 pt-3 pb-3 feature-1">
-                           <p class="feature-icon"><i class="fas fa-download gradient-icon"></i></p>
-                           <h1 class="fw-600">Mining software</h1>
-                           <small>Download a miner for your architecture: NVIDIA or AMD</small>
-                           <br>
-                           <br>
-                           <a class="btn btn-md btn-round btn-custom-green mb-3 mr-1 ml-1 text-center" href="https://bitcointalk.org/index.php?topic=4432704.0" target="_blank">T-Rex</a>
-                           <a class="btn btn-md btn-round btn-custom-pink mb-3 mr-1 ml-1 text-center" href="https://bitcointalk.org/index.php?topic=5027811.0" target="_blank">TeamRedMiner</a>
-                        </div>
-                     </div>
-                     <!-- POOLS -->
-                     <div class="tab-pane fade text-center" id="other-pools">
-                        <div class="col-xs-12 col-sm-12 col-md-4 pt-3 pb-3 feature-1">
-                           <p class="feature-icon"><i class="fas fa-globe gradient-icon"></i></p>
-                           <h1 class="fw-600">Mining Pools</h1>
-                           <small>Select a pool and start mining</small>
-                           <br>
-                           <br>
-                           <a class="btn btn-md btn-round btn-custom-green mb-3 mr-1 ml-1 text-center" href="https://goldmine.actinium.org/" target="_blank">GoldMine (community pool)</a>
-                           <a class="btn btn-md btn-round btn-custom-pink mb-3 mr-1 ml-1 text-center" href="https://www.lyra2z.com/ACM/" target="_blank">Lyra2z</a>
-                           <a class="btn btn-md btn-round btn-custom-pink mb-3 mr-1 ml-1 text-center" href="https://poolmin.com/" target="_blank">PoolMin</a>
-                           <a class="btn btn-md btn-round btn-custom-pink mb-3 mr-1 ml-1 text-center" href="https://www.nlpool.nl/" target="_blank">NLpool</a>
-                           <a class="btn btn-md btn-round btn-custom-light mb-3 mr-1 ml-1 text-center" href="https://miningpoolstats.stream/actinium" target="_blank">Check for more pools!</a>
-                        </div>
-                     </div>
-                     <div class="col-xs-12 col-sm-12 col-md-8 text-center pt-3 pb-3 feature-1">
-                        <p class="feature-icon"><i class="fas fa-broadcast-tower gradient-icon"></i></p>
-                        <h1 class="fw-600">Are you an FPGA/ASIC miner?</h1>
-                        <small>Actinium welcomes miners who invest in better hardware and technologies.</small>
-                        <br>
-                        <br>
-                        <a class="hvr-float"><img src="assets/img/gpu-fpga-miners.svg" class="shadow-svg" alt="FPGA mining"></a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <!-- ./Miners and pools -->
-         <!-- Explorer and links -->
-         <section id="explorer" class="section overflow-hidden bg-1">
-            <div class="container">
-               <header class="section-header text-1" data-aos="fade-down">
-                  <h2>Explorers and other links</h2>
-                  <hr>
-                  <p class="lead">Further resources</p>
-               </header>
-               <div class="row gap-y text-center">
-                  <div class="col-md-5 col-xl-5 mx-auto feature-1" data-aos="fade-in" data-aos-delay="250" data-aos-duration="1000" data-aos-easing="ease-in-out">
-                     <p class="feature-icon"><i class="fas fa-cubes gradient-icon"></i></p>
-                     <h3 class="text-1">Explorers</h3>
-                     <p class="text-1">Check the current blockchain status</p>
-                     <a class="btn btn-md btn-round btn-custom-green mb-3 mr-1 ml-1 text-center" href="http://explorer.actinium.org/" target="_blank">Explorer</a>
-                     <a class="btn btn-md btn-round btn-custom-pink mb-3 mr-1 ml-1 text-center" href="http://explorer2.actinium.org/" target="_blank">Explorer 2</a>
-                     <a class="btn btn-md btn-round btn-custom-pink mb-3 mr-1 ml-1 text-center" href="http://test-explorer.actinium.org/" target="_blank">Testnet Explorer</a>
-                     <a class="btn btn-md btn-round btn-custom-blue mb-3 mr-1 ml-1 text-center" href="https://ln-explorer.actinium.org/" target="_blank">LN Explorer</a>
-                     <a class="btn btn-md btn-round btn-custom-light mb-3 mr-1 ml-1 text-center" href="https://chainmapper.com/acm" target="_blank">ChainMapper</a>
-                     <a class="btn btn-md btn-round btn-custom-light mb-3 mr-1 ml-1 text-center" href="https://altexplorer.co/coin/acm" target="_blank">AltExplorer</a>
-                  </div>
-                  <div class="col-md-5 col-xl-5 mx-auto feature-1" data-aos="fade-in" data-aos-delay="500" data-aos-duration="1000" data-aos-easing="ease-in-out">
-                     <p class="feature-icon"><i class="fas fa-info-circle gradient-icon"></i></p>
-                     <h3 class="text-1">Useful links</h3>
-                     <p class="text-1">Some useful data</p>
-                     <a class="btn btn-md btn-round btn-custom-green mb-3 mr-1 ml-1 text-center" href="https://coinmarketcap.com/currencies/actinium/" target="_blank">CoinMarketCap</a>
-                     <a class="btn btn-md btn-round btn-custom-pink mb-3 mr-1 ml-1 text-center" href="https://www.livecoinwatch.com/price/Actinium-ACM" target="_blank">Live Coin Watch</a>
-                     <a class="btn btn-md btn-round btn-custom-blue mb-3 mr-1 ml-1 text-center" href="https://www.coingecko.com/en/coins/actinium" target="_blank">CoinGecko</a>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <!-- ./Explorer and links -->
-         <!-- Exchanges -->
-         <section id="exchanges" class="section bg-1 py-7 bg-1">
-            <div class="container">
-               <header class="section-header text-1" data-aos="fade-down">
-                  <h2>Exchanges</h2>
-                  <hr>
-                  <p class="lead">You can trade ACM on these exchanges</p>
-               </header>
-               <div class="row gap-y text-center mt-2 mb-2 align-items-center exchange-logos">
-                  <div class="col-6 col-xs-6 col-sm-6 col-md-6 col-lg-4 mx-auto" data-aos="fade-in" data-aos-delay="0" data-aos-duration="1000" data-aos-easing="ease-in-out">
-                     <a class="hvr-float" href="https://tradeogre.com/exchange/BTC-ACM" target="_blank"><img src="assets/img/logo/exchanges/tradeogre-exchange.svg" class="shadow-svg" alt="TradeOgre"></a>
-                  </div>
-                  <div class="col-6 col-xs-6 col-sm-6 col-md-6 col-lg-4 mx-auto" data-aos="fade-in" data-aos-delay="250" data-aos-duration="1000" data-aos-easing="ease-in-out">
-                     <a class="hvr-float" href="https://crex24.com/exchange/ACM-BTC" target="_blank"><img src="assets/img/logo/exchanges/crex24-exchange.svg" class="shadow-svg" alt="Crex24"></a>
-                  </div>
-                  <div class="col-6 col-xs-6 col-sm-6 col-md-6 col-lg-4 mx-auto" data-aos="fade-in" data-aos-delay="500" data-aos-duration="1000" data-aos-easing="ease-in-out">
-                     <a class="hvr-float" href="https://github.com/bisq-network/bisq/releases/latest" target="_blank"><img src="assets/img/logo/exchanges/bisq-exchange.svg" class="shadow-svg" alt="Bisq"></a>
-                  </div>
-                  <div class="col-6 col-xs-6 col-sm-6 col-md-6 col-lg-4 mx-auto" data-aos="fade-in" data-aos-delay="750" data-aos-duration="1000" data-aos-easing="ease-in-out">
-                     <a class="hvr-float" href="https://bitfex.trade/en/ACM/BTC" target="_blank"><img src="assets/img/logo/exchanges/bitfex-exchange.svg" class="shadow-svg" alt="Bitfex"></a>
-                  </div>
-                  <div class="col-6 col-xs-6 col-sm-6 col-md-6 col-lg-4 mx-auto" data-aos="fade-in" data-aos-delay="750" data-aos-duration="1000" data-aos-easing="ease-in-out">
-                     <a class="hvr-float" href="https://www.myqbtc.com/trade?symbol=ACM_CNYT" target="_blank"><img src="assets/img/logo/exchanges/qbtc-exchange.png" class="shadow-svg" alt="Qbtc"></a>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <!-- /.Exchanges -->
-         <!-- Roadmap -->
-         <section id="roadmap" class="section bg-2 text-1" style="background-image: linear-gradient(0deg, #172539 0%, #0b1726 100%);">
-            <div class="container">
-               <header class="section-header" data-aos="fade-down">
-                  <h2>Retroactive Roadmap</h2>
-                  <hr>
-                  <p class="lead">This timeline shows upcoming, current, and past activities.</p>
-               </header>
-               <div class="row" data-aos="fade-up">
-                  <div class="col-lg-8 mx-auto">
-                     <ol class="timeline">
-                        <li class="timeline-item" data-aos="fade-in">
-                           <p class="small-2"><time datetime="2018-04">Q2 2018</time></p>
-                           <h5 class="timeline-title display-5">Genesis</h5>
-                           <p class="timeline-p">
-                              Actinium wallet for <a href="https://github.com/Actinium-project/Actinium/releases/download/v0.18.3.1/Actinium.zip" target="_blank">Windows</a><br>
-                              Actinium wallet for <a href="https://github.com/Actinium-project/Actinium/releases/download/v0.18.3.1/Actinium-Qt.dmg" target="_blank">Mac</a><br>
-                              Actinium wallet for <a href="https://github.com/Actinium-project/Actinium/archive/v0.18.3.1.tar.gz" target="_blank">Linux</a><br>
-                              <a href="http://explorer.actinium.org/" target="_blank">Actinium explorer</a><br>
-                              Actinium <a href="https://goldmine.actinium.org/" target="_blank">GoldMine Pool</a> <i>(1% fee goes to Bounty pool)</i><br>
-                              <a href="https://play.google.com/store/apps/details?id=org.acpay" target="_blank">AcPay</a>, wallet for Android<br>
-                              Listed on <a href="https://bitfex.trade/en/ACM/BTC" target="_blank">Bitfex</a> exchange<br>
-                              <a href="https://github.com/LedgerHQ/ledger-app-btc/pull/50" target="_blank">Ledger Nano</a> wallet integration code<br>
-                              <b>Tor</b> integration<br>
-                           </p>
-                        </li>
-                        <li class="timeline-item" data-aos="fade-in">
-                           <p class="small-2"><time datetime="2018-07">Q3 2018</time></p>
-                           <h5 class="timeline-title display-5">Pre Bitcoin dump</h5>
-                           <p class="timeline-p">
-                              <a href="https://t.me/actiniumdiscussions" target="_blank">Telegram</a> channel &amp; groups<br>
-                              Listed on <a href="https://tradeogre.com/exchange/BTC-ACM" target="_blank">TradeOgre</a> exchange<br>
-                              Listed on <a href="https://www.livecoinwatch.com/price/Actinium-ACM" target="_blank">LiveCoinWatch</a><br>
-                              Listed on <a href="https://delta.app/" target="_blank">Delta</a> portfolio<br>
-                              Listed on <a href="https://blockfolio.com/" target="_blank">Blockfolio</a> portfolio<br>
-                              <a href="https://github.com/Actinium-project/Actinium/commit/14350a6679081d9d4d02d4f327540eb6a9e682d6" target="_blank">Hard fork to Lyra2z algorithm</a><br>
-                              <a href="https://paperwallet.actinium.org/?currency=Actinium" target="_blank">Paper wallet</a><br>
-                              <a href="https://github.com/Actinium-project/electrum-actinium" target="_blank">Electrum</a> client for Actinium<br>
-                              Published <a href="https://actinium.org/pdf/bluepaper-compressed.pdf" target="_blank">BluePaper</a><br>
-                              <b>Segwit</b> activation<br>
-                              <a id="LNroadmap" href="https://github.com/Actinium-project/acm-lightning" target="_blank">Lightning Network</a><br>
-                              Port of <a href="https://ln-explorer.actinium.org/" target="_blank">recksplorer</a> <i>(for ACM's Lightning Network explorer)</i><br>
-                              Adaptation of <a href="https://github.com/Actinium-project/spark-wallet" target="_blank">Spark Wallet</a> <i>(for ACM's Lightning Network)</i>
-                           </p>
-                        </li>
-                        <li class="timeline-item" data-aos="fade-in">
-                           <p class="small-2"><time datetime="2018-10">Q4 2018</time></p>
-                           <h5 class="timeline-title display-5">Christmas REKT time</h5>
-                           <p class="timeline-p">
-                              Listed on <a href="https://crex24.com/exchange/ACM-BTC" target="_blank">Crex24</a> exchange<br>
-                              Listed on <a href="https://coinmarketcap.com/currencies/actinium/" target="_blank">CoinMarketCap</a><br>
-                              <a href="https://github.com/trezor/trezor-core/commit/342c3646e18fcfb43644bdc14a32e733c334b7ea" target="_blank">Trezor</a> integration code<br>
-                              Integration in <a href="https://github.com/Actinium-project/btcpayserver" target="_blank">BTCPayServer</a><br>
-                              Actinium Wallet, wallet for <a href="https://play.google.com/store/apps/details?id=org.actinium.acmcopay" target="_blank">Android</a> &amp; <a href="https://itunes.apple.com/us/app/actinium-wallet/id1441925845" target="_blank">iOS</a><br>
-                              ACM port of <a href="https://github.com/Actinium-project/acm-bcoin" target="_blank">bcoin</a><br>
-                              <a href="https://github.com/Actinium-project/vanitygen-plus" target="_blank">Vanitygen plus</a> for address generation<br>
-                              Listed on <a href="https://github.com/bisq-network/bisq/releases/latest" target="_blank">Bisq</a> decentralized exchange<br>
-                              Incorporated an <a href="https://beta.companieshouse.gov.uk/company/11707932" target="_blank">LTD in London, UK</a>
-                           </p>
-                        </li>
-                        <li class="timeline-item" data-aos="fade-in">
-                           <p class="small-2"><time datetime="2019-01">Q1 2019</time></p>
-                           <h5 class="timeline-title display-5">Who's REKT?</h5>
-                           <p class="timeline-p">
-                              Opened a <a href="https://actinium.store" target="_blank">Store</a> for selling Full Nodes<br/>
-                              Ported <a href="https://github.com/Actinium-project/lnd" target="_blank">LND</a>, a lightning network daemon<br/>
-                              Ported <a href="https://github.com/Actinium-project/acmd" target="_blank">ACMD</a>, an alternative wallet<br/>
-                              Ported <a href="https://github.com/Actinium-project/atomicswap" target="_blank">Atomic Swaps</a><br/>
-                           </p>
-                        </li>
-                     </ol>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <!-- ./Roadmap -->
-         <!-- Team -->
-         <section id="team" class="section bg-2 text-1" style="background-image: linear-gradient(180deg, #172539 0%, #0b1726 100%);">
-            <div class="container">
-               <header class="section-header text-1" data-aos="fade-down">
-                  <h2>Meet the team</h2>
-                  <hr>
-                  <p class="lead">Unlike many other altcoins <strong>we are not anonymous.</strong>
-                     <br>
-                     We think that investors have a right to know the people representing the coin. Yes, the standard excuse is very often 'But Satoshi never revealed himself'.
-                     However, unlike us, who are building things based on Bitcoin's original code, Satoshi created something extraordinary and he/she/they had every right to remain hidden.
-                  </p>
-               </header>
-               <div class="row gap-y">
-                  <div class="col-md-6 col-lg-3 team-1" data-aos="fade-in" data-aos-delay="250" data-aos-duration="1000" data-aos-easing="ease-in-out">
-                     <a>
-                     <img src="assets/img/team/brakmic-harris-175px.jpg" class="shadow-svg" alt="Harris Brakmic">
-                     </a>
-                     <h6>Harris Brakmic <small class="team-role">Founder</small></h6>
-                     <p>Software gardener.</p>
-                     <div class="social social-gray">
-                        <a class="social-twitter" href="https://twitter.com/brakmic" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a class="social-github" href="#" target="_blank"><i class="fab fa-github"></i></a>
-                        <a class="social-stackoverflow" href="#" target="_blank"><i class="fab fa-stack-overflow"></i></a>
-                        <a class="social-website" href="#" target="_blank"><i class="fa fa-globe"></i></a>
-                     </div>
-                  </div>
-                  <div class="col-md-6 col-lg-3 team-1" data-aos="fade-in" data-aos-delay="500" data-aos-duration="1000" data-aos-easing="ease-in-out">
-                     <a>
-                     <img src="assets/img/team/pablo-caceres-175px.jpg" class="shadow-svg" alt="Pablo Cáceres">
-                     </a>
-                     <h6>Pablo Cáceres <small class="team-role">Web Designer</small></h6>
-                     <p>Web maintainer. Fan of 360º photography.</p>
-                     <div class="social social-gray">
-                        <a class="social-twitter" href="https://twitter.com/ACM_cancaB" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a class="social-linkedin" href="https://www.linkedin.com/in/pablo-caceres-diaz/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                     </div>
-                  </div>
-                  <div class="col-md-6 col-lg-3 team-1" data-aos="fade-in" data-aos-delay="750" data-aos-duration="1000" data-aos-easing="ease-in-out">
-                     <a>
-                     <img src="assets/img/team/milosnes-175px.jpg" class="shadow-svg" alt="Milosnes">
-                     </a>
-                     <h6>Milosnes <small class="team-role">Community Leader</small></h6>
-                     <p>Mining expert/support, ask him anything.</p>
-                     <div class="social social-gray">
-                        <a class="social-twitter" href="https://twitter.com/Milos756" target="_blank"><i class="fab fa-twitter"></i></a>
-                     </div>
-                  </div>
-                  <div class="col-md-6 col-lg-3 team-1" data-aos="fade-in" data-aos-delay="1000" data-aos-duration="1000" data-aos-easing="ease-in-out">
-                     <a>
-                     <img src="assets/img/team/bronson-chapman-175px.jpg" class="shadow-svg" alt="Bronson Chapman">
-                     </a>
-                     <h6>Bronson Chapman <small class="team-role">Lead Editor</small></h6>
-                     <p>I like books and making words Go.</p>
-                     <div class="social social-gray">
-                        <a class="social-twitter" href="https://twitter.com/HookBTC" target="_blank"><i class="fab fa-twitter"></i></a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <!-- ./Team -->
-      </main>
-      <!-- Footer -->
-      <footer class="footer bg-1">
-         <div class="container">
-            <div class="row gap-y align-items-center">
-               <div class="col-6 col-lg-6 mx-auto">
-                  <p class="m-0 text-center text-white">Copyright © 2019 - <b><a href="https://beta.companieshouse.gov.uk/company/11707932" target="_blank">The Actinium Project Ltd</a></b></p>
-                  <p class="m-0 text-center text-white"><a href="privacy-policy.html">Privacy policy</a> - <a href="data-security.html">Data security</a></p>
-               </div>
-            </div>
-         </div>
-      </footer>
-      <!-- /.footer -->
-      <!-- Offcanvas - Menu -->
-      <div id="offcanvas-menu" class="offcanvas text-white w-300 px-7 bg-1" data-animation="slide-right" style="border-right: 2px solid #21e6c1;">
-         <button type="button" class="close position-static px-0" data-dismiss="offcanvas" aria-label="Close">
-         <span aria-hidden="true">&times;</span>
-         </button>
-         <nav class="nav nav-lead flex-column">
-            <a class="nav-link min-width hvr-underline-from-left" href="#about">About</a>
-            <a class="nav-link min-width hvr-underline-from-left" href="#wallets">Wallets</a>
-            <a class="nav-link min-width hvr-underline-from-left" href="#miner">Mining & Pools</a>
-            <a class="nav-link min-width hvr-underline-from-left" href="#explorer">Explorers</a>
-            <a class="nav-link min-width hvr-underline-from-left" href="#exchanges">Exchanges</a>
-            <a class="nav-link min-width hvr-underline-from-left" href="#roadmap">Roadmap</a>
-            <a class="nav-link min-width hvr-underline-from-left" href="#team">Team</a>
-            <br>
-            <a class="nav-link min-width hvr-underline-from-left" href="https://discord.actinium.org/" target="_blank"><i class="fab fa-discord mr-2"></i>Discord</a>
-            <a class="nav-link min-width hvr-underline-from-left" href="https://www.reddit.com/r/ActiniumCrypto/" target="_blank"><i class="fab fa-reddit mr-2"></i>Reddit</a>
-            <a class="nav-link min-width hvr-underline-from-left" href="https://t.me/actiniumdiscussions" target="_blank"><i class="fab fa-telegram mr-2"></i>Telegram</a>
-            <a class="nav-link min-width hvr-underline-from-left" href="https://twitter.com/ActiniumCrypto" target="_blank"><i class="fab fa-twitter mr-2"></i>Twitter</a>
-            <a class="nav-link min-width hvr-underline-from-left" href="https://github.com/Actinium-project" target="_blank"><i class="fab fa-github mr-2"></i>Github</a>
-            <br>
-            <a class="nav-link min-width hvr-underline-from-left" href="https://bitcointalk.org/index.php?topic=4300440.0" target="_blank"><i class="fab fa-bitcoin mr-2"></i>BTCtalk ANN</a>
-         </nav>
-      </div>
-      <!-- Scripts -->
-      <script src="assets/js/jquery.js"></script>
-      <script src="assets/js/page.min.js"></script>
-      <script src="assets/js/script.js"></script>
-      <script type="text/javascript" src="assets/plugin/jquery.countto.js"></script>
-      <script type="text/javascript" src="assets/js/stats.js"></script>
-      <script src="assets/js/jquery-eu-cookie-law-popup.js"></script>
-   </body>
+			$(document).bind("user_cookie_consent_changed", function(event, object) {
+			  const userConsentGiven = $(object).attr('consent');
+			  if (userConsentGiven) {
+			    // User clicked on enabling cookies. Now it’s safe to call the
+			    // init functions.
+			    initialiseGoogleAnalytics();
+			  }
+			});
+		</script>
+		<meta name="google-site-verification" content="s1ds4cRPDRGlm2HjhBJGNFJcCBLbJlcA8TaWqQF24Jk" />
+		<link rel="apple-touch-icon" sizes="57x57" href="assets/img/logo/apple/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="assets/img/logo/apple/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="assets/img/logo/apple/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="assets/img/logo/apple/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="assets/img/logo/apple/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="assets/img/logo/apple/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="assets/img/logo/apple/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="assets/img/logo/apple/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="assets/img/logo/apple/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="assets/img/logo/android/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+		<link rel="manifest" href="manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+		<meta name="theme-color" content="#0b1726">
+		<meta name="application-name" content="Actinium" />
+		<meta name="msapplication-config" content="browserconfig.xml">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<link rel="icon" href="favicon.ico">
+		<!-- Styles -->
+		<link href="assets/css/page.css" rel="stylesheet">
+		<link href="assets/css/style.css" rel="stylesheet">
+		<link href="assets/css/hover.css" rel="stylesheet">
+		<link href="custom.css" rel="stylesheet">
+		<link href="buttons.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="assets/css/jquery-eu-cookie-law-popup.css">
+		<title>Actinium | Cryptocurrency - Lightning Network</title>
+	</head>
+	<body class="eupopup eupopup-bottom">
+		<!-- Cookies -->
+		<!-- ./Cookies -->
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-lg navbar-light" data-navbar="smart">
+			<div class="container">
+				<nav class="nav nav-inline nav-navbar">
+					<a class="nav-link lead-3" href="#" data-toggle="offcanvas" data-target="#offcanvas-menu">&#9776;</a>
+				</nav>
+				<div class="navbar-left mr-auto">
+					<a class="navbar-brand" href="https://actinium.org">
+					<img class="logo-dark" src="assets/img/logo/actinium-header.svg" alt="logo">
+					<img class="logo-light" src="assets/img/logo/actinium-header.svg" alt="logo">
+					</a>
+				</div>
+				<div>
+					<a class="btn btn-sm btn-round btn-info" href="https://discord.actinium.org/" target="_blank"><i class="fab fa-discord mr-2"></i>Discord</a>
+				</div>
+			</div>
+		</nav>
+		<!-- /.navbar -->
+		<!-- Header -->
+		<header class="header text-center text-1 h-fullscreen overflow-hidden" style="background-image: linear-gradient(0deg, #172539 0%, #0b1726 100%);">
+			<canvas class="constellation" data-color="#21E6C1" data-length="100" data-radius="50"></canvas>
+			<div class="container position-static">
+				<div class="row align-items-center h-100">
+					<div class="col-sm-10 col-md-10 col-lg-10 mx-auto">
+						<div class="row align-items-center">
+							<div class="col-6 col-sm-3 col-md-3 col-lg-2 mx-auto mb-5" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" data-aos-easing="ease-in-out">
+								<a class="hvr-float"><img src="assets/img/logo/actinium-logo-slider.svg" class="shadow-svg" alt="Actinium"></a>
+							</div>
+						</div>
+						<h1 class="display-5 fw-400 pb-3" data-aos="fade-in" data-aos-delay="250" data-aos-duration="1000" data-aos-easing="ease-in-out"><strong class="fw-600">Actinium</strong> project</h1>
+						<h2 class="display-6 pb-5" data-aos="fade-in" data-aos-delay="250" data-aos-duration="1000" data-aos-easing="ease-in-out" style="color: #21E6C1;"><span class="fw-200 pl-2" data-typing="#Lightning Network,#Atomic Swaps,#Tor,#POW,#Lyra2z" data-type-speed="80"></span></h2>
+						<div data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" data-aos-easing="ease-in-out">
+							<a class="btn btn-xl btn-round btn-custom-green mb-3 mr-1 ml-1" href="#wallets">Download</a>
+							<a class="btn btn-xl btn-round btn-custom-blue mb-3 mr-1 ml-1" href="pdf/bluepaper-compressed.pdf" target="_blank">BluePaper</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- /.header -->
+		<!-- Main Content -->
+		<main class="main-content">
+			<!-- Stats counter -->
+			<section id="stats" class="section bg-2 text-white">
+				<!-- News -->
+				<div class="container mb-5">
+					<div class="row">
+						<div class="col-10 col-sm-12 col-md-12 col-lg-6 mx-auto" data-aos="fade-in" data-aos-delay="0" data-aos-duration="1000" data-aos-easing="ease-in-out">
+							<div class="alert alert-news text-center" role="alert">
+								<strong>NEWS!</strong>
+								<br>
+								Actinium has been listed on <a class="news-link" href="https://www.qbtc.ink/" target="_blank">QBTC</a> exchange!
+								<br>
+								You can trade using <a class="news-link" href="https://www.qbtc.ink/trade?symbol=ACM_CNYT" target="_blank">CNYT</a> and <a class="news-link" href="https://www.qbtc.ink/trade?symbol=ACM_USDT" target="_blank">USDT</a> pairs.
+								<br>
+								<br>
+								Happy trading!
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /.News -->
+				<div class="container">
+					<div class="row gap-y">
+						<div class="w-100"></div>
+						<div class="col-10 col-xs-6 col-sm-6 col-md-6 col-lg-3 mx-auto text-center shadow-svg" data-aos="fade-in" data-aos-delay="0" data-aos-duration="1000" data-aos-easing="ease-in-out">
+							<div class="rounded-md stats-bg p-2">
+								<p>Price</p>
+								<h3 class="m-0"><span id="price" data-from="0" data-to="" data-refresh-interval="80" data-speed="3000" data-comma="true"></span>&nbsp;sat</h3>
+							</div>
+						</div>
+						<div class="col-10 col-xs-6 col-sm-6 col-md-6 col-lg-3 mx-auto text-center shadow-svg" data-aos="fade-in" data-aos-delay="250" data-aos-duration="1000" data-aos-easing="ease-in-out">
+							<div class="rounded-md stats-bg p-2">
+								<p>Market cap</p>
+								<h3 class="m-0"><span id="marketcap" data-from="0" data-to="" data-refresh-interval="80" data-speed="3000" data-comma="true"></span>&nbsp;$</h3>
+							</div>
+						</div>
+						<div class="col-10 col-xs-6 col-sm-6 col-md-6 col-lg-3 mx-auto text-center shadow-svg" data-aos="fade-in" data-aos-delay="500" data-aos-duration="1000" data-aos-easing="ease-in-out">
+							<div class="rounded-md stats-bg p-2">
+								<p>Current supply</p>
+								<h3 class="m-0"><span id="supply" data-from="0" data-to="" data-refresh-interval="80" data-speed="3000" data-comma="true"></span>&nbsp;ACM</h3>
+							</div>
+						</div>
+						<div class="col-10 col-xs-6 col-sm-6 col-md-6 col-lg-3 mx-auto text-center shadow-svg" data-aos="fade-in" data-aos-delay="750" data-aos-duration="1000" data-aos-easing="ease-in-out">
+							<div class="rounded-md stats-bg p-2">
+								<p>Hashrate</p>
+								<h3 class="m-0"><span id="hashrate" data-from="0" data-to="" data-refresh-interval="80" data-speed="3000" data-comma="true"></span>&nbsp;GH/s</h3>
+							</div>
+						</div>
+						<div class="col-10 col-xs-8 col-sm-8 col-md-8 col-lg-3 mx-auto text-center" data-aos="fade-in" data-aos-delay="1000" data-aos-duration="1000" data-aos-easing="ease-in-out">
+							<div class="p-2">
+								<p>How profitable is to mine Actinium?</p>
+								<a class="btn btn-xl btn-round btn-custom-pink mb-3 mr-1 ml-1" href="https://whattomine.com/coins/290-acm-lyra2z" target="_blank"><i class="fas fa-calculator mr-2"></i>WhatToMine</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- ./Stats counter -->
+			<!-- About -->
+			<section id="about" class="section overflow-hidden bg-2" style="background-image: linear-gradient(180deg, #172539 0%, #0b1726 100%);">
+				<div class="container">
+					<header class="section-header text-1" data-aos="fade-down">
+						<h2>What is Actinium?</h2>
+						<hr>
+						<p class="lead">A small intro to our project</p>
+					</header>
+					<div class="row tab-content h-100 text-1">
+						<div class="col-xs-12 col-sm-12 col-md-6 text-center text-sm-left" data-aos="fade-in" data-aos-delay="0" data-aos-duration="1000" data-aos-easing="ease-in-out">
+							<p><b>Actinium</b> is a cryptocurrency designed to be <b>convenient, functional and secure.</b>
+								<br><br>Featuring an active <b>Lightning Network, Hardware Wallet integration, Mobile Wallets, Tor Browser capabilities,</b> as well as maintaining a heavy focus on <b>education and every day application,</b> Actinium aims to make blockchain technology useful for everyone.
+								<br><br><b>The Actinium Network</b> is dedicated to sustaining a foundation of <b>transparency and trust,</b> which is why the project was <b>launched fairly,</b> meaning there is <b>no pre-mine, no ICO, no pre-launch funding and no developer rewards</b> of any sort associated with this project—whatsoever.
+							</p>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-6 text-center text-sm-left" data-aos="fade-in" data-aos-delay="250" data-aos-duration="1000" data-aos-easing="ease-in-out">
+							<p>Additionally, Actinium is completely decentralized featuring an <b>open-source codebase</b> available for review, critique, and change from anyone.
+								<br><br>The full breadth of the blockchain industry has yet to be realized which is why <b>the development of Actinium remains perpetual and ever-expanding.</b>
+								<br><br>Designed to continuously incorporate innovative new features accordingly. The future of blockchain technology is bright and The Actinium Network strives to be equally radiant by <b>ensuring its users have access to all the advantages this industry has to offer, both now and in the future.</b>
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- ./About -->
+			<!-- Specs -->
+			<section id="specs" class="section overflow-hidden bg-1">
+				<div class="container">
+					<header class="section-header text-1" data-aos="fade-down">
+						<h2>Specs</h2>
+						<hr>
+						<p class="lead">Maximum supply of <strong>84.000.000 ACM</strong>, block time of <strong>2.5 minutes</strong>, using the <strong>Lyra2z algorithm</strong> and halving every <strong>840.000 blocks.</strong> Block difficulty adjusted using <strong>LWMA</strong> on every block.</p>
+					</header>
+					<div class="row gap-y text-center">
+						<div class="col-md-4 col-xl-4 feature-1" data-aos="fade-in" data-aos-delay="250" data-aos-duration="1000" data-aos-easing="ease-in-out">
+							<p class="fa-stack fa-2x">
+								<i class="fas fa-ban fa-stack-2x gradient-icon"></i>
+								<i class="fas fa-cubes fa-stack-1x gradient-icon"></i>
+							</p>
+							<h3 class="text-1">No premine</h3>
+						</div>
+						<div class="col-md-4 col-xl-4 feature-1" data-aos="fade-in" data-aos-delay="500" data-aos-duration="1000" data-aos-easing="ease-in-out">
+							<p class="feature-icon"><i class="fas fa-rocket gradient-icon"></i></p>
+							<h3 class="text-1">Fair Launch</h3>
+						</div>
+						<div class="col-md-4 col-xl-4 feature-1" data-aos="fade-in" data-aos-delay="750" data-aos-duration="1000" data-aos-easing="ease-in-out">
+							<p class="fa-stack fa-2x">
+								<i class="fas fa-ban fa-stack-2x gradient-icon"></i>
+								<i class="fas fa-coins fa-stack-1x gradient-icon"></i>
+							</p>
+							<h3 class="text-1">No ICO</h3>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- ./Specs -->
+			<!-- Wallets -->
+			<section id="wallets" class="section overflow-hidden bg-2" style="background-image: linear-gradient(0deg, #172539 0%, #0b1726 100%);">
+				<div class="container">
+					<header class="section-header text-1" data-aos="fade-down">
+						<h2>Downloads</h2>
+						<hr>
+						<p class="lead">Wallets for any platform</p>
+					</header>
+					<ul class="nav nav-tabs-outline shadow-svg" data-aos="fade-in">
+						<li class="nav-item">
+							<a class="nav-link active" href="#wallet-windows" data-toggle="tab"><i class="fab fa-windows mr-2"></i>Windows</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#wallet-linux" data-toggle="tab"><i class="fab fa-linux mr-2"></i>Linux</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" href="#wallet-mac"><i class="fab fa-apple mr-2"></i>Mac</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" href="#wallet-android"><i class="fab fa-android mr-2"></i>Android</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" href="#wallet-ios"><i class="fab fa-apple mr-2"></i>iOS</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" href="#wallet-paperwallet"><i class="fa fa-scroll mr-2"></i>Paper wallet</a>
+						</li>
+					</ul>
+					<br><br>
+					<div>
+						<div class="row tab-content h-100 text-1" data-aos="fade-in" data-aos-delay="0" data-aos-duration="1000" data-aos-easing="ease-in-out">
+							<!-- WALLET WINDOWS -->
+							<div class="tab-pane fade show active text-center" id="wallet-windows">
+								<div class="col-xs-12 col-sm-12 col-md-4 pt-3 pb-3 feature-1">
+									<p class="feature-icon"><i class="fab fa-windows gradient-icon"></i></p>
+									<h1 class="fw-600">Windows wallet</h1>
+									<small>Current version: 0.19.0.2</small>
+									<br>
+									<br>
+									<a class="btn btn-md btn-round btn-custom-green mb-3 mr-1 ml-1 text-center" href="https://github.com/Actinium-project/Actinium-ng/releases/download/v0.19.0.2/Actinium.zip" target="_blank">Actinium NG</a>
+									<a class="btn btn-md btn-round btn-custom-light mb-3 mr-1 ml-1 text-center" href="https://github.com/Actinium-project/Actinium/releases/download/v0.18.4.0/Actinium.zip" target="_blank">Actinium Legacy</a>
+								</div>
+								<div class="col-xs-12 col-sm-12 col-md-8 text-left pt-3 pb-3">
+									<ol class="step">
+										<li class="step-item">
+											<div class="step-icon">
+												<span class="iconbox">1</span>
+											</div>
+											<div class="step-content">
+												<h6><strong>Download the wallet</strong></h6>
+												<p>Always download the wallet from our website or from our Github repository!</p>
+											</div>
+										</li>
+										<li class="step-item">
+											<div class="step-icon">
+												<span class="iconbox">2</span>
+											</div>
+											<div class="step-content">
+												<h6><strong>Extract the files to your desired folder</strong></h6>
+											</div>
+										</li>
+										<li class="step-item">
+											<div class="step-icon">
+												<span class="iconbox">3</span>
+											</div>
+											<div class="step-content">
+												<h6><strong>Running the wallet</strong></h6>
+												<p>Run <b>Actinium-qt</b> then select the folder for your blockchain and wait for synchronisation to finish.
+													Remember to encrypt your <i>wallet.dat</i> and save your keys and mnemonic seed in a safe place.
+												</p>
+											</div>
+										</li>
+									</ol>
+								</div>
+							</div>
+							<!-- WALLET LINUX -->
+							<div class="tab-pane fade text-center" id="wallet-linux">
+								<div class="col-xs-12 col-sm-12 col-md-4 pt-3 pb-3 feature-1">
+									<p class="feature-icon"><i class="fab fa-linux gradient-icon"></i></p>
+									<h1 class="fw-600">Linux sources</h1>
+									<small>Current version: 0.19.0.2</small>
+									<br>
+									<br>
+									<a class="btn btn-md btn-round btn-custom-green mb-3 mr-1 ml-1 text-center" href="https://github.com/Actinium-project/Actinium-ng/archive/v0.19.0.2.tar.gz" target="_blank">Actinium NG</a>
+									<a class="btn btn-md btn-round btn-custom-pink mb-3 mr-1 ml-1 text-center" href="https://github.com/Actinium-project/actinium-ng-docker" target="_blank">Docker</a>
+									<a class="btn btn-md btn-round btn-custom-light mb-3 mr-1 ml-1 text-center" href="https://github.com/Actinium-project/Actinium/archive/v0.18.4.0.tar.gz" target="_blank">Actinium Legacy</a>
+								</div>
+								<div class="col-xs-12 col-sm-12 col-md-8 text-left pt-3 pb-3">
+									<ol class="step">
+										<li class="step-item">
+											<div class="step-icon">
+												<span class="iconbox">1</span>
+											</div>
+											<div class="step-content">
+												<h6><strong>Download the wallet</strong></h6>
+												<p>Always download the wallet from our website or from our Github repository!</p>
+											</div>
+										</li>
+										<li class="step-item">
+											<div class="step-icon">
+												<span class="iconbox">2</span>
+											</div>
+											<div class="step-content">
+												<h6><strong>Compile the wallet</strong></h6>
+												<p>Check out our tutorials on building under Linux in our GitHub.</p>
+											</div>
+										</li>
+										<li class="step-item">
+											<div class="step-icon">
+												<span class="iconbox">3</span>
+											</div>
+											<div class="step-content">
+												<h6><strong>Running the wallet</strong></h6>
+												<p>Run <b>Actinium-qt</b> then select the folder for your blockchain and wait for synchronisation to finish.
+													Remember to encrypt your <i>wallet.dat</i> and save your keys and mnemonic seed in a safe place.
+												</p>
+											</div>
+										</li>
+									</ol>
+								</div>
+							</div>
+							<!-- WALLET MAC -->
+							<div class="tab-pane fade text-center" id="wallet-mac">
+								<div class="col-xs-12 col-sm-12 col-md-4 pt-3 pb-3 feature-1">
+									<p class="feature-icon"><i class="fab fa-apple gradient-icon"></i></p>
+									<h1 class="fw-600">macOS wallet</h1>
+									<small>Current version: 0.19.0.2</small>
+									<br>
+									<br>
+									<a class="btn btn-md btn-round btn-custom-green mb-3 mr-1 ml-1 text-center" href="https://github.com/Actinium-project/Actinium-ng/releases/download/v0.19.0.2/Actinium-Qt.dmg" target="_blank">Actinium NG</a>
+									<a class="btn btn-md btn-round btn-custom-light mb-3 mr-1 ml-1 text-center" href="https://github.com/Actinium-project/Actinium/releases/download/v0.18.4.0/Actinium-Qt.dmg" target="_blank">Actinium Legacy</a>
+								</div>
+								<div class="col-xs-12 col-sm-12 col-md-8 text-left pt-3 pb-3">
+									<ol class="step">
+										<li class="step-item">
+											<div class="step-icon">
+												<span class="iconbox">1</span>
+											</div>
+											<div class="step-content">
+												<h6><strong>Download the wallet</strong></h6>
+												<p>Always download the wallet from our website or from our Github repository!</p>
+											</div>
+										</li>
+										<li class="step-item">
+											<div class="step-icon">
+												<span class="iconbox">2</span>
+											</div>
+											<div class="step-content">
+												<h6><strong>Open the DMG file and follow instructions.</strong></h6>
+											</div>
+										</li>
+										<li class="step-item">
+											<div class="step-icon">
+												<span class="iconbox">3</span>
+											</div>
+											<div class="step-content">
+												<h6><strong>Run the wallet</strong></h6>
+												<p>Run <b>Actinium-qt</b> then select the folder for your blockchain and wait for synchronisation to finish.
+													Remember to encrypt your <i>wallet.dat</i> and save your keys and mnemonic seed in a safe place.
+												</p>
+											</div>
+										</li>
+									</ol>
+								</div>
+							</div>
+							<!-- WALLET ANDROID -->
+							<div class="tab-pane fade text-center" id="wallet-android">
+								<div class="col-xs-12 col-sm-12 col-md-4 pt-3 pb-3 feature-1">
+									<p class="feature-icon"><i class="fab fa-android gradient-icon"></i></p>
+									<h1 class="fw-600">Android wallet</h1>
+									<small>Download on Play Store</small>
+									<br>
+									<br>
+									<a class="btn btn-md btn-round btn-custom-green mb-3 mr-1 ml-1 text-center" href="https://play.google.com/store/apps/details?id=org.actinium.acmcopay" target="_blank">Actinium wallet</a>
+									<a class="btn btn-md btn-round btn-custom-light mb-3 mr-1 ml-1 text-center" href="https://play.google.com/store/apps/details?id=org.acpay" target="_blank">acPay</a>
+								</div>
+								<div class="col-xs-12 col-sm-12 col-md-8 text-left pt-3 pb-3">
+									<ol class="step">
+										<li class="step-item">
+											<div class="step-icon">
+												<span class="iconbox">1</span>
+											</div>
+											<div class="step-content">
+												<h6><strong>Download the wallet</strong></h6>
+												<p>Always download the wallet from Google Play Store.</p>
+											</div>
+										</li>
+										<li class="step-item">
+											<div class="step-icon">
+												<span class="iconbox">2</span>
+											</div>
+											<div class="step-content">
+												<h6><strong>Run the app</strong></h6>
+												<p>Remember to encrypt your wallet and save your keys and mnemonic seed in a safe place.</p>
+											</div>
+										</li>
+									</ol>
+								</div>
+							</div>
+							<!-- WALLET IOS -->
+							<div class="tab-pane fade text-center" id="wallet-ios">
+								<div class="col-xs-12 col-sm-12 col-md-4 pt-3 pb-3 feature-1">
+									<p class="feature-icon"><i class="fab fa-apple gradient-icon"></i></p>
+									<h1 class="fw-600">iOS wallet</h1>
+									<small>Download on iTunes Store</small>
+									<br>
+									<br>
+									<a class="btn btn-md btn-round btn-custom-green mb-3 mr-1 ml-1 text-center" href="https://itunes.apple.com/us/app/actinium-wallet/id1441925845" target="_blank">Actinium wallet</a>
+								</div>
+								<div class="col-xs-12 col-sm-12 col-md-8 text-left pt-3 pb-3">
+									<ol class="step">
+										<li class="step-item">
+											<div class="step-icon">
+												<span class="iconbox">1</span>
+											</div>
+											<div class="step-content">
+												<h6><strong>Download the wallet</strong></h6>
+												<p>Always download the wallet from iTunes Store.</p>
+											</div>
+										</li>
+										<li class="step-item">
+											<div class="step-icon">
+												<span class="iconbox">2</span>
+											</div>
+											<div class="step-content">
+												<h6><strong>Run the app</strong></h6>
+												<p>Remember to encrypt your wallet and save your keys and mnemonic seed in a safe place.</p>
+											</div>
+										</li>
+									</ol>
+								</div>
+							</div>
+							<!-- WALLET PAPER -->
+							<div class="tab-pane fade text-center" id="wallet-paperwallet">
+								<div class="col-xs-12 col-sm-12 col-md-4 pt-3 pb-3 feature-1">
+									<p class="feature-icon"><i class="fa fa-scroll gradient-icon"></i></p>
+									<h1 class="fw-600">Paper wallet</h1>
+									<small>Go to paper wallet website</small>
+									<br>
+									<br>
+									<a class="btn btn-md btn-round btn-custom-green mb-3 mr-1 ml-1 text-center" href="https://paperwallet.actinium.org/?currency=Actinium" target="_blank">Paper wallet</a>
+								</div>
+								<div class="col-xs-12 col-sm-12 col-md-8 text-left pt-3 pb-3">
+									<ol class="step">
+										<li class="step-item">
+											<div class="step-icon">
+												<span class="iconbox">1</span>
+											</div>
+											<div class="step-content">
+												<h6><strong>Go to Actinium Paper wallet website</strong></h6>
+												<p>Make sure that the website shows the information of Actinium.</p>
+											</div>
+										</li>
+										<li class="step-item">
+											<div class="step-icon">
+												<span class="iconbox">2</span>
+											</div>
+											<div class="step-content">
+												<h6><strong>Follow the instructions</strong></h6>
+												<p>Move your mouse or add random characters to increase randomness.</p>
+											</div>
+										</li>
+										<li class="step-item">
+											<div class="step-icon">
+												<span class="iconbox">3</span>
+											</div>
+											<div class="step-content">
+												<h6><strong>Save your keys</strong></h6>
+												<p>Save your keys and mnemonic seed in a safe place.</p>
+											</div>
+										</li>
+									</ol>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- ./Wallets -->
+			<!-- Hardware wallets -->
+			<section id="actilectrum" class="section bg-1 py-7 bg-2">
+				<div class="container text-1">
+					<header class="section-header text-1" data-aos="fade-down">
+						<h2>Actilectrum</h2>
+						<hr>
+						<p class="lead">The lightweight Actinium Wallet</p>
+					</header>
+					<div class="row gap-y text-center">
+						<div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-8 mx-auto text-center" data-aos="fade-in" data-aos-delay="0" data-aos-duration="1000" data-aos-easing="ease-in-out">
+							<p class="lead" data-aos="fade-in" data-aos-delay="0" data-aos-duration="1000" data-aos-easing="ease-in-out">Instead of downloading the whole blockchain <strong>Actilectrum</strong> operates in conjunction with high-performance servers that handle the most complicated parts of the Actinium system. <strong>Your private keys never leave the application.</strong></p>
+						</div>
+					</div>
+					<div class="row gap-y text-center mt-2 mb-2 align-items-center">
+						<div class="col-8 col-xs-8 col-sm-3 col-md-3 col-lg-3 mx-auto order-lg-1 order-md-1 order-sm-1 order-2" data-aos="fade-in" data-aos-delay="0" data-aos-duration="1000" data-aos-easing="ease-in-out">
+							<a class="hvr-float" href="https://trezor.io/" target="_blank"><img src="assets/img/logo/trezor-logo.svg" class="shadow-svg" alt="Trezor"></a>
+						</div>
+						<div class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-6 mx-auto order-lg-2 order-md-2 order-sm-2 order-1" data-aos="fade-in" data-aos-delay="250" data-aos-duration="1000" data-aos-easing="ease-in-out">
+							<a class="btn btn-md btn-round btn-custom-green mb-3 mr-1 ml-1 text-center" href="https://actilectrum.org" target="_blank">Actilectrum website</a>
+						</div>
+						<div class="col-8 col-xs-8 col-sm-3 col-md-3 col-lg-3 mx-auto order-lg-3 order-md-3 order-sm-3 order-3" data-aos="fade-in" data-aos-delay="500" data-aos-duration="1000" data-aos-easing="ease-in-out">
+							<a class="hvr-float" href="https://www.ledger.com/" target="_blank"><img src="assets/img/logo/ledger-logo.svg" class="shadow-svg" alt="Ledger"></a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- /.Hardware wallets -->
+			<!-- Miners and pools -->
+			<section id="miner" class="section overflow-hidden bg-2" style="background-image: linear-gradient(180deg, #172539 0%, #0b1726 100%);">
+				<div class="container">
+					<header class="section-header text-1" data-aos="fade-down">
+						<h2>Mining software and Pools<span></span></h2>
+						<hr>
+						<p class="lead">Are you a miner? Join us!</p>
+					</header>
+					<ul class="nav nav-tabs-outline shadow-svg" data-aos="fade-in">
+						<li class="nav-item">
+							<a class="nav-link active" href="#other-miners" data-toggle="tab"><i class="fas fa-download mr-2"></i>Miners</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#other-pools" data-toggle="tab"><i class="fas fa-globe mr-2"></i>Pools</a>
+						</li>
+					</ul>
+					<br><br>
+					<div>
+						<div class="row tab-content h-100 text-1" data-aos="fade-in" data-aos-delay="0" data-aos-duration="1000" data-aos-easing="ease-in-out">
+							<!-- MINING SOFTWARE -->
+							<div class="tab-pane fade show active text-center" id="other-miners">
+								<div class="col-xs-12 col-sm-12 col-md-4 pt-3 pb-3 feature-1">
+									<p class="feature-icon"><i class="fas fa-download gradient-icon"></i></p>
+									<h1 class="fw-600">Mining software</h1>
+									<small>Download a miner for your architecture: NVIDIA or AMD</small>
+									<br>
+									<br>
+									<a class="btn btn-md btn-round btn-custom-green mb-3 mr-1 ml-1 text-center" href="https://bitcointalk.org/index.php?topic=4432704.0" target="_blank">T-Rex</a>
+									<a class="btn btn-md btn-round btn-custom-pink mb-3 mr-1 ml-1 text-center" href="https://bitcointalk.org/index.php?topic=5027811.0" target="_blank">TeamRedMiner</a>
+								</div>
+							</div>
+							<!-- POOLS -->
+							<div class="tab-pane fade text-center" id="other-pools">
+								<div class="col-xs-12 col-sm-12 col-md-4 pt-3 pb-3 feature-1">
+									<p class="feature-icon"><i class="fas fa-globe gradient-icon"></i></p>
+									<h1 class="fw-600">Mining Pools</h1>
+									<small>Select a pool and start mining</small>
+									<br>
+									<br>
+									<a class="btn btn-md btn-round btn-custom-green mb-3 mr-1 ml-1 text-center" href="https://goldmine.actinium.org/" target="_blank">GoldMine (community pool)</a>
+									<a class="btn btn-md btn-round btn-custom-pink mb-3 mr-1 ml-1 text-center" href="https://www.lyra2z.com/ACM/" target="_blank">Lyra2z</a>
+									<a class="btn btn-md btn-round btn-custom-pink mb-3 mr-1 ml-1 text-center" href="https://poolmin.com/" target="_blank">PoolMin</a>
+									<a class="btn btn-md btn-round btn-custom-pink mb-3 mr-1 ml-1 text-center" href="https://www.nlpool.nl/" target="_blank">NLpool</a>
+									<a class="btn btn-md btn-round btn-custom-light mb-3 mr-1 ml-1 text-center" href="https://miningpoolstats.stream/actinium" target="_blank">Check for more pools!</a>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-8 text-center pt-3 pb-3 feature-1">
+								<p class="feature-icon"><i class="fas fa-broadcast-tower gradient-icon"></i></p>
+								<h1 class="fw-600">Are you an FPGA/ASIC miner?</h1>
+								<small>Actinium welcomes miners who invest in better hardware and technologies.</small>
+								<br>
+								<br>
+								<a class="hvr-float"><img src="assets/img/gpu-fpga-miners.svg" class="shadow-svg" alt="FPGA mining"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- ./Miners and pools -->
+			<!-- Explorer and links -->
+			<section id="explorer" class="section overflow-hidden bg-1">
+				<div class="container">
+					<header class="section-header text-1" data-aos="fade-down">
+						<h2>Explorers and other links</h2>
+						<hr>
+						<p class="lead">Further resources</p>
+					</header>
+					<div class="row gap-y text-center">
+						<div class="col-md-5 col-xl-5 mx-auto feature-1" data-aos="fade-in" data-aos-delay="250" data-aos-duration="1000" data-aos-easing="ease-in-out">
+							<p class="feature-icon"><i class="fas fa-cubes gradient-icon"></i></p>
+							<h3 class="text-1">Explorers</h3>
+							<p class="text-1">Check the current blockchain status</p>
+							<a class="btn btn-md btn-round btn-custom-green mb-3 mr-1 ml-1 text-center" href="http://explorer.actinium.org/" target="_blank">Explorer</a>
+							<a class="btn btn-md btn-round btn-custom-pink mb-3 mr-1 ml-1 text-center" href="http://explorer2.actinium.org/" target="_blank">Explorer 2</a>
+							<a class="btn btn-md btn-round btn-custom-pink mb-3 mr-1 ml-1 text-center" href="http://test-explorer.actinium.org/" target="_blank">Testnet Explorer</a>
+							<a class="btn btn-md btn-round btn-custom-blue mb-3 mr-1 ml-1 text-center" href="https://ln-explorer.actinium.org/" target="_blank">LN Explorer</a>
+							<a class="btn btn-md btn-round btn-custom-light mb-3 mr-1 ml-1 text-center" href="https://chainmapper.com/acm" target="_blank">ChainMapper</a>
+							<a class="btn btn-md btn-round btn-custom-light mb-3 mr-1 ml-1 text-center" href="https://altexplorer.co/coin/acm" target="_blank">AltExplorer</a>
+						</div>
+						<div class="col-md-5 col-xl-5 mx-auto feature-1" data-aos="fade-in" data-aos-delay="500" data-aos-duration="1000" data-aos-easing="ease-in-out">
+							<p class="feature-icon"><i class="fas fa-info-circle gradient-icon"></i></p>
+							<h3 class="text-1">Useful links</h3>
+							<p class="text-1">Some useful data</p>
+							<a class="btn btn-md btn-round btn-custom-green mb-3 mr-1 ml-1 text-center" href="https://coinmarketcap.com/currencies/actinium/" target="_blank">CoinMarketCap</a>
+							<a class="btn btn-md btn-round btn-custom-pink mb-3 mr-1 ml-1 text-center" href="https://www.livecoinwatch.com/price/Actinium-ACM" target="_blank">Live Coin Watch</a>
+							<a class="btn btn-md btn-round btn-custom-blue mb-3 mr-1 ml-1 text-center" href="https://www.coingecko.com/en/coins/actinium" target="_blank">CoinGecko</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- ./Explorer and links -->
+			<!-- Exchanges -->
+			<section id="exchanges" class="section bg-1 py-7 bg-1">
+				<div class="container">
+					<header class="section-header text-1" data-aos="fade-down">
+						<h2>Exchanges</h2>
+						<hr>
+						<p class="lead">You can trade ACM on these exchanges</p>
+					</header>
+					<div class="row gap-y text-center mt-2 mb-2 align-items-center exchange-logos">
+						<div class="col-6 col-xs-6 col-sm-6 col-md-6 col-lg-4 mx-auto" data-aos="fade-in" data-aos-delay="0" data-aos-duration="1000" data-aos-easing="ease-in-out">
+							<a class="hvr-float" href="https://tradeogre.com/exchange/BTC-ACM" target="_blank"><img src="assets/img/logo/exchanges/tradeogre-exchange.svg" class="shadow-svg" alt="TradeOgre"></a>
+						</div>
+						<div class="col-6 col-xs-6 col-sm-6 col-md-6 col-lg-4 mx-auto" data-aos="fade-in" data-aos-delay="250" data-aos-duration="1000" data-aos-easing="ease-in-out">
+							<a class="hvr-float" href="https://crex24.com/exchange/ACM-BTC" target="_blank"><img src="assets/img/logo/exchanges/crex24-exchange.svg" class="shadow-svg" alt="Crex24"></a>
+						</div>
+						<div class="col-6 col-xs-6 col-sm-6 col-md-6 col-lg-4 mx-auto" data-aos="fade-in" data-aos-delay="500" data-aos-duration="1000" data-aos-easing="ease-in-out">
+							<a class="hvr-float" href="https://github.com/bisq-network/bisq/releases/latest" target="_blank"><img src="assets/img/logo/exchanges/bisq-exchange.svg" class="shadow-svg" alt="Bisq"></a>
+						</div>
+						<div class="col-6 col-xs-6 col-sm-6 col-md-6 col-lg-4 mx-auto" data-aos="fade-in" data-aos-delay="750" data-aos-duration="1000" data-aos-easing="ease-in-out">
+							<a class="hvr-float" href="https://bitfex.trade/en/ACM/BTC" target="_blank"><img src="assets/img/logo/exchanges/bitfex-exchange.svg" class="shadow-svg" alt="Bitfex"></a>
+						</div>
+						<div class="col-6 col-xs-6 col-sm-6 col-md-6 col-lg-4 mx-auto" data-aos="fade-in" data-aos-delay="750" data-aos-duration="1000" data-aos-easing="ease-in-out">
+							<a class="hvr-float" href="https://www.myqbtc.com/trade?symbol=ACM_CNYT" target="_blank"><img src="assets/img/logo/exchanges/qbtc-exchange.png" class="shadow-svg" alt="Qbtc"></a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- /.Exchanges -->
+			<!-- Roadmap -->
+			<section id="roadmap" class="section bg-2 text-1" style="background-image: linear-gradient(0deg, #172539 0%, #0b1726 100%);">
+				<div class="container">
+					<header class="section-header" data-aos="fade-down">
+						<h2>Retroactive Roadmap</h2>
+						<hr>
+						<p class="lead">This timeline shows upcoming, current, and past activities.</p>
+					</header>
+					<div class="row" data-aos="fade-up">
+						<div class="col-lg-8 mx-auto">
+							<ol class="timeline">
+								<li class="timeline-item" data-aos="fade-in">
+									<p class="small-2"><time datetime="2018-04">Q2 2018</time></p>
+									<h5 class="timeline-title display-5">Genesis</h5>
+									<p class="timeline-p">
+										Actinium wallet for <a href="https://github.com/Actinium-project/Actinium/releases/download/v0.18.3.1/Actinium.zip" target="_blank">Windows</a><br>
+										Actinium wallet for <a href="https://github.com/Actinium-project/Actinium/releases/download/v0.18.3.1/Actinium-Qt.dmg" target="_blank">Mac</a><br>
+										Actinium wallet for <a href="https://github.com/Actinium-project/Actinium/archive/v0.18.3.1.tar.gz" target="_blank">Linux</a><br>
+										<a href="http://explorer.actinium.org/" target="_blank">Actinium explorer</a><br>
+										Actinium <a href="https://goldmine.actinium.org/" target="_blank">GoldMine Pool</a> <i>(1% fee goes to Bounty pool)</i><br>
+										<a href="https://play.google.com/store/apps/details?id=org.acpay" target="_blank">AcPay</a>, wallet for Android<br>
+										Listed on <a href="https://bitfex.trade/en/ACM/BTC" target="_blank">Bitfex</a> exchange<br>
+										<a href="https://github.com/LedgerHQ/ledger-app-btc/pull/50" target="_blank">Ledger Nano</a> wallet integration code<br>
+										<b>Tor</b> integration<br>
+									</p>
+								</li>
+								<li class="timeline-item" data-aos="fade-in">
+									<p class="small-2"><time datetime="2018-07">Q3 2018</time></p>
+									<h5 class="timeline-title display-5">Pre Bitcoin dump</h5>
+									<p class="timeline-p">
+										<a href="https://t.me/actiniumdiscussions" target="_blank">Telegram</a> channel &amp; groups<br>
+										Listed on <a href="https://tradeogre.com/exchange/BTC-ACM" target="_blank">TradeOgre</a> exchange<br>
+										Listed on <a href="https://www.livecoinwatch.com/price/Actinium-ACM" target="_blank">LiveCoinWatch</a><br>
+										Listed on <a href="https://delta.app/" target="_blank">Delta</a> portfolio<br>
+										Listed on <a href="https://blockfolio.com/" target="_blank">Blockfolio</a> portfolio<br>
+										<a href="https://github.com/Actinium-project/Actinium/commit/14350a6679081d9d4d02d4f327540eb6a9e682d6" target="_blank">Hard fork to Lyra2z algorithm</a><br>
+										<a href="https://paperwallet.actinium.org/?currency=Actinium" target="_blank">Paper wallet</a><br>
+										<a href="https://github.com/Actinium-project/electrum-actinium" target="_blank">Electrum</a> client for Actinium<br>
+										Published <a href="https://actinium.org/pdf/bluepaper-compressed.pdf" target="_blank">BluePaper</a><br>
+										<b>Segwit</b> activation<br>
+										<a id="LNroadmap" href="https://github.com/Actinium-project/acm-lightning" target="_blank">Lightning Network</a><br>
+										Port of <a href="https://ln-explorer.actinium.org/" target="_blank">recksplorer</a> <i>(for ACM's Lightning Network explorer)</i><br>
+										Adaptation of <a href="https://github.com/Actinium-project/spark-wallet" target="_blank">Spark Wallet</a> <i>(for ACM's Lightning Network)</i>
+									</p>
+								</li>
+								<li class="timeline-item" data-aos="fade-in">
+									<p class="small-2"><time datetime="2018-10">Q4 2018</time></p>
+									<h5 class="timeline-title display-5">Christmas REKT time</h5>
+									<p class="timeline-p">
+										Listed on <a href="https://crex24.com/exchange/ACM-BTC" target="_blank">Crex24</a> exchange<br>
+										Listed on <a href="https://coinmarketcap.com/currencies/actinium/" target="_blank">CoinMarketCap</a><br>
+										<a href="https://github.com/trezor/trezor-core/commit/342c3646e18fcfb43644bdc14a32e733c334b7ea" target="_blank">Trezor</a> integration code<br>
+										Integration in <a href="https://github.com/Actinium-project/btcpayserver" target="_blank">BTCPayServer</a><br>
+										Actinium Wallet, wallet for <a href="https://play.google.com/store/apps/details?id=org.actinium.acmcopay" target="_blank">Android</a> &amp; <a href="https://itunes.apple.com/us/app/actinium-wallet/id1441925845" target="_blank">iOS</a><br>
+										ACM port of <a href="https://github.com/Actinium-project/acm-bcoin" target="_blank">bcoin</a><br>
+										<a href="https://github.com/Actinium-project/vanitygen-plus" target="_blank">Vanitygen plus</a> for address generation<br>
+										Listed on <a href="https://github.com/bisq-network/bisq/releases/latest" target="_blank">Bisq</a> decentralized exchange<br>
+										Incorporated an <a href="https://beta.companieshouse.gov.uk/company/11707932" target="_blank">LTD in London, UK</a>
+									</p>
+								</li>
+								<li class="timeline-item" data-aos="fade-in">
+									<p class="small-2"><time datetime="2019-01">Q1 2019</time></p>
+									<h5 class="timeline-title display-5">Who's REKT?</h5>
+									<p class="timeline-p">
+										Opened a <a href="https://actinium.store" target="_blank">Store</a> for selling Full Nodes<br/>
+										Ported <a href="https://github.com/Actinium-project/lnd" target="_blank">LND</a>, a lightning network daemon<br/>
+										Ported <a href="https://github.com/Actinium-project/acmd" target="_blank">ACMD</a>, an alternative wallet<br/>
+										Ported <a href="https://github.com/Actinium-project/atomicswap" target="_blank">Atomic Swaps</a><br/>
+									</p>
+								</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- ./Roadmap -->
+			<!-- Team -->
+			<section id="team" class="section bg-2 text-1" style="background-image: linear-gradient(180deg, #172539 0%, #0b1726 100%);">
+				<div class="container">
+					<header class="section-header text-1" data-aos="fade-down">
+						<h2>Meet the team</h2>
+						<hr>
+						<p class="lead">Unlike many other altcoins <strong>we are not anonymous.</strong>
+							<br>
+							We think that investors have a right to know the people representing the coin. Yes, the standard excuse is very often 'But Satoshi never revealed himself'.
+							However, unlike us, who are building things based on Bitcoin's original code, Satoshi created something extraordinary and he/she/they had every right to remain hidden.
+						</p>
+					</header>
+					<div class="row gap-y">
+						<div class="col-md-6 col-lg-3 team-1" data-aos="fade-in" data-aos-delay="250" data-aos-duration="1000" data-aos-easing="ease-in-out">
+							<a>
+							<img src="assets/img/team/brakmic-harris-175px.jpg" class="shadow-svg" alt="Harris Brakmic">
+							</a>
+							<h6>Harris Brakmic <small class="team-role">Founder</small></h6>
+							<p>Software gardener.</p>
+							<div class="social social-gray">
+								<a class="social-twitter" href="https://twitter.com/brakmic" target="_blank"><i class="fab fa-twitter"></i></a>
+								<a class="social-github" href="#" target="_blank"><i class="fab fa-github"></i></a>
+								<a class="social-stackoverflow" href="#" target="_blank"><i class="fab fa-stack-overflow"></i></a>
+								<a class="social-website" href="#" target="_blank"><i class="fa fa-globe"></i></a>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-3 team-1" data-aos="fade-in" data-aos-delay="500" data-aos-duration="1000" data-aos-easing="ease-in-out">
+							<a>
+							<img src="assets/img/team/pablo-caceres-175px.jpg" class="shadow-svg" alt="Pablo Cáceres">
+							</a>
+							<h6>Pablo Cáceres <small class="team-role">Web Designer</small></h6>
+							<p>Web maintainer. Fan of 360º photography.</p>
+							<div class="social social-gray">
+								<a class="social-twitter" href="https://twitter.com/ACM_cancaB" target="_blank"><i class="fab fa-twitter"></i></a>
+								<a class="social-linkedin" href="https://www.linkedin.com/in/pablo-caceres-diaz/" target="_blank"><i class="fab fa-linkedin"></i></a>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-3 team-1" data-aos="fade-in" data-aos-delay="750" data-aos-duration="1000" data-aos-easing="ease-in-out">
+							<a>
+							<img src="assets/img/team/milosnes-175px.jpg" class="shadow-svg" alt="Milosnes">
+							</a>
+							<h6>Milosnes <small class="team-role">Community Leader</small></h6>
+							<p>Mining expert/support, ask him anything.</p>
+							<div class="social social-gray">
+								<a class="social-twitter" href="https://twitter.com/Milos756" target="_blank"><i class="fab fa-twitter"></i></a>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-3 team-1" data-aos="fade-in" data-aos-delay="1000" data-aos-duration="1000" data-aos-easing="ease-in-out">
+							<a>
+							<img src="assets/img/team/bronson-chapman-175px.jpg" class="shadow-svg" alt="Bronson Chapman">
+							</a>
+							<h6>Bronson Chapman <small class="team-role">Lead Editor</small></h6>
+							<p>I like books and making words Go.</p>
+							<div class="social social-gray">
+								<a class="social-twitter" href="https://twitter.com/HookBTC" target="_blank"><i class="fab fa-twitter"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- ./Team -->
+		</main>
+		<!-- Footer -->
+		<footer class="footer bg-1">
+			<div class="container">
+				<div class="row gap-y align-items-center">
+					<div class="col-6 col-lg-6 mx-auto">
+						<p class="m-0 text-center text-white">Copyright © 2019 - <b><a href="https://beta.companieshouse.gov.uk/company/11707932" target="_blank">The Actinium Project Ltd</a></b></p>
+						<p class="m-0 text-center text-white"><a href="privacy-policy.html">Privacy policy</a> - <a href="data-security.html">Data security</a></p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- /.footer -->
+		<!-- Offcanvas - Menu -->
+		<div id="offcanvas-menu" class="offcanvas text-white w-300 px-7 bg-1" data-animation="slide-right" style="border-right: 2px solid #21e6c1;">
+			<button type="button" class="close position-static px-0" data-dismiss="offcanvas" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+			</button>
+			<nav class="nav nav-lead flex-column">
+				<a class="nav-link min-width hvr-underline-from-left" href="#about">About</a>
+				<a class="nav-link min-width hvr-underline-from-left" href="#wallets">Wallets</a>
+				<a class="nav-link min-width hvr-underline-from-left" href="#miner">Mining & Pools</a>
+				<a class="nav-link min-width hvr-underline-from-left" href="#explorer">Explorers</a>
+				<a class="nav-link min-width hvr-underline-from-left" href="#exchanges">Exchanges</a>
+				<a class="nav-link min-width hvr-underline-from-left" href="#roadmap">Roadmap</a>
+				<a class="nav-link min-width hvr-underline-from-left" href="#team">Team</a>
+				<br>
+				<a class="nav-link min-width hvr-underline-from-left" href="https://discord.actinium.org/" target="_blank"><i class="fab fa-discord mr-2"></i>Discord</a>
+				<a class="nav-link min-width hvr-underline-from-left" href="https://www.reddit.com/r/ActiniumCrypto/" target="_blank"><i class="fab fa-reddit mr-2"></i>Reddit</a>
+				<a class="nav-link min-width hvr-underline-from-left" href="https://t.me/actiniumdiscussions" target="_blank"><i class="fab fa-telegram mr-2"></i>Telegram</a>
+				<a class="nav-link min-width hvr-underline-from-left" href="https://twitter.com/ActiniumCrypto" target="_blank"><i class="fab fa-twitter mr-2"></i>Twitter</a>
+				<a class="nav-link min-width hvr-underline-from-left" href="https://github.com/Actinium-project" target="_blank"><i class="fab fa-github mr-2"></i>Github</a>
+				<br>
+				<a class="nav-link min-width hvr-underline-from-left" href="https://bitcointalk.org/index.php?topic=4300440.0" target="_blank"><i class="fab fa-bitcoin mr-2"></i>BTCtalk ANN</a>
+			</nav>
+		</div>
+		<!-- Scripts -->
+		<script src="assets/js/jquery.js"></script>
+		<script src="assets/js/page.min.js"></script>
+		<script src="assets/js/script.js"></script>
+		<script type="text/javascript" src="assets/plugin/jquery.countto.js"></script>
+		<script type="text/javascript" src="assets/js/stats.js"></script>
+		<script src="assets/js/jquery-eu-cookie-law-popup.js"></script>
+	</body>
 </html>
