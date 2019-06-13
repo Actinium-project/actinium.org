@@ -45,32 +45,8 @@
 		</script>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121419345-1"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			// Don’t call the init functions just yet:
-			// gtag(‘js’, new Date());
-			// gtag(‘config’, ‘UA-XXXXXXXX-1’);
 
-			function initialiseGoogleAnalytics() {
-			  gtag('js', new Date());
-			  gtag('config', 'UA-121419345-1');
-			}
 
-			// Subscribe for the cookie consent events
-			$(document).bind("user_cookie_already_accepted", function(event, object) {
-			  initialiseGoogleAnalytics();
-			});
-
-			$(document).bind("user_cookie_consent_changed", function(event, object) {
-			  const userConsentGiven = $(object).attr('consent');
-			  if (userConsentGiven) {
-			    // User clicked on enabling cookies. Now it’s safe to call the
-			    // init functions.
-			    initialiseGoogleAnalytics();
-			  }
-			});
-		</script>
 		<meta name="google-site-verification" content="s1ds4cRPDRGlm2HjhBJGNFJcCBLbJlcA8TaWqQF24Jk" />
 		<link rel="apple-touch-icon" sizes="57x57" href="assets/img/logo/apple/apple-icon-57x57.png">
 		<link rel="apple-touch-icon" sizes="60x60" href="assets/img/logo/apple/apple-icon-60x60.png">
@@ -849,5 +825,31 @@
 		<script type="text/javascript" src="assets/plugin/jquery.countto.js"></script>
 		<script type="text/javascript" src="assets/js/stats.js"></script>
 		<script src="assets/js/jquery-eu-cookie-law-popup.js"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			// Don’t call the init functions just yet:
+			// gtag(‘js’, new Date());
+			// gtag(‘config’, ‘UA-XXXXXXXX-1’);
+
+			function initialiseGoogleAnalytics() {
+				gtag('js', new Date());
+				gtag('config', 'UA-121419345-1');
+			}
+
+			// Subscribe for the cookie consent events
+			$(document).bind("user_cookie_already_accepted", function(event, object) {
+				initialiseGoogleAnalytics();
+			});
+
+			$(document).bind("user_cookie_consent_changed", function(event, object) {
+				const userConsentGiven = $(object).attr('consent');
+				if (userConsentGiven) {
+					// User clicked on enabling cookies. Now it’s safe to call the
+					// init functions.
+					initialiseGoogleAnalytics();
+				}
+			});
+		</script>
 	</body>
 </html>
